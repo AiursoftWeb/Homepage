@@ -37,7 +37,7 @@ const e = [
         icon: <img src={icons.rest} {...imgCss} alt="" />,
       },
       {
-        label: "Jimmoen",
+        label: "JimMoen",
         value: "https://jimmoen.aiursoft.cn",
         icon: <img src={icons.jim} {...imgCss} alt="" />,
       },
