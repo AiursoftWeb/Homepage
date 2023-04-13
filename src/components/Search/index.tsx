@@ -21,7 +21,7 @@ const Search: React.FC = (params) => {
       value: string;
     }[]
   >([]);
-  const debouncedValue = useDebounce(value, { wait: 500 });
+  const debouncedValue = useDebounce(value, { wait: 200 });
   const onChange = (e: string) => {
     setValue(e);
   };

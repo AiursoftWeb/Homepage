@@ -45,13 +45,17 @@ const App = () => {
         css={css`
           height: 100vh;
           background-image: linear-gradient(
-              rgba(255, 255, 255, 1),
-              rgba(255, 255, 255, 0)
+              to bottom,
+              hsl(0, 0%, 100%, 1),
+              hsl(0, 0%, 100%, 0)
             ),
             url(${bg});
           background-size: cover;
           min-width: 1280px;
           min-height: 800px;
+          @media (prefers-color-scheme: dark) {
+            background-image: none;
+          }
         `}
       >
         <Header css={headerCss}>
