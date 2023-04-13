@@ -62,7 +62,7 @@ const info = [
       },
       {
         label: "音乐会",
-        value: "https://music.aiursoft.cn",
+        value: "https://musics.aiursoft.cn",
         icon: <CustomerServiceOutlined {...iconCss} />,
       },
       {
