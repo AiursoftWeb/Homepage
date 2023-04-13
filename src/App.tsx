@@ -32,7 +32,15 @@ const App = () => {
         },
       }}
     >
-      <FloatButton.Group shape="square" style={{ right: 48 }}>
+      <FloatButton.Group
+        shape="square"
+        css={css`
+          right: 48px;
+          @media (max-width: 768px) {
+            right: 0.5rem;
+          }
+        `}
+      >
         <Popover placement="leftBottom" content={<Help i={0} />}>
           <FloatButton icon={<IconFont type="icon-xiaoqu-xianxing" />} />
         </Popover>
@@ -56,6 +64,12 @@ const App = () => {
           @media (prefers-color-scheme: dark) {
             background-image: none;
           }
+          @media (max-width: 768px) {
+            width: 100vw;
+            min-width: 0;
+            min-height: 100vh;
+            height: auto;
+          }
         `}
       >
         <Header css={headerCss}>
@@ -72,15 +86,28 @@ const App = () => {
           <div
             css={[
               flex,
-              { flexDirection: "column", justifyContent: "space-between" },
+              {
+                flexDirection: "column",
+                justifyContent: "space-between",
+                height: "40%",
+              },
+              css`
+                @media (max-width: 768px) {
+                  height: 20vh;
+                }
+              `,
             ]}
-            style={{ height: "40%" }}
           >
             <img
               src={title}
-              width={800}
               alt=""
-              css={{ zIndex: 1, paddingTop: 0 }}
+              css={css`
+                width: 800px;
+                @media (max-width: 768px) {
+                  width: 5.5rem;
+                  margin-top: 1rem;
+                }
+              `}
             />
             <Search />
           </div>
@@ -90,10 +117,22 @@ const App = () => {
           style={{
             textAlign: "center",
             backgroundColor: "rgba(0,0,0,0)",
+            color: "#666",
+            // display:'flex',
           }}
         >
-          Aiursoft-Homepage ©2023 Created by HerbertLzx 苏ICP备2022030859号{" "}
-          <Button href="https://stats.uptimerobot.com/ynrA5c73EN" type="link">
+          <span>Aiursoft-Homepage ©2023 </span>
+          <span>Created by HerbertLzx </span>
+          <span>苏ICP备2022030859号 </span>
+          <Button
+            href="https://stats.uptimerobot.com/ynrA5c73EN"
+            type="link"
+            css={css`
+              @media (max-width: 768px) {
+                display: none;
+              }
+            `}
+          >
             服务可用性
           </Button>
         </Footer>
@@ -112,5 +151,9 @@ const headerCss = css`
   box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.06);
   @media (prefers-color-scheme: dark) {
     box-shadow: none;
+  }
+  @media (max-width: 768px) {
+    height: 0.8rem;
+    padding: 0.2rem;
   }
 `;

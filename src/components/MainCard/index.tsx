@@ -11,9 +11,18 @@ import {
 import { flex } from "../../utils/layout";
 import * as icons from "./icons";
 import { IconFont } from "../IconFont";
+import { css } from "@emotion/react";
 const iconCss = { css: { marginRight: "12px" } };
 const imgCss = {
-  css: { width: "24px", height: "24px", marginRight: "12px", borderRadius: 2 },
+  css: [
+    { width: "24px", height: "24px", marginRight: "12px", borderRadius: 2 },
+    css`
+      @media (max-width: 768px) {
+        width: 0.2rem;
+        height: 0.2rem;
+      }
+    `,
+  ],
 };
 const info = [
   {
@@ -171,32 +180,65 @@ const MainCard = () => {
           minWidth: "1000px",
           width: "70%",
         },
+        css`
+          @media (max-width: 768px) {
+            width: 90vw;
+            min-width: 1rem;
+            padding-bottom: 1rem;
+          }
+        `,
       ]}
     >
       <Row>
         {info.map((e) => {
           return (
-            <Col span={12} key={e.id}>
+            <Col lg={12} sm={24} key={e.id}>
               <Card
                 key={e.id}
                 bordered={false}
-                css={{
-                  margin: 20,
-                  backgroundColor: "rgba(255,255,255,0.6)",
-                  minWidth: 460,
-                }}
+                css={[
+                  {
+                    margin: 20,
+                    backgroundColor: "rgba(255,255,255,0.6)",
+                    minWidth: 460,
+                  },
+                  css`
+                    @media (max-width: 768px) {
+                      margin: 3vw;
+                      min-width: 1rem;
+                    }
+                  `,
+                ]}
                 bodyStyle={{
                   flexDirection: "column",
                 }}
               >
-                <Space css={{ fontSize: 28, color: "#666", fontWeight: 600 }}>
+                <Space
+                  css={[
+                    { fontSize: 28, color: "#666", fontWeight: 600 },
+                    css`
+                      @media (max-width: 768px) {
+                        font-size: 0.3rem;
+                      }
+                    `,
+                  ]}
+                >
                   {e.icon}
                   {e.title}
                 </Space>
-                <Row css={{ marginTop: 10 }}>
+                <Row
+                  css={css`
+                    padding-left: 15px;
+                    margin-top: 10px;
+                    @media (max-width: 768px) {
+                      margin-top: 10;
+                      padding-left: 0;
+                    }
+                  `}
+                >
                   {e.children.map((more) => {
                     return (
-                      <Col span={7} offset={1} key={more.label}>
+                      <Col span={8} offset={0} key={more.label}>
                         <a
                           key={more.label}
                           href={more.value}
@@ -209,6 +251,12 @@ const MainCard = () => {
                               fontSize: 18,
                               justifyContent: "flex-start",
                             },
+                            css`
+                              @media (max-width: 768px) {
+                                height: 0.5rem;
+                                font-size: 0.2rem;
+                              }
+                            `,
                           ]}
                           rel="noreferrer"
                         >

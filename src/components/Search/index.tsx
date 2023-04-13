@@ -6,6 +6,7 @@ import { useDebounce } from "ahooks";
 import { useEffect, useState } from "react";
 import { SearchOutlined } from "@ant-design/icons";
 import { openNewTab } from "../../utils/utils";
+import { css } from "@emotion/react";
 async function httpGet(theUrl: string | URL) {
   var xmlHttp = new XMLHttpRequest();
   xmlHttp.open("GET", theUrl, false); // false for synchronous request
@@ -48,8 +49,25 @@ const Search: React.FC = (params) => {
     fetchData();
   }, [debouncedValue]);
   return (
-    <div css={[flex, { paddingTop: 0 }]}>
+    <div
+      css={[
+        flex,
+        { paddingTop: 0 },
+        css`
+          @media (max-width: 768px) {
+            padding-top: 0.2rem;
+            width: 100vw;
+          }
+        `,
+      ]}
+    >
       <AutoComplete
+        css={css`
+          width: 500px;
+          @media (max-width: 768px) {
+            width: 60vw;
+          }
+        `}
         value={value}
         options={options}
         onSelect={onSelect}
@@ -60,9 +78,16 @@ const Search: React.FC = (params) => {
         children={
           <Input
             size="large"
-            css={flex}
             placeholder="输入关键字搜索"
-            style={{ alignSelf: "center", width: 500 }}
+            css={[
+              flex,
+              { alignSelf: "center", width: 500 },
+              // css`
+              //   @media (max-width: 768px) {
+              //     width: 0.2rem;
+              //   }
+              // `,
+            ]}
             onPressEnter={(e: any) => onSelect(e.target.value)}
             styles={{
               input: {
