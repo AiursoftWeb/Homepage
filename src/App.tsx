@@ -3,6 +3,7 @@ import { css } from "@emotion/react";
 import { Layout, ConfigProvider, FloatButton, Popover, Button } from "antd";
 import bg from "./static/bg.jpeg";
 import title from "./label/fffef8.svg";
+import titleIos from "./label/title.png";
 import RightContent from "./components/RightContent";
 import LeftContent from "./components/LeftContent";
 import { flex } from "./utils/layout";
@@ -15,6 +16,7 @@ import { IconFont } from "./components/IconFont";
 import { useEffect } from "react";
 import { auto as followSystemColorScheme } from "darkreader";
 const { Header, Content } = Layout;
+const ifMobile = window.matchMedia("(max-width: 768px)").matches;
 const App = () => {
   useEffect(() => {
     followSystemColorScheme({
@@ -98,17 +100,24 @@ const App = () => {
               `,
             ]}
           >
-            <img
-              src={title}
-              alt=""
-              css={css`
-                width: 800px;
-                @media (max-width: 768px) {
+            {ifMobile ? (
+              <img
+                src={titleIos}
+                alt=""
+                css={css`
                   width: 5.5rem;
                   margin-top: 1rem;
-                }
-              `}
-            />
+                `}
+              />
+            ) : (
+              <img
+                src={title}
+                alt=""
+                css={css`
+                  width: 800px;
+                `}
+              />
+            )}
             <Search />
           </div>
           <MainCard />
