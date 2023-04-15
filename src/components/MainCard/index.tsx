@@ -66,8 +66,8 @@ const info = [
         icon: <CustomerServiceOutlined {...iconCss} />,
       },
       {
-        label: "ChatGPT",
-        value: "https://chat.aiursoft.cn",
+        label: "电视台",
+        value: "https://live.aiursoft.cn",
         icon: <IconFont {...iconCss} type="icon-guangchang" />,
       },
       {
