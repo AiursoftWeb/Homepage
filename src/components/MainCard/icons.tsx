@@ -10,6 +10,7 @@ export { default as cs } from "../../static/cs.jpeg";
 export { default as mk } from "../../static/miku2.gif";
 export { default as sl } from "../../static/sl.png";
 export { default as russia } from "../../static/russia.jpeg";
+export { default as restart } from "../../static/restart.jpeg";
 export { default as _2048 } from "../../static/2048.png";
 export { default as jim } from "../../static/jm.jpeg";
 export { default as git } from "../../static/git.png";

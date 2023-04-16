@@ -122,6 +122,11 @@ const info = [
         value: "https://hextris.aiursoft.cn",
         icon: <img src={icons.russia} {...imgCss} alt="" />,
       },
+      {
+        label: "人生重开",
+        value: "https://life.aiursoft.cn",
+        icon: <img src={icons.restart} {...imgCss} alt="" />,
+      },
     ],
   },
   // {
