@@ -15,6 +15,7 @@ import Search from "./components/Search";
 import { IconFont } from "./components/IconFont";
 import { useEffect } from "react";
 import { auto as followSystemColorScheme } from "darkreader";
+import { openNewTab } from "./utils/utils";
 const { Header, Content } = Layout;
 const ifMobile = window.matchMedia("(max-width: 768px)").matches;
 const App = () => {
@@ -131,10 +132,17 @@ const App = () => {
           }}
         >
           <span>Aiursoft-Homepage ©2023 </span>
-          <span>Created by HerbertLzx </span>
-          <span>苏ICP备2022030859号 </span>
+          <span>Created by HerbertLzx</span>
           <Button
-            href="https://stats.uptimerobot.com/ynrA5c73EN"
+            onClick={() => openNewTab("https://beian.miit.gov.cn/")}
+            type="link"
+          >
+            苏ICP备2022030859号
+          </Button>
+          <Button
+            onClick={() =>
+              openNewTab("https://stats.uptimerobot.com/ynrA5c73EN")
+            }
             type="link"
             css={css`
               @media (max-width: 768px) {
