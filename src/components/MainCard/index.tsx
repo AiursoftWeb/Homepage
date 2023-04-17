@@ -9,21 +9,22 @@ import {
   CustomerServiceOutlined,
 } from "@ant-design/icons";
 import { flex } from "../../utils/layout";
-import * as icons from "./icons";
 import { IconFont } from "../IconFont";
+import * as icons from "./icons";
 import { css } from "@emotion/react";
-const iconCss = { css: { marginRight: "12px" } };
 const imgCss = {
-  css: [
-    { width: "24px", height: "24px", marginRight: "12px", borderRadius: 2 },
-    css`
-      @media (max-width: 768px) {
-        width: 0.2rem;
-        height: 0.2rem;
-      }
-    `,
-  ],
+  css: css`
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    border-radius: 2px;
+    @media (max-width: 768px) {
+      width: 0.2rem;
+      height: 0.2rem;
+    }
+  `,
 };
+const iconCss = { css: { marginRight: "12px" } };
 const info = [
   {
     id: 0,
@@ -214,14 +215,14 @@ const MainCard = () => {
                 }}
               >
                 <Space
-                  css={[
-                    { fontSize: 28, color: "#666", fontWeight: 600 },
-                    css`
-                      @media (max-width: 768px) {
-                        font-size: 0.3rem;
-                      }
-                    `,
-                  ]}
+                  css={css`
+                    font-size: 28px;
+                    color: #666;
+                    font-weight: 600;
+                    @media (max-width: 768px) {
+                      font-size: 0.3rem;
+                    }
+                  `}
                 >
                   {e.icon}
                   {e.title}
@@ -241,7 +242,7 @@ const MainCard = () => {
                       <Col span={8} offset={0} key={more.label}>
                         <a
                           key={more.label}
-                          href={more.value}
+                          href={more?.value}
                           target="_blank"
                           css={[
                             flex,
