@@ -6,6 +6,8 @@ import {
   VideoCameraOutlined,
   CodeOutlined,
   CustomerServiceOutlined,
+  BankOutlined,
+  DesktopOutlined,
 } from "@ant-design/icons";
 import { IconFont } from "../../IconFont";
 import * as icons from "../icons";
@@ -17,7 +19,7 @@ const imgCss = {
     width: 24px;
     height: 24px;
     margin-right: 12px;
-    border-radius: 2px;
+    border-radius: 5px;
     @media (max-width: 768px) {
       width: 0.2rem;
       height: 0.2rem;
@@ -25,7 +27,6 @@ const imgCss = {
   `,
 };
 const iconCss = { css: { marginRight: "12px" } };
-
 export const info = [
   {
     id: 0,
@@ -70,12 +71,12 @@ export const info = [
       {
         label: "电视台",
         value: "https://live.aiursoft.cn",
-        icon: <IconFont {...iconCss} type="icon-guangchang" />,
+        icon: <DesktopOutlined {...iconCss} />,
       },
       {
         label: "文件银行",
         value: "https://nextcloud.aiursoft.cn",
-        icon: <IconFont {...iconCss} type="icon-guangchang" />,
+        icon: <BankOutlined {...iconCss} />,
       },
     ],
   },
@@ -135,49 +136,4 @@ export const info = [
       },
     ],
   },
-  // {
-  //   id: 2,
-  //   title: "住户小区",
-  //   icon: <IconFont type="icon-xiaoquguanli" />,
-  //   children: [
-  //     {
-  //       label: "AnduinXue",
-  //       value: "https://anduin.aiursoft.cn",
-  //       icon: <img src={icons.anduin} {...imgCss} alt="" />,
-  //     },
-  //     {
-  //       label: "杨过",
-  //       value: "https://gxhao.aiursoft.cn",
-  //       icon: <img src={icons.yang} {...imgCss} alt="" />,
-  //     },
-  //     {
-  //       label: "Gbiner",
-  //       value: "https://gbiner.aiursoft.cn",
-  //       icon: <img src={icons.gb} {...imgCss} alt="" />,
-  //     },
-  //     {
-  //       label: "Rest",
-  //       value: "https://rest.aiursoft.cn",
-  //       icon: <img src={icons.rest} {...imgCss} alt="" />,
-  //     },
-  //     {
-  //       label: "Jimmoen",
-  //       value: "https://jimmoen.aiursoft.cn",
-  //       icon: <img src={icons.jim} {...imgCss} alt="" />,
-  //     },
-  //     {
-  //       label: "蓝猫猫",
-  //       value: "https://cat.aiursoft.cn",
-  //       icon: <img src={icons.kit} {...imgCss} alt="" />,
-  //     },
-  //   ],
-  // },
-  // {
-  //   id: 3,
-  //   title: "帮助",
-  //   icon: <IconFont {...iconCss} type="icon-bangzhu" />,
-  //   children: [
-  //     { label: "Github", value: "", icon: <GithubOutlined {...iconCss} /> },
-  //   ],
-  // },
 ];
