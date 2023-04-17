@@ -107,7 +107,7 @@ export const info = [
       },
       {
         label: "CS:Source",
-        value: "https://cssource.aiursoft.cn",
+        // value: "https://cssource.aiursoft.cn",
         icon: <img src={icons.cs} {...imgCss} alt="" />,
         content: cssource,
         md: true,
