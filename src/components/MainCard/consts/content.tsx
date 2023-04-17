@@ -13,7 +13,7 @@ import { IconFont } from "../../IconFont";
 import * as icons from "../icons";
 import { css } from "@emotion/react";
 import { terraria } from "./terraria";
-import Factorio from "./factorio";
+import { factorio } from "./factorio";
 const imgCss = {
   css: css`
     width: 24px;
@@ -101,8 +101,8 @@ export const info = [
         label: "Factorio",
         // value: "https://factorio.aiursoft.cn",
         icon: <img src={icons.ft} {...imgCss} alt="" />,
-        content: <Factorio />,
-        md: false,
+        content: factorio,
+        md: true,
       },
       {
         label: "CS:Source",
