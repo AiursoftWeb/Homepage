@@ -7,13 +7,13 @@ export const terraria =
 
 当然，也可以在 Steam 上购买游戏。[steamcommunity.com](https://store.steampowered.com/app/105600/Terraria/)
 
-**注意：**泰拉瑞亚是付费游戏，它的价格大约是 ￥70！
+注意：泰拉瑞亚是付费游戏，它的价格大约是 ￥70！
 
 ## 加入服务器
 
 ### 服务器地址
 
-terraria.aiursoft.cn
+  terraria.aiursoft.cn
 
 ### 服务器端口
 
