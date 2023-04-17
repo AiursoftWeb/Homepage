@@ -13,7 +13,7 @@ import { IconFont } from "../../IconFont";
 import * as icons from "../icons";
 import { css } from "@emotion/react";
 import { terraria } from "./terraria";
-import Factorio from "./Factorio";
+import Factorio from "./factorio";
 const imgCss = {
   css: css`
     width: 24px;
