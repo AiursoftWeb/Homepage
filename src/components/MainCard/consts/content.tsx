@@ -14,6 +14,7 @@ import * as icons from "../icons";
 import { css } from "@emotion/react";
 import { terraria } from "./terraria";
 import { factorio } from "./factorio";
+import { cssource } from "./cssource";
 const imgCss = {
   css: css`
     width: 24px;
@@ -108,6 +109,8 @@ export const info = [
         label: "CS:Source",
         value: "https://cssource.aiursoft.cn",
         icon: <img src={icons.cs} {...imgCss} alt="" />,
+        content: cssource,
+        md: true,
       },
       {
         label: "Miku",
