@@ -10,10 +10,14 @@ import {
   DesktopOutlined,
   AlertOutlined,
   NotificationOutlined,
+  PictureOutlined,
+  CloudServerOutlined,
+  AntDesignOutlined 
 } from "@ant-design/icons";
 import { IconFont } from "../../IconFont";
 import * as icons from "../icons";
 import { css } from "@emotion/react";
+import { announcement } from "./announcement";
 import { terraria } from "./terraria";
 import { factorio } from "./factorio";
 import { cssource } from "./cssource";
@@ -43,55 +47,29 @@ export const info = [
     icon: <AlertOutlined />,
     children: [
       {
-        label: "Minecraft",
-        value: "https://mc.aiursoft.cn",
-        icon: <img src={icons.mc} {...imgCss} alt="" />,
+        label: "ChatGPT",
+        value: "https://chat.aiursoft.cn",
+        icon: <MessageOutlined {...iconCss} />,
       },
       {
-        label: "Terraria",
-        // value: "https://terraria.aiursoft.cn",
-        icon: <img src={icons.tl} {...imgCss} alt="" />,
-        content: terraria,
-        md: true,
+        label: "Stable Diffusion",
+        value: "https://stable-diffusion.aiursoft.cn/",
+        icon: <PictureOutlined {...iconCss} />,
       },
       {
-        label: "Factorio",
-        // value: "https://factorio.aiursoft.cn",
-        icon: <img src={icons.ft} {...imgCss} alt="" />,
-        content: factorio,
-        md: true,
+        label: "IaaS 云计算",
+        value: "https://pve.aiursoft.cn/",
+        icon: <CloudServerOutlined {...iconCss} />,
       },
       {
-        label: "CS:Source",
-        // value: "https://cssource.aiursoft.cn",
-        icon: <img src={icons.cs} {...imgCss} alt="" />,
-        content: cssource,
-        md: true,
+        label: "实验室手册",
+        value: "https://docs.aiursoft.cn/",
+        icon: <FileTextOutlined {...iconCss} />,
       },
       {
-        label: "Miku",
-        value: "https://miku.aiursoft.cn",
-        icon: <img src={icons.mk} {...imgCss} alt="" />,
-      },
-      {
-        label: "扫雷",
-        value: "https://minesweeper.aiursoft.cn",
-        icon: <img src={icons.sl} {...imgCss} alt="" />,
-      },
-      {
-        label: "2048",
-        value: "https://2048.aiursoft.cn",
-        icon: <img src={icons._2048} {...imgCss} alt="" />,
-      },
-      {
-        label: "Hextris",
-        value: "https://hextris.aiursoft.cn",
-        icon: <img src={icons.russia} {...imgCss} alt="" />,
-      },
-      {
-        label: "人生重开",
-        value: "https://life.aiursoft.cn",
-        icon: <img src={icons.restart} {...imgCss} alt="" />,
+        label: "生命游戏",
+        value: "https://gameoflife.aiursoft.cn/",
+        icon: <AntDesignOutlined  {...iconCss} />,
       },
     ],
   },
