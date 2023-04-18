@@ -39,7 +39,7 @@ export const info = [
     id: 0,
     title: "公告",
     icon: <NotificationOutlined />,
-    notice: terraria,
+    notice: announcement,
   },
   {
     id: 1,
