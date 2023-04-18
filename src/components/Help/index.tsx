@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 
 // import { GithubOutlined } from "@ant-design/icons";
-import { flex } from "../../utils/layout";
+import { flex } from "@/utils/layout";
 import { Space } from "antd";
 import * as icons from "../MainCard/icons";
 import { IconFont } from "../IconFont";

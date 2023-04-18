@@ -1,11 +1,11 @@
 /** @jsxImportSource @emotion/react */
 // import { css } from "@emotion/react";
 import { AutoComplete, Button, Input } from "antd";
-import { flex } from "../../utils/layout";
+import { flex } from "@/utils/layout";
 import { useDebounce } from "ahooks";
 import { useEffect, useState } from "react";
 import { SearchOutlined } from "@ant-design/icons";
-import { openNewTab } from "../../utils/utils";
+import { openNewTab } from "@/utils/utils";
 import { css } from "@emotion/react";
 async function httpGet(theUrl: string | URL) {
   var xmlHttp = new XMLHttpRequest();

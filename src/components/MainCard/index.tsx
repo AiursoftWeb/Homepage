@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { Card, Col, Modal, Row, Space } from "antd";
-import { flex } from "../../utils/layout";
+import { flex } from "@/utils/layout";
 import { css } from "@emotion/react";
 import { info } from "./consts/content";
 import { useState } from "react";
