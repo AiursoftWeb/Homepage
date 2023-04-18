@@ -63,7 +63,6 @@ const App = () => {
             url(${bg});
           background-size: cover;
           min-width: 1280px;
-          min-height: 800px;
           @media (prefers-color-scheme: dark) {
             background-image: none;
           }

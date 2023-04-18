@@ -80,8 +80,23 @@ const MainCard = () => {
         onCancel={() => setOpen(false)}
         destroyOnClose
         footer={null}
-        width={600}
-        bodyStyle={{ minHeight: "300px" }}
+        width={800}
+        title={
+          <div
+            css={css`
+              font-size: 32px;
+            `}
+          >
+            {content.label}
+          </div>
+        }
+        bodyStyle={{
+          minHeight: "300px",
+          overflowY: "auto",
+          textOverflow: "ellipsis",
+          maxHeight: "400px",
+          paddingLeft: "10px",
+        }}
       >
         {content.md ? (
           <ReactMarkdown children={content.content} />
