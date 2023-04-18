@@ -11,7 +11,7 @@ import MainCard from "./components/MainCard";
 import { QuestionCircleOutlined } from "@ant-design/icons";
 import Help from "./components/Help";
 import { Footer } from "antd/es/layout/layout";
-import Search from "./components/Search";
+// import Search from "./components/Search";
 import { IconFont } from "./components/IconFont";
 import { useEffect } from "react";
 import { auto as followSystemColorScheme } from "darkreader";
@@ -54,7 +54,7 @@ const App = () => {
       <Layout
         className="layout"
         css={css`
-          height: 100vh;
+          min-height: 100vh;
           background-image: linear-gradient(
               to bottom,
               hsl(0, 0%, 100%, 1),
@@ -84,6 +84,7 @@ const App = () => {
             display: "flex",
             alignItems: "center",
             flexDirection: "column",
+            minHeight: "30%",
           }}
         >
           <div
@@ -92,11 +93,11 @@ const App = () => {
               {
                 flexDirection: "column",
                 justifyContent: "space-between",
-                height: "40%",
+                minHeight: "30%",
               },
               css`
                 @media (max-width: 768px) {
-                  height: 20vh;
+                  min-height: 20vh;
                 }
               `,
             ]}
@@ -119,7 +120,7 @@ const App = () => {
                 `}
               />
             )}
-            <Search />
+            {/* <Search /> */}
           </div>
           <MainCard />
         </Content>
@@ -164,7 +165,7 @@ const headerCss = css`
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0);
   padding-inline: 60;
-  height: 6%;
+  height: 50px;
   box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.06);
   @media (prefers-color-scheme: dark) {
     box-shadow: none;

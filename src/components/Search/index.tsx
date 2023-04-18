@@ -47,13 +47,14 @@ const Search: React.FC = (params) => {
       setOpen(true);
     };
     fetchData();
+    console.log(process.env.REACT_APP_SEARCH);
   }, [debouncedValue]);
   return (
     <div
       css={[
         flex,
-        { paddingTop: 0 },
         css`
+          padding-bottom: 40px;
           @media (max-width: 768px) {
             padding-top: 0.2rem;
             width: 100vw;

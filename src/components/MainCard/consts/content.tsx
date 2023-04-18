@@ -8,6 +8,8 @@ import {
   CustomerServiceOutlined,
   BankOutlined,
   DesktopOutlined,
+  AlertOutlined,
+  NotificationOutlined,
 } from "@ant-design/icons";
 import { IconFont } from "../../IconFont";
 import * as icons from "../icons";
@@ -31,6 +33,70 @@ const iconCss = { css: { marginRight: "12px" } };
 export const info = [
   {
     id: 0,
+    title: "公告",
+    icon: <NotificationOutlined />,
+    notice: terraria,
+  },
+  {
+    id: 1,
+    title: "实验室",
+    icon: <AlertOutlined />,
+    children: [
+      {
+        label: "Minecraft",
+        value: "https://mc.aiursoft.cn",
+        icon: <img src={icons.mc} {...imgCss} alt="" />,
+      },
+      {
+        label: "Terraria",
+        // value: "https://terraria.aiursoft.cn",
+        icon: <img src={icons.tl} {...imgCss} alt="" />,
+        content: terraria,
+        md: true,
+      },
+      {
+        label: "Factorio",
+        // value: "https://factorio.aiursoft.cn",
+        icon: <img src={icons.ft} {...imgCss} alt="" />,
+        content: factorio,
+        md: true,
+      },
+      {
+        label: "CS:Source",
+        // value: "https://cssource.aiursoft.cn",
+        icon: <img src={icons.cs} {...imgCss} alt="" />,
+        content: cssource,
+        md: true,
+      },
+      {
+        label: "Miku",
+        value: "https://miku.aiursoft.cn",
+        icon: <img src={icons.mk} {...imgCss} alt="" />,
+      },
+      {
+        label: "扫雷",
+        value: "https://minesweeper.aiursoft.cn",
+        icon: <img src={icons.sl} {...imgCss} alt="" />,
+      },
+      {
+        label: "2048",
+        value: "https://2048.aiursoft.cn",
+        icon: <img src={icons._2048} {...imgCss} alt="" />,
+      },
+      {
+        label: "Hextris",
+        value: "https://hextris.aiursoft.cn",
+        icon: <img src={icons.russia} {...imgCss} alt="" />,
+      },
+      {
+        label: "人生重开",
+        value: "https://life.aiursoft.cn",
+        icon: <img src={icons.restart} {...imgCss} alt="" />,
+      },
+    ],
+  },
+  {
+    id: 2,
     title: "广场",
     icon: <IconFont type="icon-a-mubiaoguangchang" />,
     children: [
@@ -82,7 +148,7 @@ export const info = [
     ],
   },
   {
-    id: 1,
+    id: 3,
     title: "游戏厅",
     icon: <IconFont type="icon-youxi" />,
     children: [

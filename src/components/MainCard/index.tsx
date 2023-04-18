@@ -1,10 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import { Card, Col, Modal, Row, Space } from "antd";
-import { flex } from "@/utils/layout";
 import { css } from "@emotion/react";
 import { info } from "./consts/content";
 import { useState } from "react";
 import ReactMarkdown from "react-markdown";
+import FuncList from "./component/FuncList";
+import Notice from "./component/Notice";
 type content = {
   label: string;
   content?: any;
@@ -17,23 +18,19 @@ const MainCard = () => {
     content: "",
     md: false,
   });
+  const params = { setOpen, setContent };
   return (
     <div
-      css={[
-        {
-          marginTop: "90px",
-          backgroundColor: "rgba(0,0,0,0)",
-          minWidth: "1000px",
-          width: "70%",
-        },
-        css`
-          @media (max-width: 768px) {
-            width: 90vw;
-            min-width: 1rem;
-            padding-bottom: 1rem;
-          }
-        `,
-      ]}
+      css={css`
+        background-color: rgba(0, 0, 0, 0);
+        min-width: 1000px;
+        width: 70%;
+        @media (max-width: 768px) {
+          width: 90vw;
+          min-width: 1rem;
+          padding-bottom: 1rem;
+        }
+      `}
     >
       <Row>
         {info.map((e) => {
@@ -42,26 +39,22 @@ const MainCard = () => {
               <Card
                 key={e.id}
                 bordered={false}
-                css={[
-                  {
-                    margin: 20,
-                    backgroundColor: "rgba(255,255,255,0.6)",
-                    minWidth: 460,
-                  },
-                  css`
-                    @media (max-width: 768px) {
-                      margin: 3vw;
-                      min-width: 1rem;
-                    }
-                  `,
-                ]}
+                css={css`
+                  margin: 10px;
+                  background-color: rgba(255, 255, 255, 0.6);
+                  min-width: 460px;
+                  @media (max-width: 768px) {
+                    margin: 3vw;
+                    min-width: 1rem;
+                  }
+                `}
                 bodyStyle={{
                   flexDirection: "column",
                 }}
               >
                 <Space
                   css={css`
-                    font-size: 28px;
+                    font-size: 24px;
                     color: #666;
                     font-weight: 600;
                     @media (max-width: 768px) {
@@ -72,61 +65,11 @@ const MainCard = () => {
                   {e.icon}
                   {e.title}
                 </Space>
-                <Row
-                  css={css`
-                    padding-left: 15px;
-                    margin-top: 10px;
-                    @media (max-width: 768px) {
-                      margin-top: 10;
-                      padding-left: 0;
-                    }
-                  `}
-                >
-                  {e.children.map((more) => {
-                    return (
-                      <Col span={8} offset={0} key={more.label}>
-                        <a
-                          key={more.label}
-                          href={more?.value}
-                          onClick={() => {
-                            if (!more?.value) {
-                              setContent({
-                                label: more.label,
-                                content: more.content,
-                                md: more?.md || false,
-                              });
-                              setOpen(true);
-                            }
-                          }}
-                          target="_blank"
-                          css={[
-                            flex,
-                            {
-                              color: "#777",
-                              height: 50,
-                              fontSize: 18,
-                              justifyContent: "flex-start",
-                            },
-                            css`
-                              @media (max-width: 768px) {
-                                height: 0.5rem;
-                                font-size: 0.2rem;
-                              }
-                            `,
-                          ]}
-                          rel="noreferrer"
-                        >
-                          {more?.icon ? (
-                            more?.icon
-                          ) : (
-                            <svg style={{ width: 21, height: 1 }} />
-                          )}
-                          {more.label}
-                        </a>
-                      </Col>
-                    );
-                  })}
-                </Row>
+                {e.children ? (
+                  <FuncList {...params} children={e.children} />
+                ) : (
+                  <Notice notice={e.notice} />
+                )}
               </Card>
             </Col>
           );
