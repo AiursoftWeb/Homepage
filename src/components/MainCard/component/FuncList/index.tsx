@@ -26,11 +26,11 @@ type funcList = {
 const FuncList: React.FC<funcList> = ({ setContent, setOpen, children }) => {
   return (
     <Row
+      gutter={12}
       css={css`
         padding-left: 15px;
         margin-top: 10px;
         @media (max-width: 768px) {
-          margin-top: 10;
           padding-left: 0;
         }
       `}
@@ -74,7 +74,15 @@ const FuncList: React.FC<funcList> = ({ setContent, setOpen, children }) => {
               ) : (
                 <svg style={{ width: 21, height: 1 }} />
               )}
-              {more.label}
+              <span
+                css={css`
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                `}
+              >
+                {more.label}
+              </span>
             </a>
           </Col>
         );
