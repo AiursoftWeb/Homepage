@@ -1,6 +1,5 @@
 export const announcement =
-  `# 公告
-
+  `
 最近我们仍然专注于为数据中心增加 GPU 算力。这需要踩大量的坑。包括：搞定 vGPU License、设计 mdev 的 GPU 虚拟化方案、搞定 GPU 虚拟化的驱动问题、监控、分配、调度等。
 
 ## AI ？

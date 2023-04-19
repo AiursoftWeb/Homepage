@@ -43,8 +43,10 @@ const MainCard = () => {
                   margin: 10px;
                   background-color: rgba(255, 255, 255, 0.6);
                   min-width: 460px;
+                  min-height: 250px;
                   @media (max-width: 768px) {
                     margin: 3vw;
+                    min-height: 0;
                     min-width: 1rem;
                   }
                 `}

@@ -37,7 +37,7 @@ const FuncList: React.FC<funcList> = ({ setContent, setOpen, children }) => {
     >
       {children.map((more) => {
         return (
-          <Col span={8} key={more.label}>
+          <Col span={children?.length > 6 ? 8 : 12} key={more.label}>
             <a
               key={more.label}
               href={more?.value}
