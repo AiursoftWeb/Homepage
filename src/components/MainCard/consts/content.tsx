@@ -12,7 +12,8 @@ import {
   NotificationOutlined,
   PictureOutlined,
   CloudServerOutlined,
-  AntDesignOutlined 
+  AntDesignOutlined,
+  NodeCollapseOutlined
 } from "@ant-design/icons";
 import { IconFont } from "../../IconFont";
 import * as icons from "../icons";
@@ -70,6 +71,11 @@ export const info = [
         label: "生命游戏",
         value: "https://gameoflife.aiursoft.cn/",
         icon: <AntDesignOutlined  {...iconCss} />,
+      },
+      {
+        label: "三体模拟器",
+        value: "https://three.aiursoft.cn/",
+        icon: <NodeCollapseOutlined  {...iconCss} />,
       },
     ],
   },
