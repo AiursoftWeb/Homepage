@@ -152,6 +152,19 @@ const App = () => {
           >
             服务可用性
           </Button>
+          <Button
+            onClick={() =>
+              openNewTab("https://tracer.aiursoft.cn/")
+            }
+            type="link"
+            css={css`
+              @media (max-width: 768px) {
+                display: none;
+              }
+            `}
+          >
+            服务器连接诊断
+          </Button>
         </Footer>
       </Layout>
     </ConfigProvider>
