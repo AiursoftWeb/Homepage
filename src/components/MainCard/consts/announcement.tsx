@@ -8,6 +8,16 @@ export const announcement =
 
 关于我们踩坑的所有笔记，我都将汇总到 [Aiursoft 运维文档中心](https://docs.aiursoft.cn)。我们也欢迎大家一起来完善这个文档。
 
+## AI 实验室
+
+我们搞 AI 的主张之一，就是人人有丹炼！因此，我们构建了一个共享的实验室：
+
+[https://lab.aiuirsoft.cn/](https://lab.aiuirsoft.cn/)
+
+在实验室里，你可以享受到 GPU 资源。它已经预装了 Python 环境和 CUDA 环境，已经安装好了 NVIDIA 加速卡驱动。你可以免费试用它来训练、运行、测试你的 AI 应用程序！
+
+致信 [anduin@aiursoft.com](mailto://anduin@aiursoft.com) 以获取实验室账号。
+
 ## 入口页
 
 感谢 Herbert 的贡献，目前你看到的页面是由 [Herbert](https://git.aiursoft.cn/HerbertLzx) 贡献，在 [Aiursoft Git](https://git.aiursoft.cn/Aiursoft/Homepage) 开源的 React 项目。他在这个项目中贡献了非常优秀的代码。我们欢迎大家学习这份优秀的前端导航系统。
