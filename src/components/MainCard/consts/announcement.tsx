@@ -12,7 +12,7 @@ export const announcement =
 
 我们搞 AI 的主张之一，就是人人有丹炼！因此，我们构建了一个共享的实验室：
 
-[https://lab.aiuirsoft.cn/](https://lab.aiuirsoft.cn/)
+[https://lab.aiursoft.cn/](https://lab.aiursoft.cn/)
 
 在实验室里，你可以享受到 GPU 资源。它已经预装了 Python 环境和 CUDA 环境，已经安装好了 NVIDIA 加速卡驱动。你可以免费试用它来训练、运行、测试你的 AI 应用程序！
 
