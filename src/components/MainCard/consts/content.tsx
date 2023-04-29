@@ -59,7 +59,7 @@ export const info = [
       },
       {
         label: "IaaS 云计算",
-        value: "https://pve.aiursoft.cn/",
+        value: "https://iaas.aiursoft.cn/",
         icon: <CloudServerOutlined {...iconCss} />,
       },
       {
