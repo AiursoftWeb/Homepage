@@ -14,7 +14,8 @@ import {
   CloudServerOutlined,
   AntDesignOutlined,
   NodeCollapseOutlined,
-  CodepenOutlined
+  CodepenOutlined,
+  GitlabOutlined
 } from "@ant-design/icons";
 import { IconFont } from "../../IconFont";
 import * as icons from "../icons";
@@ -82,6 +83,11 @@ export const info = [
         label: "AI 实验室",
         value: "https://lab.aiursoft.cn/",
         icon: <CodepenOutlined {...iconCss} />,
+      },
+      {
+        label: "DevOps 控制台",
+        value: "https://gitlab.aiursoft.cn/",
+        icon: <GitlabOutlined {...iconCss} />,
       },
     ],
   },
