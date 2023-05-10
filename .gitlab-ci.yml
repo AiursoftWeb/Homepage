@@ -9,7 +9,7 @@ build:
   stage: build
   script:
     - yarn
-    - yarn
+    - yarn build
     - tar -czvf build.tar.gz ./build
   artifacts:
     paths:
