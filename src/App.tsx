@@ -136,7 +136,7 @@ const App = () => {
             // display:'flex',
           }}
         >
-          <Space>
+          <Space direction={ifMobile ? "vertical" : "horizontal"}>
             <span>Aiursoft-Homepage ©2023 </span>
             <span>Created by HerbertLzx</span>
             <a
@@ -150,11 +150,6 @@ const App = () => {
               href="https://tracer.aiursoft.cn/"
               target="_blank"
               rel="noreferrer"
-              css={css`
-                @media (max-width: 768px) {
-                  display: none;
-                }
-              `}
             >
               服务器连接诊断
             </a>
