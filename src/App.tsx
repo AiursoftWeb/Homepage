@@ -147,6 +147,13 @@ const App = () => {
               苏ICP备2022030859号
             </a>
             <a
+              href="https://stats.uptimerobot.com/ynrA5c73EN"
+              target="_blank"
+              rel="noreferrer"
+            >
+              可用性报告
+            </a>
+            <a
               href="https://tracer.aiursoft.cn/"
               target="_blank"
               rel="noreferrer"
