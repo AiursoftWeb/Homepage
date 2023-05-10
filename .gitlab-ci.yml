@@ -1,8 +1,16 @@
 stages:
   - build
 
+before_script:
+  - 'cat /etc/lsb-release && uname -a && pwd && ls -ashl'
+  - 'node --version && npm --version && yarn --version'
+
 build:
   stage: build
   script:
     - yarn
     - yarn
+    - tar -czvf build.tar.gz ./build
+  artifacts:
+    paths:
+      - build.tar.gz
