@@ -50,11 +50,11 @@ const e = [
   },
   {
     id: 3,
-    title: "帮助",
+    title: "代码库",
     children: [
       {
-        label: "Git",
-        value: "https://git.aiursoft.cn/Aiursoft",
+        label: "GitLab",
+        value: "https://gitlab.aiursoft.cn/Aiursoft",
         icon: (
           <img
             src={icons.git}
