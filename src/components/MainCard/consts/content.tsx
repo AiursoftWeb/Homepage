@@ -12,7 +12,10 @@ import {
   NotificationOutlined,
   PictureOutlined,
   CloudServerOutlined,
-  AntDesignOutlined 
+  AntDesignOutlined,
+  NodeCollapseOutlined,
+  CodepenOutlined,
+  GitlabOutlined
 } from "@ant-design/icons";
 import { IconFont } from "../../IconFont";
 import * as icons from "../icons";
@@ -58,7 +61,7 @@ export const info = [
       },
       {
         label: "IaaS 云计算",
-        value: "https://pve.aiursoft.cn/",
+        value: "https://iaas.aiursoft.cn/",
         icon: <CloudServerOutlined {...iconCss} />,
       },
       {
@@ -70,6 +73,21 @@ export const info = [
         label: "生命游戏",
         value: "https://gameoflife.aiursoft.cn/",
         icon: <AntDesignOutlined  {...iconCss} />,
+      },
+      {
+        label: "三体模拟器",
+        value: "https://three.aiursoft.cn/10/10/5/1/0.43/-0.18/0.45/0.22/0.13/0.94/-0.26/0.66/-0.94/-0.76/-0.22/-0.86/0.78/0.98/0.19/0.4/0.78/0.15/-0.25/-0.65/-0.5",
+        icon: <NodeCollapseOutlined  {...iconCss} />,
+      },
+      {
+        label: "AI 实验室",
+        value: "https://lab.aiursoft.cn/",
+        icon: <CodepenOutlined {...iconCss} />,
+      },
+      {
+        label: "DevOps 控制台",
+        value: "https://gitlab.aiursoft.cn/",
+        icon: <GitlabOutlined {...iconCss} />,
       },
     ],
   },
