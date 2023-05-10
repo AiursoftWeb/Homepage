@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import { Layout, ConfigProvider, FloatButton, Popover, Button } from "antd";
+import { Layout, ConfigProvider, FloatButton, Popover, Space } from "antd";
 import bg from "./static/bg.jpeg";
 import title from "./label/fffef8.svg";
 import titleIos from "./label/title.png";
@@ -15,7 +15,7 @@ import { Footer } from "antd/es/layout/layout";
 import { IconFont } from "./components/IconFont";
 import { useEffect } from "react";
 import { auto as followSystemColorScheme } from "darkreader";
-import { openNewTab } from "./utils/utils";
+import { Helmet } from "react-helmet";
 const { Header, Content } = Layout;
 const ifMobile = window.matchMedia("(max-width: 768px)").matches;
 const App = () => {
@@ -35,6 +35,11 @@ const App = () => {
         },
       }}
     >
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>首页 HomePage - Aiursoft</title>
+        <link rel="index" href="https://www.aiursoft.cn" />
+      </Helmet>
       <FloatButton.Group
         shape="square"
         css={css`
@@ -131,27 +136,29 @@ const App = () => {
             // display:'flex',
           }}
         >
-          <span>Aiursoft-Homepage ©2023 </span>
-          <span>Created by HerbertLzx</span>
-          <Button
-            onClick={() => openNewTab("https://beian.miit.gov.cn/")}
-            type="link"
-          >
-            苏ICP备2022030859号
-          </Button>
-          <Button
-            onClick={() =>
-              openNewTab("https://stats.uptimerobot.com/ynrA5c73EN")
-            }
-            type="link"
-            css={css`
-              @media (max-width: 768px) {
-                display: none;
-              }
-            `}
-          >
-            服务可用性
-          </Button>
+          <Space>
+            <span>Aiursoft-Homepage ©2023 </span>
+            <span>Created by HerbertLzx</span>
+            <a
+              href="https://beian.miit.gov.cn/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              苏ICP备2022030859号
+            </a>
+            <a
+              href="https://stats.uptimerobot.com/ynrA5c73EN"
+              target="_blank"
+              rel="noreferrer"
+              css={css`
+                @media (max-width: 768px) {
+                  display: none;
+                }
+              `}
+            >
+              服务可用性
+            </a>
+          </Space>
         </Footer>
       </Layout>
     </ConfigProvider>
