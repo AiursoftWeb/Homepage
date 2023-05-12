@@ -1,5 +1,9 @@
 # Aiursoft Homepage by Herbert
 
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://gitlab.aiursoft.cn/aiursoft/homepage/-/blob/master/LICENSE)
+[![Pipeline stat](https://gitlab.aiursoft.cn/aiursoft/homepage/badges/master/pipeline.svg)](https://gitlab.aiursoft.cn/aiursoft/homepage/-/pipelines)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.aiursoft.cn%2F)](https://www.aiursoft.cn)
+
 ## Available Scripts
 
 In the project directory, you can run:
