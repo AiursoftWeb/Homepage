@@ -8,7 +8,7 @@ export const announcement =
 
 因此，我们使用了 GitLab 来替代 Azure DevOps。
 
-我们的 DevOps 服务地址：[https://gitlab.aiursoft.com/](https://gitlab.aiursoft.com/)。考虑到 DevOps 对计算资源的性能要求，我们仍然局限于会员制：仅会员可以使用 DevOps 服务。
+我们的 DevOps 服务地址：[https://gitlab.aiursoft.cn/](https://gitlab.aiursoft.cn/)。考虑到 DevOps 对计算资源的性能要求，我们仍然局限于会员制：仅会员可以使用 DevOps 服务。
 
 ## AI ？
 
