@@ -1,5 +1,6 @@
 stages:
   - build
+  - deploy
 
 before_script:
   - 'cat /etc/lsb-release && uname -a && pwd && ls -ashl'
@@ -10,7 +11,18 @@ build:
   script:
     - yarn
     - yarn build
-    - tar -czvf build.tar.gz ./build
   artifacts:
     paths:
-      - build.tar.gz
+      - build/
+
+deploy:
+  stage: deploy
+  needs:
+   - build
+  environment: production
+  before_script:
+    - chmod 600 $DEPLOY_PRIVATEKEY
+  script:
+    - rsync -rvz -e "ssh -i $DEPLOY_PRIVATEKEY -o StrictHostKeyChecking=no" --delete build/ updater@$jsgames:/opt/HomePage/
+  only:
+    - master
