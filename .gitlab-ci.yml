@@ -20,9 +20,8 @@ deploy:
   needs:
    - build
   environment: production
-  before_script:
-    - chmod 600 $DEPLOY_PRIVATEKEY
   script:
+    - chmod 600 $DEPLOY_PRIVATEKEY
     - rsync -rvz -e "ssh -i $DEPLOY_PRIVATEKEY -o StrictHostKeyChecking=no" --delete build/ updater@jsgames:/opt/HomePage/
   only:
     - master
