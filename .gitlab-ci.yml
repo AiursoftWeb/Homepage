@@ -8,6 +8,11 @@ before_script:
 
 build:
   stage: build
+  cache:
+    paths:
+      - node_modules/
+    untracked: false
+    when: on_success
   script:
     - yarn
     - yarn build
