@@ -23,6 +23,6 @@ deploy:
   before_script:
     - chmod 600 $DEPLOY_PRIVATEKEY
   script:
-    - rsync -rvz -e "ssh -i $DEPLOY_PRIVATEKEY -o StrictHostKeyChecking=no" --delete build/ updater@$jsgames:/opt/HomePage/
+    - rsync -rvz -e "ssh -i $DEPLOY_PRIVATEKEY -o StrictHostKeyChecking=no" --delete build/ updater@jsgames:/opt/HomePage/
   only:
     - master
