@@ -46,6 +46,11 @@ const e = [
         value: "https://cat.aiursoft.cn",
         icon: <img src={icons.kit} {...imgCss} alt="" />,
       },
+      {
+        label: "EdgeNeko",
+        value: "https://edgeneko.aiursoft.cn",
+        icon: <img src={icons.edgeneko} {...imgCss} alt="" />,
+      },
     ],
   },
   {
