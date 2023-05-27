@@ -15,3 +15,4 @@ export { default as _2048 } from "@/static/2048.png";
 export { default as jim } from "@/static/jm.jpeg";
 export { default as git } from "@/static/git.png";
 export { default as edgeneko } from "@/static/edgeneko.jpg";
+export { default as dvorak } from "@/static/dvorak.jpg";

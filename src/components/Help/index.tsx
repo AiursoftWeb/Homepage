@@ -51,6 +51,11 @@ const e = [
         value: "https://edgeneko.aiursoft.cn",
         icon: <img src={icons.edgeneko} {...imgCss} alt="" />,
       },
+      {
+        label: "Dvorak",
+        value: "https://dvorak.aiursoft.cn",
+        icon: <img src={icons.dvorak} {...imgCss} alt="" />,
+      },
     ],
   },
   {
