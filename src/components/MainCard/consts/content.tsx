@@ -24,6 +24,7 @@ import { announcement } from "./announcement";
 import { terraria } from "./terraria";
 import { factorio } from "./factorio";
 import { cssource } from "./cssource";
+import { minecraft } from "./minecraft";
 const imgCss = {
   css: css`
     width: 24px;
@@ -150,8 +151,10 @@ export const info = [
     children: [
       {
         label: "Minecraft",
-        value: "https://mc.aiursoft.cn",
+        // value: "https://mc.aiursoft.cn",
         icon: <img src={icons.mc} {...imgCss} alt="" />,
+        content: minecraft,
+        md: true
       },
       {
         label: "Terraria",
