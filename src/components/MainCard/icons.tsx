@@ -16,4 +16,4 @@ export { default as jim } from "@/static/jm.jpeg";
 export { default as git } from "@/static/git.png";
 export { default as edgeneko } from "@/static/edgeneko.jpg";
 export { default as dvorak } from "@/static/dvorak.jpg";
-export { default as lyx } from "@/static/lyx.jpg";
+export { default as lyx } from "@/static/lyx.png";
