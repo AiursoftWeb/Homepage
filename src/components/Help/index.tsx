@@ -83,6 +83,17 @@ const e = [
           />
         ),
       },
+      {
+        label: "Gitea",
+        value: "https://git.aiursoft.cn/",
+        icon: (
+          <img
+            src={icons.git}
+            alt=""
+            css={{ width: 22, height: 22, marginRight: 6 }}
+          />
+        ),
+      }
     ],
   },
 ];
