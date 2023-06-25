@@ -61,6 +61,11 @@ const e = [
         value: "https://lyx.aiursoft.cn",
         icon: <img src={icons.lyx} {...imgCss} alt="" />,
       },
+      {
+        label: "anois",
+        value: "https://anois.aiursoft.cn/",
+        icon: <img src={icons.anois} {...imgCss} alt="" />,
+      },
     ],
   },
   {
