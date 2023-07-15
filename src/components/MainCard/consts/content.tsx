@@ -56,7 +56,7 @@ export const info = [
         icon: <MessageOutlined {...iconCss} />,
       },
       {
-        label: "AI绘图",
+        label: "AI 绘图",
         value: "https://paint.aiursoft.cn/",
         icon: <PictureOutlined {...iconCss} />,
       },
