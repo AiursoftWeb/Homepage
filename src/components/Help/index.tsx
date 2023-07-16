@@ -66,6 +66,11 @@ const e = [
         value: "https://anois.aiursoft.cn/",
         icon: <img src={icons.anois} {...imgCss} alt="" />,
       },
+      {
+        label: "shubuzuo",
+        value: "https://shubuzuo.aiursoft.cn",
+        icon: <img src={icons.shubuzuo} {...imgCss} alt="" />,
+      },
     ],
   },
   {
