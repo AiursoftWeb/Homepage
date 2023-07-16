@@ -70,7 +70,7 @@ const e = [
         label: "shubuzuo",
         value: "https://shubuzuo.aiursoft.cn",
         icon: <img src={icons.shubuzuo} {...imgCss} alt="" />,
-      },
+      }
     ],
   },
   {
