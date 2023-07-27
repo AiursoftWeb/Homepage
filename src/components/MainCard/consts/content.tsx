@@ -77,7 +77,7 @@ export const info = [
       },
       {
         label: "三体模拟器",
-        value: "https://three.aiursoft.cn/10/10/5/1/0.43/-0.18/0.45/0.22/0.13/0.94/-0.26/0.66/-0.94/-0.76/-0.22/-0.86/0.78/0.98/0.19/0.4/0.78/0.15/-0.25/-0.65/-0.5",
+        value: "https://three.aiursoft.cn/",
         icon: <NodeCollapseOutlined  {...iconCss} />,
       },
       {
@@ -98,18 +98,23 @@ export const info = [
     icon: <IconFont type="icon-a-mubiaoguangchang" />,
     children: [
       {
+        label: "文件中心",
+        value: "https://nextcloud.aiursoft.cn",
+        icon: <BankOutlined {...iconCss} />,
+      },
+      {
         label: "开友者社区",
         value: "https://git.aiursoft.cn",
         icon: <CodeOutlined {...iconCss} />,
       },
       {
-        label: "包中心",
+        label: "包库",
         value: "https://nuget.aiursoft.cn",
         icon: <FilePptOutlined {...iconCss} />,
       },
       {
-        label: "聊天室",
-        value: "https://nextcloud.aiursoft.cn/index.php/call/jzxa5ba9",
+        label: "朋友圈",
+        value: "https://mastodon.aiursoft.cn/",
         icon: <MessageOutlined {...iconCss} />,
       },
       {
@@ -136,12 +141,7 @@ export const info = [
         label: "电视台",
         value: "https://live.aiursoft.cn",
         icon: <DesktopOutlined {...iconCss} />,
-      },
-      {
-        label: "文件银行",
-        value: "https://nextcloud.aiursoft.cn",
-        icon: <BankOutlined {...iconCss} />,
-      },
+      }
     ],
   },
   {
