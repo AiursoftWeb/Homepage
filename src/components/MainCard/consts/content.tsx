@@ -103,7 +103,7 @@ export const info = [
         icon: <BankOutlined {...iconCss} />,
       },
       {
-        label: "开友者社区",
+        label: "开发者社区",
         value: "https://git.aiursoft.cn",
         icon: <CodeOutlined {...iconCss} />,
       },
