@@ -1,5 +1,13 @@
 export const announcement =
   `
+## 第三届编程大赛
+
+为了鼓励大家对 AI 技术的探索，Anduin 赞助第三届人工智能编程大赛。
+
+大赛题目是: 需要用户输入一句话，一句话中有数个英文单词。这些英文单词可能某些词拼写错了，需要找到这些拼写错误的词，并纠正。
+
+快来[这里](https://anduin.aiursoft.cn/page/dev3)查看比赛详情和竞争作品吧！
+
 ## Avoid Microsoft
 
 考虑到 Windows 近期 [Bug 实在是太多了](https://borncity.com/win/2023/02/20/windows-server-2022-feb-2023-patchday-secure-boot-issues-also-on-bare-metal-systems/)，几次重大的事故均是由于 Windows 的 Bug 导致的。并且 Windows Server 很难使用开源的技术进行调度、监控和管理，我们正在全面的避免使用 Windows Server 和微软的周边方案。
