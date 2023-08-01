@@ -70,7 +70,12 @@ const e = [
         label: "shubuzuo",
         value: "https://shubuzuo.aiursoft.cn",
         icon: <img src={icons.shubuzuo} {...imgCss} alt="" />,
-      }
+      },
+      {
+        label: "波波",
+        value: "https://xinboo.aiursoft.cn",
+        icon: <img src={icons.xinboo} {...imgCss} alt="" />,
+      },
     ],
   },
   {
