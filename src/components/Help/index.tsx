@@ -76,6 +76,11 @@ const e = [
         value: "https://xinboo.aiursoft.cn",
         icon: <img src={icons.xinboo} {...imgCss} alt="" />,
       },
+      {
+        label: "RDF",
+        value: "https://rdf.aiursoft.cn",
+        icon: <img src={icons.rdf} {...imgCss} alt="" />,
+      },
     ],
   },
   {
