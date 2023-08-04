@@ -20,4 +20,4 @@ export { default as lyx } from "@/static/lyx.png";
 export { default as anois } from "@/static/anois.png";
 export { default as shubuzuo } from "@/static/shubuzuo.png";
 export { default as xinboo } from "@/static/xinboo.png";
-export { default as rdf } from "@/static/xinboo.rdf";
+export { default as rdf } from "@/static/rdf.png";
