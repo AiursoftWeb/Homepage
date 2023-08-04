@@ -81,6 +81,11 @@ const e = [
         value: "https://rdf.aiursoft.cn",
         icon: <img src={icons.rdf} {...imgCss} alt="" />,
       },
+      {
+        label: "fissssssh",
+        value: "https://fissssssh.aiursoft.cn",
+        icon: <img src={icons.fissssssh} {...imgCss} alt="" />,
+      },
     ],
   },
   {
