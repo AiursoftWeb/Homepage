@@ -86,6 +86,11 @@ const e = [
         value: "https://fissssssh.aiursoft.cn",
         icon: <img src={icons.fissssssh} {...imgCss} alt="" />,
       },
+      {
+        label: "Aimer Neige",
+        value: "https://aimer.aiursoft.cn",
+        icon: <img src={icons.aimer} {...imgCss} alt="" />,
+      },
     ],
   },
   {
