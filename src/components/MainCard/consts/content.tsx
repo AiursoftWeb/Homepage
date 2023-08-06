@@ -55,6 +55,11 @@ export const info = [
         value: "https://chat.aiursoft.cn",
         icon: <MessageOutlined {...iconCss} />,
       },
+        {
+        label: "ChatGLM",
+        value: "https://glm.aiursoft.cn",
+        icon: <MessageOutlined {...iconCss} />,
+      },
       {
         label: "AI 绘图",
         value: "https://paint.aiursoft.cn/",
