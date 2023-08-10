@@ -25,6 +25,7 @@ import { terraria } from "./terraria";
 import { factorio } from "./factorio";
 import { cssource } from "./cssource";
 import { minecraft } from "./minecraft";
+import { remotely } from "./remotely";
 const imgCss = {
   css: css`
     width: 24px;
@@ -94,6 +95,12 @@ export const info = [
         label: "DevOps 控制台",
         value: "https://gitlab.aiursoft.cn/",
         icon: <GitlabOutlined {...iconCss} />,
+      },
+      {
+        label: "远程桌面连接",
+        icon: <PictureOutlined {...iconCss} />,
+        content: remotely,
+        md: true
       },
     ],
   },
