@@ -12,9 +12,9 @@ import {
   InteractionOutlined,
   NotificationOutlined,
   PictureOutlined,
+  CloudServerOutlined,
   AntDesignOutlined,
   NodeCollapseOutlined,
-  CodepenOutlined,
   GitlabOutlined
 } from "@ant-design/icons";
 import { IconFont } from "../../IconFont";
