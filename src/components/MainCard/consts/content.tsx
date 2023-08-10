@@ -9,7 +9,7 @@ import {
   BankOutlined,
   DesktopOutlined,
   AlertOutlined,
-  InteractionOutlined
+  InteractionOutlined,
   NotificationOutlined,
   PictureOutlined,
   CloudServerOutlined,
