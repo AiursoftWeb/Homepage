@@ -9,6 +9,7 @@ import {
   BankOutlined,
   DesktopOutlined,
   AlertOutlined,
+  InteractionOutlined
   NotificationOutlined,
   PictureOutlined,
   CloudServerOutlined,
@@ -87,18 +88,13 @@ export const info = [
         icon: <NodeCollapseOutlined  {...iconCss} />,
       },
       {
-        label: "AI 实验室",
-        value: "https://lab.aiursoft.cn/",
-        icon: <CodepenOutlined {...iconCss} />,
-      },
-      {
         label: "DevOps 控制台",
         value: "https://gitlab.aiursoft.cn/",
         icon: <GitlabOutlined {...iconCss} />,
       },
       {
         label: "远程桌面连接",
-        icon: <PictureOutlined {...iconCss} />,
+        icon: <InteractionOutlined {...iconCss} />,
         content: remotely,
         md: true
       },
