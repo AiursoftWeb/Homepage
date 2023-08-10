@@ -3,7 +3,7 @@ export const remotely =
 
 轻松代替任何远程桌面客户端！
 
-Remotely 是一个开源的远程桌面解决方案，它可以让你轻松代替任何远程桌面客户端，使用浏览器远程连接到任何电脑。
+[Remotely](https://git.aiursoft.cn/PublicVault/Remotely) 是一个开源的远程桌面解决方案，它可以让你轻松代替任何远程桌面客户端，使用浏览器远程连接到任何电脑。
 
 ## 我要控制他人的电脑
 
@@ -17,6 +17,12 @@ Remotely 是一个开源的远程桌面解决方案，它可以让你轻松代�
 
 下载被控客户端，使用浏览器打开 [https://remotely.aiursoft.cn/downloads](https://remotely.aiursoft.cn/downloads)
 
-现在支持 Windows 和 Ubuntu！
+现在支持 Windows 和 Ubuntu，不需要安装，但是需要管理员或ROOT权限。
+
+打开 Remotely Desktop 软件后，你将会看到你的ID。将它分享给你的朋友，他们就可以远程控制你的电脑了！
+
+### 小问题
+
+如果 Remotely Desktop 询问你服务器地址，请填写：[https://remotely.aiursoft.cn](https://remotely.aiursoft.cn)
 
 `;
