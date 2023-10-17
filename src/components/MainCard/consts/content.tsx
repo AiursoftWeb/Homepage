@@ -72,8 +72,8 @@ export const info = [
         icon: <CloudServerOutlined {...iconCss} />,
       },
       {
-        label: "实验室手册",
-        value: "https://docs.aiursoft.cn/",
+        label: "显示器计算器",
+        value: "https://anduin.aiursoft.cn/page/scale",
         icon: <FileTextOutlined {...iconCss} />,
       },
       {
