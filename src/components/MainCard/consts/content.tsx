@@ -26,6 +26,7 @@ import { factorio } from "./factorio";
 import { cssource } from "./cssource";
 import { minecraft } from "./minecraft";
 import { remotely } from "./remotely";
+import { aiursoftAi } from "./aiursoftAi";
 const imgCss = {
   css: css`
     width: 24px;
@@ -52,14 +53,10 @@ export const info = [
     icon: <AlertOutlined />,
     children: [
       {
-        label: "ChatGPT",
-        value: "https://chat.aiursoft.cn",
+        label: "Aiursoft AI",
         icon: <MessageOutlined {...iconCss} />,
-      },
-        {
-        label: "ChatGLM",
-        value: "https://glm.aiursoft.cn",
-        icon: <MessageOutlined {...iconCss} />,
+        content: aiursoftAi,
+        md: true
       },
       {
         label: "AI 绘图",
