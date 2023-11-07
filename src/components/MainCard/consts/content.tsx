@@ -53,7 +53,7 @@ export const info = [
     icon: <AlertOutlined />,
     children: [
       {
-        label: "Aiursoft AI",
+        label: "Aiursoft Chat",
         icon: <MessageOutlined {...iconCss} />,
         content: aiursoftAi,
         md: true

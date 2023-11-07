@@ -1,7 +1,13 @@
 export const aiursoftAi =
-  `# 使用 Aiursoft 运营的基于 ChatGLM 的开源大模型
+  `# 使用 Aiursoft 运营的聊天机器人
 
 [打开 Aiursoft Ai Chat](https://chat.aiursoft.cn)
+
+目前此聊天机器人仍然基于 ChatGPT 3.5。我们正在下单更多的显卡，以尽快适配国产大模型 ChatGLM3-6B。
+
+`;
+
+export const aiursoftAiGlm = `
 
 ## 模型介绍
 
@@ -30,5 +36,4 @@ curl --location 'https://chat.aiursoft.cn/api/openai/v1/chat/completions' \
             "role": "user", "content": "你是如何诞生的？作者是谁呢？" }
         ]
     }'
-
 `;
