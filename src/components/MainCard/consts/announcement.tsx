@@ -65,7 +65,7 @@ export const announcement =
 `;
 
 
-const pending = `## 全新 Aiursoft AI
+export const pending = `## 全新 Aiursoft AI
 
 过去 Aiursoft GPT 和 Aiursoft GLM 等诸多服务已经合并为了 Aiursoft AI。 Aiursoft AI 是完全基于国产自研的大模型 ChatGLM3 构建的。它可以帮助你解决各种问题，包括：闲聊、问答、编写代码、搜索问题等。
 
