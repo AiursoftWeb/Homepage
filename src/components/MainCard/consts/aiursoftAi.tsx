@@ -3,12 +3,6 @@ export const aiursoftAi =
 
 [打开 Aiursoft Ai Chat](https://chat.aiursoft.cn)
 
-目前此聊天机器人仍然基于 ChatGPT 3.5。我们正在下单更多的显卡，以尽快适配国产大模型 ChatGLM3-6B。
-
-`;
-
-export const aiursoftAiGlm = `
-
 ## 模型介绍
 
 [ChatGLM3](https://github.com/THUDM/ChatGLM3) 是一个开源的双语大模型。
@@ -23,17 +17,12 @@ ChatGLM3 是智谱AI和清华大学 KEG 实验室联合发布的新一代对话�
 
 Aiursoft 通过在本地服务器上部署了 ChatGLM3-6B ，并且完全使用本地的计算卡来运行。因此，在使用 ChatGLM3-6B 时，你的对话内容不会被上传到任何第三方服务，也不会被任何人查看。其隐私得到了非常好的保护。
 
-## API
+Aiursoft 使用了目前能够买到的最好的显卡：NVIDIA RTX 4090 来计算对话，因此，对话速度将会非常快。
 
-目前 Aiursoft 运营的 ChatGLM3-6B 服务的 API 完全免费，并且可以直接在你的应用程序中调用。
+## 密码
 
-curl --location 'https://chat.aiursoft.cn/api/openai/v1/chat/completions' \
---header 'Content-Type: application/json' \
---data '{
-    "model": "chatglm3-6b",
-    "messages": [
-        { 
-            "role": "user", "content": "你是如何诞生的？作者是谁呢？" }
-        ]
-    }'
+目前我们为了避免过分的滥用，增加了一个很弱的密码。密码是：home。
+
+这个服务仅仅面向真实的人类使用，请不要使用 API 。 未来我们会为其增加验证码以防止滥用。
+
 `;

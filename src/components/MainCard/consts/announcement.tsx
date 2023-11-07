@@ -1,5 +1,17 @@
 export const announcement =
   `
+## 全新 Aiursoft AI
+
+过去 Aiursoft GPT 和 Aiursoft GLM 等诸多服务已经合并为了 Aiursoft Chat。 Aiursoft Chat 是完全基于国产自研的大模型 ChatGLM3 构建的。它可以帮助你解决各种问题，包括：闲聊、问答、编写代码、搜索问题等。
+
+相比于过去访问 OpenAI 的 API 的方法，Aiursoft Chat 不再需要将数据发送到第三方服务，而是直接在本地服务器上运行，因此数据不会被任何人查看或发送到第三方服务。这可以保证你的隐私安全。
+
+另外，相比于 OpenAI 的 API，Aiursoft Chat 使用的 GLM3 是由智谱AI和清华大学 KEG 实验室联合发布的新一代对话预训练模型，具有众多优势，包括：更强大的基础模型、更完整的功能支持、更全面的开源序列等。最重要的是实现了人工智能对话领域不再被卡脖子。
+
+快来感受一下国产大模型的强大吧！[立刻尝试 Aiursoft AI (基于 ChatGLM3) ](https://chat.aiursoft.cn)
+
+用户名和密码都是 "home"。
+
 ## 显示器 PPI 计算器
 
 我们开发了一个显示器 PPI 计算器，可以帮助你快速计算显示器的 PPI 值。
@@ -64,14 +76,3 @@ export const announcement =
 
 `;
 
-
-export const pending = `## 全新 Aiursoft AI
-
-过去 Aiursoft GPT 和 Aiursoft GLM 等诸多服务已经合并为了 Aiursoft AI。 Aiursoft AI 是完全基于国产自研的大模型 ChatGLM3 构建的。它可以帮助你解决各种问题，包括：闲聊、问答、编写代码、搜索问题等。
-
-相比于过去访问 OpenAI 的 API 的方法，Aiursoft AI 不再需要将数据发送到第三方服务，而是直接在本地服务器上运行，因此数据不会被任何人查看或发送到第三方服务。这可以保证你的隐私安全。
-
-另外，相比于 OpenAI 的 API，Aiursoft AI 使用的 GLM3 是由智谱AI和清华大学 KEG 实验室联合发布的新一代对话预训练模型，具有众多优势，包括：更强大的基础模型、更完整的功能支持、更全面的开源序列等。最重要的是实现了人工智能对话领域不再被卡脖子。
-
-快来感受一下国产大模型的强大吧！[立刻尝试 Aiursoft AI (基于 ChatGLM3) ](https://chat.aiursoft.cn)
-`;
