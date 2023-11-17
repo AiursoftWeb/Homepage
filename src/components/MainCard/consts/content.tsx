@@ -55,8 +55,7 @@ export const info = [
       {
         label: "Aiursoft Chat",
         icon: <MessageOutlined {...iconCss} />,
-        content: aiursoftAi,
-        md: true
+        value: "https://chat.aiursoft.cn/",
       },
       {
         label: "AI 绘图",
