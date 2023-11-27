@@ -25,7 +25,6 @@ import { terraria } from "./terraria";
 import { factorio } from "./factorio";
 import { cssource } from "./cssource";
 import { minecraft } from "./minecraft";
-import { remotely } from "./remotely";
 const imgCss = {
   css: css`
     width: 24px;
@@ -67,11 +66,6 @@ export const info = [
         icon: <CloudServerOutlined {...iconCss} />,
       },
       {
-        label: "显示器计算器",
-        value: "https://anduin.aiursoft.cn/page/scale",
-        icon: <FileTextOutlined {...iconCss} />,
-      },
-      {
         label: "生命游戏",
         value: "https://gameoflife.aiursoft.cn/",
         icon: <AntDesignOutlined  {...iconCss} />,
@@ -85,13 +79,7 @@ export const info = [
         label: "DevOps 控制台",
         value: "https://gitlab.aiursoft.cn/",
         icon: <GitlabOutlined {...iconCss} />,
-      },
-      {
-        label: "远程桌面连接",
-        icon: <InteractionOutlined {...iconCss} />,
-        content: remotely,
-        md: true
-      },
+      }
     ],
   },
   {

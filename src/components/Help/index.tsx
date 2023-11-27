@@ -1,7 +1,11 @@
 /** @jsxImportSource @emotion/react */
-
+import {
+  FileTextOutlined,
+  InteractionOutlined
+} from "@ant-design/icons";
 // import { GithubOutlined } from "@ant-design/icons";
 import { flex } from "@/utils/layout";
+import { remotely } from "../MainCard/consts/remotely";
 import { Space } from "antd";
 import * as icons from "../MainCard/icons";
 import { IconFont } from "../IconFont";
@@ -121,6 +125,28 @@ const e = [
       }
     ],
   },
+  {
+    id: 4,
+    title: "工具箱",
+    children: [
+      {
+        label: "显示器 PPI 计算器",
+        value: "https://anduin.aiursoft.cn/page/scale",
+        icon: <FileTextOutlined {...imgCss} />,
+      },
+      {
+        label: "远程桌面连接",
+        icon: <InteractionOutlined {...imgCss} />,
+        content: remotely,
+        md: true
+      },
+      {
+        label: "人时计算器",
+        icon: <InteractionOutlined {...imgCss} />,
+        value: "https://manhour.aiursoft.cn",
+      },
+    ],
+  }
 ];
 const Help: React.FC<{ i: number; title?: boolean }> = ({
   i,
