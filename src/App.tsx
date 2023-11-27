@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import { Layout, ConfigProvider, FloatButton, Popover, Space } from "antd";
+import { Layout, ConfigProvider, Space } from "antd";
 import bg from "./static/bg.jpeg";
 import title from "./label/fffef8.svg";
 import titleIos from "./label/title.png";
@@ -8,11 +8,7 @@ import RightContent from "./components/RightContent";
 import LeftContent from "./components/LeftContent";
 import { flex } from "./utils/layout";
 import MainCard from "./components/MainCard";
-import { QuestionCircleOutlined } from "@ant-design/icons";
-import Help from "./components/Help";
 import { Footer } from "antd/es/layout/layout";
-// import Search from "./components/Search";
-import { IconFont } from "./components/IconFont";
 import { useEffect } from "react";
 import { auto as followSystemColorScheme } from "darkreader";
 import { Helmet } from "react-helmet";

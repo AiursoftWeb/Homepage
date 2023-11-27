@@ -1,13 +1,9 @@
 /** @jsxImportSource @emotion/react */
 // import { css } from "@emotion/react";
-import { DatabaseOutlined } from "@ant-design/icons";
-import { Space, Tooltip, Button, Popover } from "antd";
+import { Space, Button, Popover } from "antd";
 // import { flex } from "../../utils/layout";
 import Help from "../Help";
 import { IconFont } from "../IconFont";
-import { openNewTab } from "@/utils/utils";
-import git from "@/static/git.png";
-import { flex } from "@/utils/layout";
 const RightContent = () => {
   return (
     <>
