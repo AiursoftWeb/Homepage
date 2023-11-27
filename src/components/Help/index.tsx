@@ -1,7 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import {
-  FileTextOutlined,
-  InteractionOutlined
+  CalculatorOutlined,
+  InteractionOutlined,
+  FieldTimeOutlined
 } from "@ant-design/icons";
 // import { GithubOutlined } from "@ant-design/icons";
 import { flex } from "@/utils/layout";
@@ -99,40 +100,12 @@ const e = [
   },
   {
     id: 3,
-    title: "代码库",
-    children: [
-      {
-        label: "GitLab",
-        value: "https://gitlab.aiursoft.cn/Aiursoft",
-        icon: (
-          <img
-            src={icons.git}
-            alt=""
-            css={{ width: 22, height: 22, marginRight: 6 }}
-          />
-        ),
-      },
-      {
-        label: "Gitea",
-        value: "https://git.aiursoft.cn/",
-        icon: (
-          <img
-            src={icons.git}
-            alt=""
-            css={{ width: 22, height: 22, marginRight: 6 }}
-          />
-        ),
-      }
-    ],
-  },
-  {
-    id: 4,
     title: "工具箱",
     children: [
       {
         label: "显示器 PPI 计算器",
         value: "https://anduin.aiursoft.cn/page/scale",
-        icon: <FileTextOutlined {...imgCss} />,
+        icon: <CalculatorOutlined {...imgCss} />,
       },
       {
         label: "远程桌面连接",
@@ -142,8 +115,8 @@ const e = [
       },
       {
         label: "人时计算器",
-        icon: <InteractionOutlined {...imgCss} />,
-        value: "https://manhour.aiursoft.cn",
+        icon: <FieldTimeOutlined {...imgCss} />,
+        value: "https://manhours.aiursoft.cn",
       },
     ],
   }

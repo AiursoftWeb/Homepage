@@ -23,22 +23,11 @@ const RightContent = () => {
             住户小区
           </Button>
         </Popover>
-        <Tooltip placement="bottom" title="文件库">
-          <Button
-            icon={<DatabaseOutlined />}
-            type="text"
-            onClick={() => openNewTab("https://nextcloud.aiursoft.cn")}
-          />
-        </Tooltip>
-        <Tooltip placement="bottom" title="代码库">
-          <Button
-            css={flex}
-            style={{ alignSelf: "center", justifySelf: "center" }}
-            icon={<img src={git} alt="" css={{ width: 22, height: 22 }} />}
-            type="text"
-            onClick={() => openNewTab("https://git.aiursoft.cn")}
-          />
-        </Tooltip>
+        <Popover placement="bottomRight" content={<Help i={1} title={false} />}>
+          <Button icon={<IconFont type="icon-xiaoqu-xianxing" />} type="text">
+            工具箱
+          </Button>
+        </Popover>
       </Space>
     </>
   );

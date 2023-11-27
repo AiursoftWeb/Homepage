@@ -9,7 +9,7 @@ import {
   BankOutlined,
   DesktopOutlined,
   AlertOutlined,
-  InteractionOutlined,
+  EditOutlined,
   NotificationOutlined,
   PictureOutlined,
   CloudServerOutlined,
@@ -54,6 +54,11 @@ export const info = [
         label: "Aiursoft Chat",
         icon: <MessageOutlined {...iconCss} />,
         value: "https://chat.aiursoft.cn/",
+      },
+      {
+        label: "Aiursoft Wiki",
+        icon: <EditOutlined {...iconCss} />,
+        value: "https://wiki.aiursoft.cn/",
       },
       {
         label: "AI 绘图",

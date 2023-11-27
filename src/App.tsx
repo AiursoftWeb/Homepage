@@ -40,22 +40,6 @@ const App = () => {
         <title>首页 HomePage - Aiursoft</title>
         <link rel="index" href="https://www.aiursoft.cn" />
       </Helmet>
-      <FloatButton.Group
-        shape="square"
-        css={css`
-          right: 48px;
-          @media (max-width: 768px) {
-            right: 0.5rem;
-          }
-        `}
-      >
-        <Popover placement="leftBottom" content={<Help i={0} />}>
-          <FloatButton icon={<IconFont type="icon-xiaoqu-xianxing" />} />
-        </Popover>
-        <Popover placement="leftBottom" content={<Help i={1} />}>
-          <FloatButton icon={<QuestionCircleOutlined />} />
-        </Popover>
-      </FloatButton.Group>
       <Layout
         className="layout"
         css={css`
