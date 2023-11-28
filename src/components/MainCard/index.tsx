@@ -1,24 +1,10 @@
 /** @jsxImportSource @emotion/react */
-import { Card, Col, Modal, Row, Space } from "antd";
-import { css } from "@emotion/react";
-import { info } from "./consts/content";
-import { useState } from "react";
-import ReactMarkdown from "react-markdown";
-import FuncList from "./component/FuncList";
-import Notice from "./component/Notice";
-type content = {
-  label: string;
-  content?: any;
-  md: boolean;
-};
+import { Card, Col, Row, Space } from 'antd';
+import { css } from '@emotion/react';
+import { info } from './consts/content';
+import FuncList from './component/FuncList';
+import Notice from './component/Notice';
 const MainCard = () => {
-  const [open, setOpen] = useState(false);
-  const [content, setContent] = useState<content>({
-    label: "",
-    content: "",
-    md: false,
-  });
-  const params = { setOpen, setContent };
   return (
     <div
       css={css`
@@ -51,7 +37,7 @@ const MainCard = () => {
                   }
                 `}
                 bodyStyle={{
-                  flexDirection: "column",
+                  flexDirection: 'column',
                 }}
               >
                 <Space
@@ -68,7 +54,7 @@ const MainCard = () => {
                   {e.title}
                 </Space>
                 {e.children ? (
-                  <FuncList {...params} children={e.children} />
+                  <FuncList children={e.children} />
                 ) : (
                   <Notice notice={e.notice} />
                 )}
@@ -77,35 +63,6 @@ const MainCard = () => {
           );
         })}
       </Row>
-      <Modal
-        open={open}
-        onCancel={() => setOpen(false)}
-        destroyOnClose
-        footer={null}
-        width={800}
-        title={
-          <div
-            css={css`
-              font-size: 32px;
-            `}
-          >
-            {content.label}
-          </div>
-        }
-        bodyStyle={{
-          minHeight: "300px",
-          overflowY: "auto",
-          textOverflow: "ellipsis",
-          maxHeight: "400px",
-          paddingLeft: "10px",
-        }}
-      >
-        {content.md ? (
-          <ReactMarkdown children={content.content} />
-        ) : (
-          content.content
-        )}
-      </Modal>
     </div>
   );
 };
