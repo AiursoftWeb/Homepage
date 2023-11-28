@@ -1,11 +1,11 @@
 /** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
-import { Col, Row } from "antd";
-import { flex } from "@/utils/layout";
-import { EmotionJSX } from "@emotion/react/types/jsx-namespace";
+import { css } from '@emotion/react';
+import { Col, Row } from 'antd';
+import { flex } from '@/utils/layout';
+import { EmotionJSX } from '@emotion/react/types/jsx-namespace';
+import { useContext } from 'react';
+import MyContext from '@/utils/context';
 type funcList = {
-  setContent: React.Dispatch<any>;
-  setOpen: React.Dispatch<any>;
   children: (
     | {
         label: string;
@@ -23,7 +23,8 @@ type funcList = {
       }
   )[];
 };
-const FuncList: React.FC<funcList> = ({ setContent, setOpen, children }) => {
+const FuncList: React.FC<funcList> = ({ children }) => {
+  const { setOpen, setContent } = useContext(MyContext)!;
   return (
     <Row
       gutter={12}
@@ -51,14 +52,14 @@ const FuncList: React.FC<funcList> = ({ setContent, setOpen, children }) => {
                   setOpen(true);
                 }
               }}
-              target="_blank"
+              target='_blank'
               css={[
                 flex,
                 {
-                  color: "#777",
+                  color: '#777',
                   height: 50,
                   fontSize: 18,
-                  justifyContent: "flex-start",
+                  justifyContent: 'flex-start',
                 },
                 css`
                   @media (max-width: 768px) {
@@ -67,7 +68,7 @@ const FuncList: React.FC<funcList> = ({ setContent, setOpen, children }) => {
                   }
                 `,
               ]}
-              rel="noreferrer"
+              rel='noreferrer'
             >
               {more?.icon ? (
                 more?.icon

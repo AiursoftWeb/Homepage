@@ -10,6 +10,8 @@ import { remotely } from "../MainCard/consts/remotely";
 import { Space } from "antd";
 import * as icons from "../MainCard/icons";
 import { IconFont } from "../IconFont";
+import { useContext } from "react";
+import MyContext from "@/utils/context";
 
 // const iconCss = { css: { marginRight: "6px" } };
 const imgCss = {
@@ -125,6 +127,7 @@ const Help: React.FC<{ i: number; title?: boolean }> = ({
   i,
   title = true,
 }) => {
+  const { setOpen, setContent } = useContext(MyContext)!;
   return (
     <div css={{ padding: 10, minWidth: 150 }}>
       {title && (
@@ -144,7 +147,17 @@ const Help: React.FC<{ i: number; title?: boolean }> = ({
           return (
             <div>
               <a
-                href={more.value}
+                href={more?.value}
+                onClick={() => {
+                  if (!more?.value) {
+                    setContent({
+                      label: more.label,
+                      content: more.content,
+                      md: more?.md || false,
+                    });
+                    setOpen(true);
+                  }
+                }}
                 target="_blank"
                 css={[
                   flex,
