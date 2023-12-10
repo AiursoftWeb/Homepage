@@ -11,13 +11,15 @@ import { Space } from "antd";
 import * as icons from "../MainCard/icons";
 import { IconFont } from "../IconFont";
 import { useContext } from "react";
+import Markdown from 'react-markdown';
+import { HelpModel } from './model';
 import MyContext from "@/utils/context";
 
 // const iconCss = { css: { marginRight: "6px" } };
 const imgCss = {
   css: { width: "24px", height: "24px", marginRight: "12px", borderRadius: 2 },
 };
-const e = [
+const e: HelpModel[] = [
   {
     id: 2,
     title: "住户小区",
@@ -105,18 +107,18 @@ const e = [
     title: "工具箱",
     children: [
       {
-        label: "显示器 PPI 计算器",
+        marker: "显示器 PPI 计算器",
         value: "https://anduin.aiursoft.cn/page/scale",
         icon: <CalculatorOutlined {...imgCss} />,
       },
       {
-        label: "远程桌面连接",
+        marker: "远程桌面连接",
         icon: <InteractionOutlined {...imgCss} />,
         content: remotely,
         md: true
       },
       {
-        label: "人时计算器",
+        marker: "人时计算器",
         icon: <FieldTimeOutlined {...imgCss} />,
         value: "https://manhours.aiursoft.cn",
       },
@@ -170,14 +172,12 @@ const Help: React.FC<{ i: number; title?: boolean }> = ({
                 ]}
                 rel="noreferrer"
               >
-                {/* <p> */}
                 {more?.icon ? (
                   more?.icon
                 ) : (
                   <svg style={{ width: 21, height: 1 }} />
                 )}
-                {/* </p> */}
-                {more.label}
+                {more.marker ? <Markdown>{more.marker}</Markdown> : more.label}
               </a>
             </div>
           );
