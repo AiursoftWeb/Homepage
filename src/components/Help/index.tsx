@@ -10,10 +10,8 @@ import { remotely } from "../MainCard/consts/remotely";
 import { Space } from "antd";
 import * as icons from "../MainCard/icons";
 import { IconFont } from "../IconFont";
-import { useContext } from "react";
-import Markdown from 'react-markdown';
 import { HelpModel } from './model';
-import MyContext from "@/utils/context";
+import openDetailModal from '@/utils/detail-modal';
 
 // const iconCss = { css: { marginRight: "6px" } };
 const imgCss = {
@@ -107,18 +105,17 @@ const e: HelpModel[] = [
     title: "工具箱",
     children: [
       {
-        marker: "显示器 PPI 计算器",
+        label: "显示器 PPI 计算器",
         value: "https://anduin.aiursoft.cn/page/scale",
         icon: <CalculatorOutlined {...imgCss} />,
       },
       {
-        marker: "远程桌面连接",
+        label: "远程桌面连接",
         icon: <InteractionOutlined {...imgCss} />,
         content: remotely,
-        md: true
       },
       {
-        marker: "人时计算器",
+        label: "人时计算器",
         icon: <FieldTimeOutlined {...imgCss} />,
         value: "https://manhours.aiursoft.cn",
       },
@@ -129,7 +126,6 @@ const Help: React.FC<{ i: number; title?: boolean }> = ({
   i,
   title = true,
 }) => {
-  const { setOpen, setContent } = useContext(MyContext)!;
   return (
     <div css={{ padding: 10, minWidth: 150 }}>
       {title && (
@@ -147,17 +143,12 @@ const Help: React.FC<{ i: number; title?: boolean }> = ({
       <div>
         {e[i].children.map((more) => {
           return (
-            <div>
+            <div key={more.label}>
               <a
                 href={more?.value}
                 onClick={() => {
                   if (!more?.value) {
-                    setContent({
-                      label: more.label,
-                      content: more.content,
-                      md: more?.md || false,
-                    });
-                    setOpen(true);
+                    openDetailModal(more.label, more.content);
                   }
                 }}
                 target="_blank"
@@ -177,7 +168,7 @@ const Help: React.FC<{ i: number; title?: boolean }> = ({
                 ) : (
                   <svg style={{ width: 21, height: 1 }} />
                 )}
-                {more.marker ? <Markdown>{more.marker}</Markdown> : more.label}
+                {more.label}
               </a>
             </div>
           );

@@ -149,28 +149,24 @@ export const info = [
         // value: "https://mc.aiursoft.cn",
         icon: <img src={icons.mc} {...imgCss} alt="" />,
         content: minecraft,
-        md: true
       },
       {
         label: "Terraria",
         // value: "https://terraria.aiursoft.cn",
         icon: <img src={icons.tl} {...imgCss} alt="" />,
         content: terraria,
-        md: true,
       },
       {
         label: "Factorio",
         // value: "https://factorio.aiursoft.cn",
         icon: <img src={icons.ft} {...imgCss} alt="" />,
         content: factorio,
-        md: true,
       },
       {
         label: "CS:Source",
         // value: "https://cssource.aiursoft.cn",
         icon: <img src={icons.cs} {...imgCss} alt="" />,
         content: cssource,
-        md: true,
       },
       {
         label: "Miku",

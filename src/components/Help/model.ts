@@ -19,16 +19,8 @@ export type HelpLinks = HelpLink[];
 export class HelpLink {
   /**
    * the link label that displayed
-   * 
-   * if you want to support markdown, you should use property [marker]
    */
   label?: string;
-  /**
-   * label that support markdown
-   * 
-   * if you want to use markdown, should use this property instead of [label]
-   */
-  marker?: string;
   /**
    * link
    */
@@ -38,5 +30,4 @@ export class HelpLink {
    * the icon that displayed on the left
    */
   icon?: React.ReactElement;
-  md?: boolean;
 }
