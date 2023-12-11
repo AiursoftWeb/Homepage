@@ -3,28 +3,25 @@ import { css } from '@emotion/react';
 import { Col, Row } from 'antd';
 import { flex } from '@/utils/layout';
 import { EmotionJSX } from '@emotion/react/types/jsx-namespace';
-import { useContext } from 'react';
-import MyContext from '@/utils/context';
+import openDetailModal from '@/utils/detail-modal';
+
 type funcList = {
   children: (
     | {
-        label: string;
-        value: string;
-        icon: EmotionJSX.Element;
-        content?: undefined;
-        md?: undefined;
-      }
+      label: string;
+      value: string;
+      icon: EmotionJSX.Element;
+      content?: undefined;
+    }
     | {
-        label: string;
-        icon: EmotionJSX.Element;
-        content: string;
-        md: boolean;
-        value?: undefined;
-      }
+      label: string;
+      icon: EmotionJSX.Element;
+      content: string;
+      value?: undefined;
+    }
   )[];
 };
 const FuncList: React.FC<funcList> = ({ children }) => {
-  const { setOpen, setContent } = useContext(MyContext)!;
   return (
     <Row
       gutter={12}
@@ -44,12 +41,7 @@ const FuncList: React.FC<funcList> = ({ children }) => {
               href={more?.value}
               onClick={() => {
                 if (!more?.value) {
-                  setContent({
-                    label: more.label,
-                    content: more.content,
-                    md: more?.md || false,
-                  });
-                  setOpen(true);
+                  openDetailModal(more.label, more.content);
                 }
               }}
               target='_blank'

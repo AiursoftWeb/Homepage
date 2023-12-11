@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import { Layout, ConfigProvider, Space, Modal } from 'antd';
+import { Layout, ConfigProvider, Space } from 'antd';
 import bg from './static/bg.jpeg';
 import title from './label/fffef8.svg';
 import titleIos from './label/title.png';
@@ -9,22 +9,13 @@ import LeftContent from './components/LeftContent';
 import { flex } from './utils/layout';
 import MainCard from './components/MainCard';
 import { Footer } from 'antd/es/layout/layout';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { auto as followSystemColorScheme } from 'darkreader';
 import { Helmet } from 'react-helmet';
-import MyContext from './utils/context';
-import ReactMarkdown from 'react-markdown';
 const { Header, Content } = Layout;
 const ifMobile = window.matchMedia('(max-width: 768px)').matches;
 const App = () => {
-  const [open, setOpen] = useState(false);
-  const [content, setContent] = useState({}) as any;
-  const contextValue: CTX.MyContextProps = {
-    open,
-    content,
-    setOpen,
-    setContent,
-  };
+
   useEffect(() => {
     followSystemColorScheme({
       brightness: 100,
@@ -33,23 +24,22 @@ const App = () => {
     });
   }, []);
   return (
-    <MyContext.Provider value={contextValue}>
-      <ConfigProvider
-        theme={{
-          token: {
-            colorPrimary: '#9A9A9A',
-            borderRadius: 6,
-          },
-        }}
-      >
-        <Helmet>
-          <meta charSet='utf-8' />
-          <title>首页 HomePage - Aiursoft</title>
-          <link rel='index' href='https://www.aiursoft.cn' />
-        </Helmet>
-        <Layout
-          className='layout'
-          css={css`
+    <ConfigProvider
+      theme={{
+        token: {
+          colorPrimary: '#9A9A9A',
+          borderRadius: 6,
+        },
+      }}
+    >
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>首页 HomePage - Aiursoft</title>
+        <link rel='index' href='https://www.aiursoft.cn' />
+      </Helmet>
+      <Layout
+        className='layout'
+        css={css`
             min-height: 100vh;
             background-image: linear-gradient(
                 to bottom,
@@ -69,123 +59,92 @@ const App = () => {
               height: auto;
             }
           `}
+      >
+        <Header css={headerCss}>
+          <LeftContent />
+          <RightContent />
+        </Header>
+        <Content
+          css={{
+            display: 'flex',
+            alignItems: 'center',
+            flexDirection: 'column',
+            minHeight: '30%',
+          }}
         >
-          <Header css={headerCss}>
-            <LeftContent />
-            <RightContent />
-          </Header>
-          <Content
-            css={{
-              display: 'flex',
-              alignItems: 'center',
-              flexDirection: 'column',
-              minHeight: '30%',
-            }}
-          >
-            <div
-              css={[
-                flex,
-                {
-                  flexDirection: 'column',
-                  justifyContent: 'space-between',
-                  minHeight: '30%',
-                },
-                css`
+          <div
+            css={[
+              flex,
+              {
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                minHeight: '30%',
+              },
+              css`
                   @media (max-width: 768px) {
                     min-height: 20vh;
                   }
                 `,
-              ]}
-            >
-              {ifMobile ? (
-                <img
-                  src={titleIos}
-                  alt=''
-                  css={css`
+            ]}
+          >
+            {ifMobile ? (
+              <img
+                src={titleIos}
+                alt=''
+                css={css`
                     width: 5.5rem;
                     margin-top: 1rem;
                   `}
-                />
-              ) : (
-                <img
-                  src={title}
-                  alt=''
-                  css={css`
+              />
+            ) : (
+              <img
+                src={title}
+                alt=''
+                css={css`
                     width: 800px;
                   `}
-                />
-              )}
-              {/* <Search /> */}
-            </div>
-            <MainCard />
-          </Content>
-          <Footer
-            style={{
-              textAlign: 'center',
-              backgroundColor: 'rgba(0,0,0,0)',
-              color: '#666',
-              // display:'flex',
-            }}
-          >
-            <Space direction={ifMobile ? 'vertical' : 'horizontal'}>
-              <span>Aiursoft-Homepage ©2023 </span>
-              <span>Created by HerbertLzx</span>
-              <a
-                href='https://beian.miit.gov.cn/'
-                target='_blank'
-                rel='noreferrer'
-              >
-                苏ICP备2022030859号
-              </a>
-              <a
-                href='https://stats.uptimerobot.com/ynrA5c73EN'
-                target='_blank'
-                rel='noreferrer'
-              >
-                可用性报告
-              </a>
-              <a
-                href='https://tracer.aiursoft.cn/'
-                target='_blank'
-                rel='noreferrer'
-              >
-                服务器连接诊断
-              </a>
-            </Space>
-          </Footer>
-
-          <Modal
-            open={open}
-            onCancel={() => setOpen(false)}
-            destroyOnClose
-            footer={null}
-            width={800}
-            title={
-              <div
-                css={css`
-                  font-size: 32px;
-                `}
-              >
-                {content.label}
-              </div>
-            }
-            bodyStyle={{
-              minHeight: '300px',
-              overflowY: 'auto',
-              textOverflow: 'ellipsis',
-              maxHeight: '400px',
-              paddingLeft: '10px',
-            }}
-          >
-            {content.md ? (
-              <ReactMarkdown children={content.content} />
-            ) : (
-              content.content
+              />
             )}
-          </Modal>
-        </Layout>
-      </ConfigProvider>
-    </MyContext.Provider>
+            {/* <Search /> */}
+          </div>
+          <MainCard />
+        </Content>
+        <Footer
+          style={{
+            textAlign: 'center',
+            backgroundColor: 'rgba(0,0,0,0)',
+            color: '#666',
+            // display:'flex',
+          }}
+        >
+          <Space direction={ifMobile ? 'vertical' : 'horizontal'}>
+            <span>Aiursoft-Homepage ©2023 </span>
+            <span>Created by HerbertLzx</span>
+            <a
+              href='https://beian.miit.gov.cn/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              苏ICP备2022030859号
+            </a>
+            <a
+              href='https://stats.uptimerobot.com/ynrA5c73EN'
+              target='_blank'
+              rel='noreferrer'
+            >
+              可用性报告
+            </a>
+            <a
+              href='https://tracer.aiursoft.cn/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              服务器连接诊断
+            </a>
+          </Space>
+        </Footer>
+      </Layout>
+    </ConfigProvider>
   );
 };
 export default App;
