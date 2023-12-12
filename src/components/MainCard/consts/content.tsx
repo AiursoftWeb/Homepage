@@ -58,7 +58,7 @@ export const info = [
       {
         label: "Aiursoft Wiki",
         icon: <EditOutlined {...iconCss} />,
-        value: "https://wiki.aiursoft.cn/",
+        value: "https://docs.aiursoft.cn/",
       },
       {
         label: "AI 绘图",
