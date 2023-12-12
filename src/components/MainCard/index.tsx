@@ -8,7 +8,7 @@ const MainCard = () => {
   return (
     <div
       css={css`
-        background-color: rgba(0, 0, 0, 0);
+        opacity: 0.7;
         min-width: 1000px;
         width: 70%;
         @media (max-width: 768px) {
@@ -27,7 +27,6 @@ const MainCard = () => {
                 bordered={false}
                 css={css`
                   margin: 10px;
-                  background-color: rgba(255, 255, 255, 0.6);
                   min-width: 460px;
                   min-height: 250px;
                   @media (max-width: 768px) {
