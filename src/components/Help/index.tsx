@@ -7,7 +7,7 @@ import {
 // import { GithubOutlined } from "@ant-design/icons";
 import { flex } from "@/utils/layout";
 import { remotely } from "../MainCard/consts/remotely";
-import { Space } from "antd";
+import { Modal, Space } from "antd";
 import * as icons from "../MainCard/icons";
 import { IconFont } from "../IconFont";
 import { HelpModel } from './model';
@@ -126,55 +126,61 @@ const Help: React.FC<{ i: number; title?: boolean }> = ({
   i,
   title = true,
 }) => {
+  const [modal, contextHolder] = Modal.useModal();
+
   return (
-    <div css={{ padding: 10, minWidth: 150 }}>
-      {title && (
-        <Space
-          css={{
-            fontSize: 20,
-            color: "#666",
-            fontWeight: 600,
-            marginBottom: 20,
-          }}
-        >
-          {e[i].title}
-        </Space>
-      )}
-      <div>
-        {e[i].children.map((more) => {
-          return (
-            <div key={more.label}>
-              <a
-                href={more?.value}
-                onClick={() => {
-                  if (!more?.value) {
-                    openDetailModal(more.label, more.content);
-                  }
-                }}
-                target="_blank"
-                css={[
-                  flex,
-                  {
-                    color: "#777",
-                    height: 30,
-                    fontSize: 16,
-                    justifyContent: "flex-start",
-                  },
-                ]}
-                rel="noreferrer"
-              >
-                {more?.icon ? (
-                  more?.icon
-                ) : (
-                  <svg style={{ width: 21, height: 1 }} />
-                )}
-                {more.label}
-              </a>
-            </div>
-          );
-        })}
+    <>
+      {contextHolder}
+
+      <div css={{ padding: 10, minWidth: 150 }}>
+        {title && (
+          <Space
+            css={{
+              fontSize: 20,
+              color: "#666",
+              fontWeight: 600,
+              marginBottom: 20,
+            }}
+          >
+            {e[i].title}
+          </Space>
+        )}
+        <div>
+          {e[i].children.map((more) => {
+            return (
+              <div key={more.label}>
+                <a
+                  href={more?.value}
+                  onClick={() => {
+                    if (!more?.value) {
+                      openDetailModal(modal, more.label, more.content);
+                    }
+                  }}
+                  target="_blank"
+                  css={[
+                    flex,
+                    {
+                      color: "#777",
+                      height: 30,
+                      fontSize: 16,
+                      justifyContent: "flex-start",
+                    },
+                  ]}
+                  rel="noreferrer"
+                >
+                  {more?.icon ? (
+                    more?.icon
+                  ) : (
+                    <svg style={{ width: 21, height: 1 }} />
+                  )}
+                  {more.label}
+                </a>
+              </div>
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 export default Help;
