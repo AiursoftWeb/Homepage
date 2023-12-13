@@ -15,7 +15,8 @@ import {
   CloudServerOutlined,
   AntDesignOutlined,
   NodeCollapseOutlined,
-  GitlabOutlined
+  GitlabOutlined,
+  BookOutlined
 } from "@ant-design/icons";
 import { IconFont } from "../../IconFont";
 import * as icons from "../icons";
@@ -58,7 +59,7 @@ export const info = [
       {
         label: "Aiursoft Wiki",
         icon: <EditOutlined {...iconCss} />,
-        value: "https://wiki.aiursoft.cn/",
+        value: "https://docs.aiursoft.cn/",
       },
       {
         label: "AI 绘图",
@@ -84,6 +85,11 @@ export const info = [
         label: "DevOps 控制台",
         value: "https://gitlab.aiursoft.cn/",
         icon: <GitlabOutlined {...iconCss} />,
+      },
+      {
+        label: "Gist",
+        value: "https://gist.aiursoft.cn/",
+        icon: <BookOutlined {...iconCss} />,
       }
     ],
   },
