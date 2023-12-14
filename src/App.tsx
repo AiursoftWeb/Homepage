@@ -81,7 +81,6 @@ const App = () => {
                 `,
               ]}
             >
-              {/* <div className='ccc'> */}
               {ifMobile ? (
                 <img
                   src={titleIos}

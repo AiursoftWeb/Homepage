@@ -1,8 +1,10 @@
 import { Logo } from './logo';
 import { CyberLogo } from './cyber-logo';
-
-const logos = [<Logo />, <Logo />, <CyberLogo />];
+import { isDarkMode } from '@/utils/dark-mode';
 
 export function StrangeLogo() {
-    return logos[Math.floor(Math.random() * 10) % logos.length];
+
+    const isDark = isDarkMode();
+
+    return isDark ? <CyberLogo /> : <Logo />;
 }
