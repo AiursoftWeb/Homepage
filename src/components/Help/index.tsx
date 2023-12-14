@@ -4,7 +4,6 @@ import {
   InteractionOutlined,
   FieldTimeOutlined
 } from "@ant-design/icons";
-// import { GithubOutlined } from "@ant-design/icons";
 import { flex } from "@/utils/layout";
 import { remotely } from "../MainCard/consts/remotely";
 import { Modal, Space } from "antd";
@@ -13,7 +12,6 @@ import { IconFont } from "../IconFont";
 import { HelpModel } from './model';
 import openDetailModal from '@/utils/detail-modal';
 
-// const iconCss = { css: { marginRight: "6px" } };
 const imgCss = {
   css: { width: "24px", height: "24px", marginRight: "12px", borderRadius: 2 },
 };
