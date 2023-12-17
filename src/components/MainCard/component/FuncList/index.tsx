@@ -1,7 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import { Col, Modal, Row } from 'antd';
-import { flex } from '@/utils/layout';
 import { EmotionJSX } from '@emotion/react/types/jsx-namespace';
 import openDetailModal from '@/utils/detail-modal';
 
@@ -41,6 +40,7 @@ const FuncList: React.FC<funcList> = ({ children }) => {
           return (
             <Col span={children?.length > 6 ? 8 : 12} key={more.label}>
               <a
+                className='center'
                 key={more.label}
                 href={more?.value}
                 onClick={() => {
@@ -50,7 +50,6 @@ const FuncList: React.FC<funcList> = ({ children }) => {
                 }}
                 target='_blank'
                 css={[
-                  flex,
                   {
                     color: '#777',
                     height: 50,

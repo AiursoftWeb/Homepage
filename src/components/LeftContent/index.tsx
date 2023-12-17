@@ -2,10 +2,9 @@
 import { css } from "@emotion/react";
 import logo from "@/static/logo.png";
 import { Space } from "antd";
-import { flex } from "@/utils/layout";
 const LeftContent = () => {
   return (
-    <Space css={flex}>
+    <Space className="center">
       <div
         css={css`
           background-image: url(${logo});

@@ -4,7 +4,6 @@ import {
   InteractionOutlined,
   FieldTimeOutlined
 } from "@ant-design/icons";
-import { flex } from "@/utils/layout";
 import { remotely } from "../MainCard/consts/remotely";
 import { Modal, Space } from "antd";
 import * as icons from "../MainCard/icons";
@@ -148,6 +147,7 @@ const Help: React.FC<{ i: number; title?: boolean }> = ({
             return (
               <div key={more.label}>
                 <a
+                  className="center"
                   href={more?.value}
                   onClick={() => {
                     if (!more?.value) {
@@ -156,7 +156,6 @@ const Help: React.FC<{ i: number; title?: boolean }> = ({
                   }}
                   target="_blank"
                   css={[
-                    flex,
                     {
                       color: "#777",
                       height: 30,
