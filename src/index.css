@@ -22,8 +22,16 @@ code {
   justify-content: center;
 }
 
+.logo-normal {
+  max-width: 80vw;
+}
+
 .logo-cyber {
   position: relative;
+}
+
+.logo-cyber svg {
+  max-width: 80vw;
 }
 
 .logo-cyber svg:nth-child(2) {
