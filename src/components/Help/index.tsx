@@ -47,7 +47,7 @@ const e: HelpModel[] = [
       },
       {
         label: "蓝猫猫",
-        value: "https://cat.aiursoft.cn",
+        value: "https://kitlau.aiursoft.cn",
         icon: <img src={icons.kit} {...imgCss} alt="" />,
       },
       {
@@ -94,6 +94,11 @@ const e: HelpModel[] = [
         label: "Aimer Neige",
         value: "https://aimer.aiursoft.cn",
         icon: <img src={icons.aimer} {...imgCss} alt="" />,
+      },
+      {
+        label: "cody",
+        value: "https://cody.aiursoft.cn",
+        icon: <img src={icons.lyx} {...imgCss} alt="" />,
       },
     ],
   },
