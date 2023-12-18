@@ -1,14 +1,14 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -20,4 +20,81 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.logo-normal {
+  max-width: 80vw;
+}
+
+.logo-cyber {
+  position: relative;
+}
+
+.logo-cyber svg {
+  max-width: 80vw;
+}
+
+.logo-cyber svg:nth-child(2) {
+  top: -3px;
+  left: -5px;
+  fill: #ff0054;
+  animation: 3s infinite alternate dark-left;
+}
+
+.logo-cyber svg:last-child {
+  top: 3px;
+  left: 5px;
+  fill: #00ffdb;
+  animation: 3s infinite alternate dark-right;
+}
+
+.logo-cyber svg:nth-child(2),
+.logo-cyber svg:last-child {
+  position: absolute;
+  mix-blend-mode: lighten;
+  opacity: 0.5;
+}
+
+@keyframes dark-left {
+  from {
+    fill: #ff0054;
+  }
+
+  25% {
+    fill: #9dff00;
+  }
+
+  50% {
+    fill: #00d5ff;
+  }
+
+  75% {
+    fill: #8400ff;
+  }
+
+  to {
+    fill: #ff0054;
+  }
+}
+
+@keyframes dark-right {
+  from {
+    fill: #00ffdb;
+  }
+
+  25% {
+    fill: #ff00bb;
+  }
+
+  50% {
+    fill: #ff0000;
+  }
+
+  75% {
+    fill: #aeff00;
+  }
+
+  to {
+    fill: #00ffdb;
+  }
 }

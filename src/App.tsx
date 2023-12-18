@@ -2,21 +2,19 @@
 import { css } from '@emotion/react';
 import { Layout, ConfigProvider, Space, theme } from 'antd';
 import bg from './static/bg.jpeg';
-import title from './label/fffef8.svg';
-import titleIos from './label/title.png';
 import RightContent from './components/RightContent';
 import LeftContent from './components/LeftContent';
-import { flex } from './utils/layout';
 import MainCard from './components/MainCard';
 import { Footer } from 'antd/es/layout/layout';
-import { Helmet } from 'react-helmet';
 import { isDarkMode, DarkModeContext } from '@/utils/dark-mode';
 import { useState } from 'react';
+import { StrangeLogo } from '@/components/logos/strange-logo';
+import { isMobile } from 'is-mobile';
 const { Header, Content } = Layout;
-const ifMobile = window.matchMedia('(max-width: 768px)').matches;
 
 const App = () => {
 
+  const isMobileDevice = isMobile();
   const [isDark, setDark] = useState(isDarkMode());
 
   return (
@@ -25,11 +23,6 @@ const App = () => {
         algorithm: isDark ? theme.darkAlgorithm : theme.defaultAlgorithm,
       }}
     >
-      <Helmet>
-        <meta charSet='utf-8' />
-        <title>首页 HomePage - Aiursoft</title>
-        <link rel='index' href='https://www.aiursoft.cn' />
-      </Helmet>
       <DarkModeContext.Provider value={setDark}>
         <Layout
           className='layout'
@@ -42,14 +35,13 @@ const App = () => {
               ),
               url(${bg});
             background-size: cover;
-            min-width: 1280px;
+            width: 100vw;
             ${isDark && `
               background-color: #000000d9;
               background-blend-mode: hue;
               `}
             @media (max-width: 768px) {
               width: 100vw;
-              min-width: 0;
               min-height: 100vh;
               height: auto;
             }
@@ -68,39 +60,12 @@ const App = () => {
             }}
           >
             <div
-              css={[
-                flex,
-                {
-                  flexDirection: 'column',
-                  justifyContent: 'space-between',
-                  minHeight: '30%',
-                },
-                css`
-                  @media (max-width: 768px) {
-                    min-height: 20vh;
-                  }
-                `,
-              ]}
+              className='center'
+              css={{
+                minHeight: '20vh',
+              }}
             >
-              {ifMobile ? (
-                <img
-                  src={titleIos}
-                  alt='Aiursoft'
-                  css={css`
-                    width: 5.5rem;
-                    margin-top: 1rem;
-                  `}
-                />
-              ) : (
-                <img
-                  src={title}
-                  alt='Aiursoft'
-                  css={css`
-                    width: 800px;
-                  `}
-                />
-              )}
-              {/* <Search /> */}
+              <StrangeLogo />
             </div>
             <MainCard />
           </Content>
@@ -109,12 +74,11 @@ const App = () => {
               textAlign: 'center',
               backgroundColor: 'rgba(0,0,0,0)',
               color: '#666',
-              // display:'flex',
             }}
           >
-            <Space direction={ifMobile ? 'vertical' : 'horizontal'}>
+            <Space direction={isMobileDevice ? 'vertical' : 'horizontal'}>
               <span>Aiursoft-Homepage ©2023 </span>
-              <span>Created by HerbertLzx</span>
+              <span>Created by HerbertLzx, Dvorak</span>
               <a
                 href='https://beian.miit.gov.cn/'
                 target='_blank'

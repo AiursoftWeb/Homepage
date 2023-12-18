@@ -23,3 +23,4 @@ export { default as xinboo } from "@/static/xinboo.png";
 export { default as rdf } from "@/static/rdf.png";
 export { default as fissssssh } from "@/static/fissssssh.jpeg";
 export { default as aimer } from "@/static/aimer.png";
+export { default as cody } from "@/static/cody.png";

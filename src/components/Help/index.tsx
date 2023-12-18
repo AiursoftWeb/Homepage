@@ -4,8 +4,6 @@ import {
   InteractionOutlined,
   FieldTimeOutlined
 } from "@ant-design/icons";
-// import { GithubOutlined } from "@ant-design/icons";
-import { flex } from "@/utils/layout";
 import { remotely } from "../MainCard/consts/remotely";
 import { Modal, Space } from "antd";
 import * as icons from "../MainCard/icons";
@@ -13,7 +11,6 @@ import { IconFont } from "../IconFont";
 import { HelpModel } from './model';
 import openDetailModal from '@/utils/detail-modal';
 
-// const iconCss = { css: { marginRight: "6px" } };
 const imgCss = {
   css: { width: "24px", height: "24px", marginRight: "12px", borderRadius: 2 },
 };
@@ -50,7 +47,7 @@ const e: HelpModel[] = [
       },
       {
         label: "蓝猫猫",
-        value: "https://cat.aiursoft.cn",
+        value: "https://kitlau.aiursoft.cn",
         icon: <img src={icons.kit} {...imgCss} alt="" />,
       },
       {
@@ -97,6 +94,11 @@ const e: HelpModel[] = [
         label: "Aimer Neige",
         value: "https://aimer.aiursoft.cn",
         icon: <img src={icons.aimer} {...imgCss} alt="" />,
+      },
+      {
+        label: "cody",
+        value: "https://cody.aiursoft.cn",
+        icon: <img src={icons.cody} {...imgCss} alt="" />,
       },
     ],
   },
@@ -150,6 +152,7 @@ const Help: React.FC<{ i: number; title?: boolean }> = ({
             return (
               <div key={more.label}>
                 <a
+                  className="center"
                   href={more?.value}
                   onClick={() => {
                     if (!more?.value) {
@@ -158,7 +161,6 @@ const Help: React.FC<{ i: number; title?: boolean }> = ({
                   }}
                   target="_blank"
                   css={[
-                    flex,
                     {
                       color: "#777",
                       height: 30,
