@@ -98,7 +98,7 @@ const e: HelpModel[] = [
       {
         label: "cody",
         value: "https://cody.aiursoft.cn",
-        icon: <img src={icons.lyx} {...imgCss} alt="" />,
+        icon: <img src={icons.cody} {...imgCss} alt="" />,
       },
     ],
   },
