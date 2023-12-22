@@ -1,6 +1,28 @@
 export const announcement =
   `
-## 服务新上: Gist
+## 跑它！ CppRunner！
+
+总是有人问你怎么搭建开发环境？找到了一片碎片的代码想知道跑起来是什么结果？快速搓了一个函数不知道对不对？
+
+是的！很多时候你懒得搭建开发环境，或者你只是想快速跑一下代码，看看结果。这个时候，就需要 CppRunner 了！别看它名字叫 CppRunner，它其实是一个通用的代码运行器，支持了常见的17种语言。
+
+你可以在 [https://cpprunner.aiursoft.cn/](https://cpprunner.aiursoft.cn/) 体验一下。
+
+以后快速徒手搓一些用来测试的代码有福了！希望它能帮助到你和你的朋友们提高效率，也能帮助无数初学者快速验证自己的代码。
+
+**CppRunner 有奖骇入大赛**
+
+CppRunner 是一个开源项目，我们很想挑战一下构造一个安全的远程代码执行环境。如果你能使用它实现：
+
+* 访问主机的机密文件 "/etc/fstab"
+* 向第三方服务器发出任何网络请求
+* 使服务器宕机 （除了 DDOS）
+
+你都算找到了它的一个安全漏洞！我们将立刻送上 2048 元奖金。请将漏洞发送到 [anduin@aiursoft.com](mailto://anduin@aiursoft.com)。请附加详细的复现步骤。
+
+凭此通告，Aiursoft 授权所有人可以以任何方式骇入 CppRunner 服务器，并且此行为不会被视为违反 Aiursoft 的服务条款，也不会被视为违反任何法律。
+
+## Gist 代码片段服务
 
 我们部署了一款 Gist 服务。你可以在 [https://gist.aiursoft.cn/](https://gist.aiursoft.cn/) 体验一下。
 

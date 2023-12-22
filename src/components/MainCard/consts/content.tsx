@@ -16,7 +16,8 @@ import {
   AntDesignOutlined,
   NodeCollapseOutlined,
   GitlabOutlined,
-  BookOutlined
+  BookOutlined,
+  CodepenOutlined
 } from "@ant-design/icons";
 import { IconFont } from "../../IconFont";
 import * as icons from "../icons";
@@ -90,6 +91,11 @@ export const info = [
         label: "Gist",
         value: "https://gist.aiursoft.cn/",
         icon: <BookOutlined {...iconCss} />,
+      },
+      {
+        label: "C++ Runner",
+        value: "https://cpprunner.aiursoft.cn/",
+        icon: <CodepenOutlined {...iconCss} />,
       }
     ],
   },
