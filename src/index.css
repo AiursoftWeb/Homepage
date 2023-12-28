@@ -38,14 +38,14 @@ code {
   top: -3px;
   left: -5px;
   fill: #ff0054;
-  animation: 3s infinite alternate dark-left;
+  animation: 15s infinite alternate dark-left;
 }
 
 .logo-cyber svg:last-child {
   top: 3px;
   left: 5px;
   fill: #00ffdb;
-  animation: 3s infinite alternate dark-right;
+  animation: 15s infinite alternate dark-right;
 }
 
 .logo-cyber svg:nth-child(2),
