@@ -24,6 +24,7 @@ import * as icons from "../icons";
 import { css } from "@emotion/react";
 import { announcement } from "./announcement";
 import { terraria } from "./terraria";
+import { registry } from "./registry";
 import { factorio } from "./factorio";
 import { cssource } from "./cssource";
 import { minecraft } from "./minecraft";
@@ -116,7 +117,8 @@ export const info = [
       },
       {
         label: "包库",
-        value: "https://nuget.aiursoft.cn",
+        //value: "https://nuget.aiursoft.cn",
+        content: registry,
         icon: <FilePptOutlined {...iconCss} />,
       },
       {
