@@ -69,11 +69,6 @@ export const info = [
         icon: <PictureOutlined {...iconCss} />,
       },
       {
-        label: "IaaS 云计算",
-        value: "https://iaas.aiursoft.cn/",
-        icon: <CloudServerOutlined {...iconCss} />,
-      },
-      {
         label: "生命游戏",
         value: "https://gameoflife.aiursoft.cn/",
         icon: <AntDesignOutlined  {...iconCss} />,
