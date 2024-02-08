@@ -2,7 +2,7 @@ export const announcement =
   `
 ## 加速包管理
 
-Aiursoft 为了加速常见开发人员下载各类 docker、nuget、npm 的包的速度，正在建设一系列对于官方源的镜像站点。
+Aiursoft 为了加速常见开发人员下载各类 docker、nuget、apt、npm 的包的速度，正在建设一系列对于官方源的镜像站点。
 
 立刻点击下方广场的 “包库” 按钮，体验一下吧！
 
