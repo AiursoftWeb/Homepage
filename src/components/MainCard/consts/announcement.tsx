@@ -1,5 +1,25 @@
 export const announcement =
   `
+## 信息安全的实践和检查
+
+为了确保数据中心的安全，我们正在进行一系列的安全检查和实践。
+
+我们启用了一系列的安全措施，包括但不限于：
+
+* 开启 HSTS
+* 强制使用 DNSSEC
+* 强制使用全站 DNSCAA
+* 通过了 SSLABS 的 A+ 评级
+
+我们也启用了一系列体验相关的措施，包括但不限于：
+
+* 开启了 基于 QUIC 的 HTTP/3
+* 支持了 IPv6
+* 使用 Brotli 压缩算法
+* 使用了 BBR 来优化拥塞控制和 cake 来优化队列管理
+
+当然，我们也对上面的检查项目重新梳理了一份 [Web 应用开发检查单](https://anduin.aiursoft.cn/post/2024/3/1/web-checklist) 供大家参考。
+
 ## 加速包管理
 
 Aiursoft 为了加速常见开发人员下载各类 docker、nuget、apt、npm 的包的速度，正在建设一系列对于官方源的镜像站点。
