@@ -24,18 +24,6 @@ deb http://mirror.aiursoft.cn/ubuntu/ jammy-security main restricted universe mu
 
 然后直接正常使用 apt 命令即可。
 
-### ArchLinux
-
-你可以立刻使用 Aiursoft 自建的 ArchLinux 包管理服务器。
-
-你需要编辑 /etc/pacman.d/mirrorlist， 在文件的最顶端添加：
-
-\`\`\`bash
-Server = https://mirror.aiursoft.cn/archlinux/$repo/os/$arch
-\`\`\`
-
-然后直接正常使用 pacman 命令即可。
-
 ### Nuget
 
 你可以立刻使用 Aiursoft 自建的 Nuget 包管理服务器：
