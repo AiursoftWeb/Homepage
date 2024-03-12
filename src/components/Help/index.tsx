@@ -2,7 +2,8 @@
 import {
   CalculatorOutlined,
   InteractionOutlined,
-  FieldTimeOutlined
+  FieldTimeOutlined,
+  GiftOutlined
 } from "@ant-design/icons";
 import { remotely } from "../MainCard/consts/remotely";
 import { Modal, Space } from "antd";
@@ -120,6 +121,11 @@ const e: HelpModel[] = [
         label: "人时计算器",
         icon: <FieldTimeOutlined {...imgCss} />,
         value: "https://manhours.aiursoft.cn",
+      },
+      {
+        label: "程序员做饭指南",
+        icon: <GiftOutlined {...imgCss} />,
+        value: "https://cook.aiursoft.cn",
       },
     ],
   }
