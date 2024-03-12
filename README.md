@@ -5,40 +5,26 @@
 [![ManHours](https://manhours.aiursoft.cn/r/gitlab.aiursoft.cn/aiursoft/homepage.svg)](https://gitlab.aiursoft.cn/aiursoft/homepage/-/commits/master?ref_type=heads)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.aiursoft.cn%2F)](https://www.aiursoft.cn)
 
-## Available Scripts
+## Run in Docker
 
-In the project directory, you can run:
+First, install Docker [here](https://docs.docker.com/get-docker/).
 
-### `yarn` 
-Install the dependencies required by the project.
+Then run the following commands in a Linux shell:
 
-### `yarn start`
+```bash
+image=hub.aiursoft.cn/aiursoft/homepage
+appName=homepage
+docker pull $image
+docker run -d --name $appName --restart unless-stopped -p 5000:5000 -v /var/www/$appName:/data $image
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+That will start a web server at `http://localhost:5000` and you can test the app.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The docker image has the following context:
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## About Developer
-A frontend developer who prefer React love all you guys in `Anduin's Group`!
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Properties  | Value                                  |
+|-------------|----------------------------------------|
+| Image       | hub.aiursoft.cn/aiursoft/homepage      |
+| Ports       | 5000                                   |
+| Binary path | /app                                   |
+| Data path   | /data                                  |
