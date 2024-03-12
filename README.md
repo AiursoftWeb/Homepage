@@ -4,6 +4,7 @@
 [![Pipeline stat](https://gitlab.aiursoft.cn/aiursoft/homepage/badges/master/pipeline.svg)](https://gitlab.aiursoft.cn/aiursoft/homepage/-/pipelines)
 [![ManHours](https://manhours.aiursoft.cn/r/gitlab.aiursoft.cn/aiursoft/homepage.svg)](https://gitlab.aiursoft.cn/aiursoft/homepage/-/commits/master?ref_type=heads)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.aiursoft.cn%2F)](https://www.aiursoft.cn)
+[![Docker](https://img.shields.io/badge/docker-latest-blue?logo=docker)](https://hub.aiursoft.cn/#!/taglist/aiursoft/homepage)
 
 ## Run in Docker
 
