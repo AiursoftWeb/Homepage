@@ -1,32 +1,8 @@
 stages:
-  - build
   - deploy
 
-before_script:
-  - 'cat /etc/lsb-release && uname -a && pwd && ls -ashl'
-  - 'node --version && npm --version && yarn --version'
-
-build:
-  stage: build
-  cache:
-    paths:
-      - node_modules/
-    untracked: false
-    when: on_success
-  script:
-    - yarn
-    - yarn build
-  artifacts:
-    paths:
-      - build/
-
-deploy:
+deploy_docker:
   stage: deploy
-  needs:
-   - build
-  environment: production
   script:
-    - chmod 600 $DEPLOY_PRIVATEKEY
-    - rsync -rvz -e "ssh -i $DEPLOY_PRIVATEKEY -o StrictHostKeyChecking=no" --delete build/ updater@jsgames:/opt/HomePage/
-  only:
-    - master
+    - docker build . -t hub.aiursoft.cn/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:latest
+    - docker push hub.aiursoft.cn/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:latest
