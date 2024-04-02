@@ -117,11 +117,6 @@ export const info = [
         icon: <FilePptOutlined {...iconCss} />,
       },
       {
-        label: "朋友圈",
-        value: "https://mastodon.aiursoft.cn/",
-        icon: <MessageOutlined {...iconCss} />,
-      },
-      {
         label: "文档馆",
         value: "https://wiki.aiursoft.cn",
         icon: <FileTextOutlined {...iconCss} />,
