@@ -58,11 +58,11 @@ export const info = [
         icon: <MessageOutlined {...iconCss} />,
         value: "https://chat.aiursoft.cn/",
       },
-      {
-        label: "Aiursoft Wiki",
-        icon: <EditOutlined {...iconCss} />,
-        value: "https://docs.aiursoft.cn/",
-      },
+      // {
+      //   label: "Aiursoft Wiki",
+      //   icon: <EditOutlined {...iconCss} />,
+      //   value: "https://docs.aiursoft.cn/",
+      // },
       {
         label: "AI 绘图",
         value: "https://paint.aiursoft.cn/",
@@ -136,11 +136,11 @@ export const info = [
         value: "https://musics.aiursoft.cn",
         icon: <CustomerServiceOutlined {...iconCss} />,
       },
-      {
-        label: "电视台",
-        value: "https://live.aiursoft.cn",
-        icon: <DesktopOutlined {...iconCss} />,
-      }
+      // {
+      //   label: "电视台",
+      //   value: "https://live.aiursoft.cn",
+      //   icon: <DesktopOutlined {...iconCss} />,
+      // }
     ],
   },
   {
