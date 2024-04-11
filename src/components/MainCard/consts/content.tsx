@@ -63,11 +63,11 @@ export const info = [
       //   icon: <EditOutlined {...iconCss} />,
       //   value: "https://docs.aiursoft.cn/",
       // },
-      {
-        label: "AI 绘图",
-        value: "https://paint.aiursoft.cn/",
-        icon: <PictureOutlined {...iconCss} />,
-      },
+      // {
+      //   label: "AI 绘图",
+      //   value: "https://paint.aiursoft.cn/",
+      //   icon: <PictureOutlined {...iconCss} />,
+      // },
       {
         label: "生命游戏",
         value: "https://gameoflife.aiursoft.cn/",
