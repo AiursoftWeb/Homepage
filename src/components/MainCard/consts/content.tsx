@@ -23,10 +23,10 @@ import { IconFont } from "../../IconFont";
 import * as icons from "../icons";
 import { css } from "@emotion/react";
 import { announcement } from "./announcement";
-import { terraria } from "./terraria";
 import { registry } from "./registry";
-import { factorio } from "./factorio";
-import { cssource } from "./cssource";
+// import { terraria } from "./terraria";
+// import { factorio } from "./factorio";
+// import { cssource } from "./cssource";
 import { minecraft } from "./minecraft";
 const imgCss = {
   css: css`
@@ -154,24 +154,24 @@ export const info = [
         icon: <img src={icons.mc} {...imgCss} alt="" />,
         content: minecraft,
       },
-      {
-        label: "Terraria",
-        // value: "https://terraria.aiursoft.cn",
-        icon: <img src={icons.tl} {...imgCss} alt="" />,
-        content: terraria,
-      },
-      {
-        label: "Factorio",
-        // value: "https://factorio.aiursoft.cn",
-        icon: <img src={icons.ft} {...imgCss} alt="" />,
-        content: factorio,
-      },
-      {
-        label: "CS:Source",
-        // value: "https://cssource.aiursoft.cn",
-        icon: <img src={icons.cs} {...imgCss} alt="" />,
-        content: cssource,
-      },
+      // {
+      //   label: "Terraria",
+      //   // value: "https://terraria.aiursoft.cn",
+      //   icon: <img src={icons.tl} {...imgCss} alt="" />,
+      //   content: terraria,
+      // },
+      // {
+      //   label: "Factorio",
+      //   // value: "https://factorio.aiursoft.cn",
+      //   icon: <img src={icons.ft} {...imgCss} alt="" />,
+      //   content: factorio,
+      // },
+      // {
+      //   label: "CS:Source",
+      //   // value: "https://cssource.aiursoft.cn",
+      //   icon: <img src={icons.cs} {...imgCss} alt="" />,
+      //   content: cssource,
+      // },
       {
         label: "Miku",
         value: "https://miku.aiursoft.cn",
