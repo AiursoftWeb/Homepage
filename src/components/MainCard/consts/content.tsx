@@ -23,10 +23,10 @@ import { IconFont } from "../../IconFont";
 import * as icons from "../icons";
 import { css } from "@emotion/react";
 import { announcement } from "./announcement";
-import { terraria } from "./terraria";
 import { registry } from "./registry";
-import { factorio } from "./factorio";
-import { cssource } from "./cssource";
+// import { terraria } from "./terraria";
+// import { factorio } from "./factorio";
+// import { cssource } from "./cssource";
 import { minecraft } from "./minecraft";
 const imgCss = {
   css: css`
@@ -58,16 +58,16 @@ export const info = [
         icon: <MessageOutlined {...iconCss} />,
         value: "https://chat.aiursoft.cn/",
       },
-      {
-        label: "Aiursoft Wiki",
-        icon: <EditOutlined {...iconCss} />,
-        value: "https://docs.aiursoft.cn/",
-      },
-      {
-        label: "AI 绘图",
-        value: "https://paint.aiursoft.cn/",
-        icon: <PictureOutlined {...iconCss} />,
-      },
+      // {
+      //   label: "Aiursoft Wiki",
+      //   icon: <EditOutlined {...iconCss} />,
+      //   value: "https://docs.aiursoft.cn/",
+      // },
+      // {
+      //   label: "AI 绘图",
+      //   value: "https://paint.aiursoft.cn/",
+      //   icon: <PictureOutlined {...iconCss} />,
+      // },
       {
         label: "生命游戏",
         value: "https://gameoflife.aiursoft.cn/",
@@ -136,11 +136,11 @@ export const info = [
         value: "https://musics.aiursoft.cn",
         icon: <CustomerServiceOutlined {...iconCss} />,
       },
-      {
-        label: "电视台",
-        value: "https://live.aiursoft.cn",
-        icon: <DesktopOutlined {...iconCss} />,
-      }
+      // {
+      //   label: "电视台",
+      //   value: "https://live.aiursoft.cn",
+      //   icon: <DesktopOutlined {...iconCss} />,
+      // }
     ],
   },
   {
@@ -154,24 +154,24 @@ export const info = [
         icon: <img src={icons.mc} {...imgCss} alt="" />,
         content: minecraft,
       },
-      {
-        label: "Terraria",
-        // value: "https://terraria.aiursoft.cn",
-        icon: <img src={icons.tl} {...imgCss} alt="" />,
-        content: terraria,
-      },
-      {
-        label: "Factorio",
-        // value: "https://factorio.aiursoft.cn",
-        icon: <img src={icons.ft} {...imgCss} alt="" />,
-        content: factorio,
-      },
-      {
-        label: "CS:Source",
-        // value: "https://cssource.aiursoft.cn",
-        icon: <img src={icons.cs} {...imgCss} alt="" />,
-        content: cssource,
-      },
+      // {
+      //   label: "Terraria",
+      //   // value: "https://terraria.aiursoft.cn",
+      //   icon: <img src={icons.tl} {...imgCss} alt="" />,
+      //   content: terraria,
+      // },
+      // {
+      //   label: "Factorio",
+      //   // value: "https://factorio.aiursoft.cn",
+      //   icon: <img src={icons.ft} {...imgCss} alt="" />,
+      //   content: factorio,
+      // },
+      // {
+      //   label: "CS:Source",
+      //   // value: "https://cssource.aiursoft.cn",
+      //   icon: <img src={icons.cs} {...imgCss} alt="" />,
+      //   content: cssource,
+      // },
       {
         label: "抓猫猫",
         value: "https://cat.aiursoft.cn",
