@@ -173,6 +173,11 @@ export const info = [
         content: cssource,
       },
       {
+        label: "抓猫猫",
+        value: "https://cat.aiursoft.cn",
+        icon: <img src={icons.cat} {...imgCss} alt="" />,
+      },
+      {
         label: "Miku",
         value: "https://miku.aiursoft.cn",
         icon: <img src={icons.mk} {...imgCss} alt="" />,

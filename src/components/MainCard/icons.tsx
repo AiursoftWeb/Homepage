@@ -8,6 +8,7 @@ export { default as rest } from "@/static/rest.jpeg";
 export { default as kit } from "@/static/kit.png";
 export { default as cs } from "@/static/cs.jpeg";
 export { default as mk } from "@/static/miku2.gif";
+export { default as cat } from "@/static/cat.svg";
 export { default as sl } from "@/static/sl.png";
 export { default as russia } from "@/static/russia.jpeg";
 export { default as restart } from "@/static/restart.png";
