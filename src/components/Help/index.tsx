@@ -3,7 +3,8 @@ import {
   CalculatorOutlined,
   InteractionOutlined,
   FieldTimeOutlined,
-  GiftOutlined
+  GiftOutlined,
+  TranslationOutlined
 } from "@ant-design/icons";
 import { remotely } from "../MainCard/consts/remotely";
 import { Modal, Space } from "antd";
@@ -111,6 +112,11 @@ const e: HelpModel[] = [
         label: "显示器 PPI 计算器",
         value: "https://anduin.aiursoft.cn/page/scale",
         icon: <CalculatorOutlined {...imgCss} />,
+      },
+      {
+        label: "翻译器",
+        value: "https://translate.aiursoft.cn",
+        icon: <TranslationOutlined {...imgCss} />,
       },
       {
         label: "远程桌面连接",
