@@ -44,13 +44,13 @@ const iconCss = { css: { marginRight: "12px" } };
 export const info = [
   {
     id: 0,
-    title: "公告",
+    title: "Announcement",
     icon: <NotificationOutlined />,
     notice: announcement,
   },
   {
     id: 1,
-    title: "实验室",
+    title: "Lab",
     icon: <AlertOutlined />,
     children: [
       {
@@ -69,17 +69,17 @@ export const info = [
       //   icon: <PictureOutlined {...iconCss} />,
       // },
       {
-        label: "生命游戏",
+        label: "Game of life",
         value: "https://gameoflife.aiursoft.cn/",
         icon: <AntDesignOutlined  {...iconCss} />,
       },
       {
-        label: "三体模拟器",
+        label: "Three body",
         value: "https://three.aiursoft.cn/",
         icon: <NodeCollapseOutlined  {...iconCss} />,
       },
       {
-        label: "DevOps 控制台",
+        label: "GitLab",
         value: "https://gitlab.aiursoft.cn/",
         icon: <GitlabOutlined {...iconCss} />,
       },
@@ -89,7 +89,7 @@ export const info = [
         icon: <BookOutlined {...iconCss} />,
       },
       {
-        label: "C++ Runner",
+        label: "Code Runner",
         value: "https://cpprunner.aiursoft.cn/",
         icon: <CodepenOutlined {...iconCss} />,
       }
@@ -97,42 +97,42 @@ export const info = [
   },
   {
     id: 2,
-    title: "广场",
+    title: "Media",
     icon: <IconFont type="icon-a-mubiaoguangchang" />,
     children: [
       {
-        label: "文件中心",
+        label: "Nextcloud",
         value: "https://nextcloud.aiursoft.cn",
         icon: <BankOutlined {...iconCss} />,
       },
       {
-        label: "开发者社区",
+        label: "Gitea",
         value: "https://git.aiursoft.cn",
         icon: <CodeOutlined {...iconCss} />,
       },
       {
-        label: "包库",
+        label: "Baget",
         //value: "https://nuget.aiursoft.cn",
         content: registry,
         icon: <FilePptOutlined {...iconCss} />,
       },
       {
-        label: "文档馆",
+        label: "Kiwix",
         value: "https://wiki.aiursoft.cn",
         icon: <FileTextOutlined {...iconCss} />,
       },
       {
-        label: "视频舞台",
+        label: "Media CMS",
         value: "https://videos.aiursoft.cn",
         icon: <VideoCameraOutlined {...iconCss} />,
       },
       {
-        label: "图书馆",
+        label: "Kavita",
         value: "https://books.aiursoft.cn",
         icon: <IconFont {...iconCss} type="icon-tushuguan" />,
       },
       {
-        label: "音乐会",
+        label: "Koel",
         value: "https://musics.aiursoft.cn",
         icon: <CustomerServiceOutlined {...iconCss} />,
       },
@@ -145,7 +145,7 @@ export const info = [
   },
   {
     id: 3,
-    title: "游戏厅",
+    title: "UDP Demos",
     icon: <IconFont type="icon-youxi" />,
     children: [
       {
@@ -173,7 +173,7 @@ export const info = [
       //   content: cssource,
       // },
       {
-        label: "抓猫猫",
+        label: "Cat",
         value: "https://cat.aiursoft.cn",
         icon: <img src={icons.cat} {...imgCss} alt="" />,
       },
@@ -183,7 +183,7 @@ export const info = [
         icon: <img src={icons.mk} {...imgCss} alt="" />,
       },
       {
-        label: "扫雷",
+        label: "Minesweeper",
         value: "https://minesweeper.aiursoft.cn",
         icon: <img src={icons.sl} {...imgCss} alt="" />,
       },
@@ -198,7 +198,7 @@ export const info = [
         icon: <img src={icons.russia} {...imgCss} alt="" />,
       },
       {
-        label: "人生重开",
+        label: "Life Game",
         value: "https://life.aiursoft.cn",
         icon: <img src={icons.restart} {...imgCss} alt="" />,
       },

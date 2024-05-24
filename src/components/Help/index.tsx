@@ -19,7 +19,7 @@ const imgCss = {
 const e: HelpModel[] = [
   {
     id: 2,
-    title: "住户小区",
+    title: "Blogs",
     icon: <IconFont type="icon-xiaoquguanli" />,
     children: [
       {
@@ -48,7 +48,7 @@ const e: HelpModel[] = [
         icon: <img src={icons.jim} {...imgCss} alt="" />,
       },
       {
-        label: "蓝猫猫",
+        label: "Kitlau",
         value: "https://kitlau.aiursoft.cn",
         icon: <img src={icons.kit} {...imgCss} alt="" />,
       },
@@ -78,7 +78,7 @@ const e: HelpModel[] = [
         icon: <img src={icons.shubuzuo} {...imgCss} alt="" />,
       },
       {
-        label: "波波",
+        label: "Xinboo",
         value: "https://xinboo.aiursoft.cn",
         icon: <img src={icons.xinboo} {...imgCss} alt="" />,
       },
@@ -106,30 +106,30 @@ const e: HelpModel[] = [
   },
   {
     id: 3,
-    title: "工具箱",
+    title: "Toolbox",
     children: [
       {
-        label: "显示器 PPI 计算器",
+        label: "Display PPI Calculator",
         value: "https://anduin.aiursoft.cn/page/scale",
         icon: <CalculatorOutlined {...imgCss} />,
       },
       {
-        label: "翻译器",
+        label: "Translate",
         value: "https://translate.aiursoft.cn",
         icon: <TranslationOutlined {...imgCss} />,
       },
       {
-        label: "远程桌面连接",
+        label: "Remote Desktop",
         icon: <InteractionOutlined {...imgCss} />,
         content: remotely,
       },
       {
-        label: "人时计算器",
+        label: "Repo Manhours",
         icon: <FieldTimeOutlined {...imgCss} />,
         value: "https://manhours.aiursoft.cn",
       },
       {
-        label: "程序员做饭指南",
+        label: "How to cook",
         icon: <GiftOutlined {...imgCss} />,
         value: "https://cook.aiursoft.cn",
       },

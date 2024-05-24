@@ -78,7 +78,6 @@ const App = () => {
           >
             <Space direction={isMobileDevice ? 'vertical' : 'horizontal'}>
               <span>Aiursoft-Homepage ©2023 </span>
-              <span>Created by HerbertLzx, Dvorak</span>
               <a
                 href='https://beian.miit.gov.cn/'
                 target='_blank'
@@ -91,14 +90,14 @@ const App = () => {
                 target='_blank'
                 rel='noreferrer'
               >
-                可用性报告
+                Availability
               </a>
               <a
                 href='https://tracer.aiursoft.cn/'
                 target='_blank'
                 rel='noreferrer'
               >
-                服务器连接诊断
+                Speed test
               </a>
             </Space>
           </Footer>
