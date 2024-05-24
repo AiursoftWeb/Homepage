@@ -1,138 +1,113 @@
 export const announcement =
   `
-## 全面容器化
+  ## Comprehensive Containerization
 
-为了方便维护、扩展、测试和部署，我们正在全面的将数据中心的所有服务容器化。这需要我们对整个数据中心进行声明式的重构。
-
-我们使用了 Docker 来容器化所有的服务。并且使用了 Docker Swarm 来进行服务的编排。最终，我们将全部声明式的代码签入了 [GitLab](https://gitlab.aiursoft.cn/aiursoft/box)，并且使用了 GitLab CI/CD 来进行自动化的构建、测试、部署。
-
-是的，现在整个工作已经全部完成了，对于用户来说是没有任何感知的。但是对于我们来说，这是一个巨大的进步。
-
-## 信息安全的实践和检查
-
-为了确保数据中心的安全，我们正在进行一系列的安全检查和实践。
-
-我们启用了一系列的安全措施，包括但不限于：
-
-* 开启 HSTS
-* 强制使用 DNSSEC
-* 强制使用全站 DNSCAA
-* 通过了 SSLABS 的 A+ 评级
-
-我们也启用了一系列体验相关的措施，包括但不限于：
-
-* 开启了 基于 QUIC 的 HTTP/3
-* 支持了 IPv6
-* 使用 Brotli 压缩算法
-* 使用了 BBR 来优化拥塞控制和 cake 来优化队列管理
-
-当然，我们也对上面的检查项目重新梳理了一份 [Web 应用开发检查单](https://anduin.aiursoft.cn/post/2024/3/1/web-checklist) 供大家参考。
-
-## 加速包管理
-
-Aiursoft 为了加速常见开发人员下载各类 docker、nuget、apt、npm 的包的速度，正在建设一系列对于官方源的镜像站点。
-
-立刻点击下方广场的 “包库” 按钮，体验一下吧！
-
-## 跑它！ CppRunner！
-
-总是有人问你怎么搭建开发环境？找到了一片碎片的代码想知道跑起来是什么结果？快速搓了一个函数不知道对不对？
-
-是的！很多时候你懒得搭建开发环境，或者你只是想快速跑一下代码，看看结果。这个时候，就需要 CppRunner 了！别看它名字叫 CppRunner，它其实是一个通用的代码运行器，支持了常见的17种语言。
-
-你可以在 [https://cpprunner.aiursoft.cn/](https://cpprunner.aiursoft.cn/) 体验一下。
-
-以后快速徒手搓一些用来测试的代码有福了！希望它能帮助到你和你的朋友们提高效率，也能帮助无数初学者快速验证自己的代码。
-
-**CppRunner 有奖骇入大赛**
-
-CppRunner 是一个开源项目，我们很想挑战一下构造一个安全的远程代码执行环境。如果你能使用它实现：
-
-* 访问主机的机密文件 "/etc/fstab"
-* 向第三方服务器发出任何网络请求
-* 使服务器宕机 （除了 DDOS）
-
-你都算找到了它的一个安全漏洞！我们将立刻送上 2048 元奖金。请将漏洞发送到 [anduin@aiursoft.com](mailto://anduin@aiursoft.com)。请附加详细的复现步骤。
-
-凭此通告，Aiursoft 授权所有人可以以任何方式骇入 CppRunner 服务器，并且此行为不会被视为违反 Aiursoft 的服务条款，也不会被视为违反任何法律。
-
-## Gist 代码片段服务
-
-我们部署了一款 Gist 服务。你可以在 [https://gist.aiursoft.cn/](https://gist.aiursoft.cn/) 体验一下。
-
-Gist 是一个代码片段分享服务。你可以在这里分享你的代码片段，也可以在这里查看别人分享的代码片段。相比于又是我懒得创建一个完整的代码仓库，只是想快速归档一个我觉得写的有趣的小代码，Gist 是一个非常好的选择。
-
-## ManHours 计算器
-
-我们开发了一款人时计算器，可以快速帮你计算一个项目一共花了多长时间来开发。
-
-只需要打开 [ManHours](https://manhours.aiursoft.cn)，将你的 Git 仓库的链接粘贴进去，就可以快速的计算出你的项目一共花了多少人时来开发。
-
-你可以将计算的结果作为一个 Badge 粘贴到你的项目的 README 中，来展示你的项目的开发时间。
-
-（注意：只支持公开仓库）
-
-## 显示器 PPI 计算器
-
-我们开发了一个显示器 PPI 计算器，可以帮助你快速计算显示器的 PPI 值。
-
-这可以有效的帮助你选择显示器，或者计算显示器的 PPI 值。下次选购笔记本、台式机显示器时，可以买一台 PPI 是 96 整数倍的显示器来避免缩放问题啦~
-
-输入你的分辨率和屏幕尺寸，就可以得到你的显示器 PPI 值，并且根据你输入的缩放比例计算出显示的文字大小。
-
-快打开 [https://anduin.aiursoft.cn/page/scale](https://anduin.aiursoft.cn/page/scale) 体验一下吧！
-
-## 远程桌面连接解决方案
-
-为了方便大家快速帮助其他人解决问题，我们建设了一款不需要注册、不需要复杂配置的快速屏幕分享、远程桌面连接解决方案。
-
-请在右侧点击“远程桌面连接”与好友体验一下吧！
-
-我们在建设前，审核了它的全部开源代码，确保了此项目是无恶意逻辑的。
-
-## Avoid Microsoft
-
-考虑到 Windows 近期 [Bug 实在是太多了](https://borncity.com/win/2023/02/20/windows-server-2022-feb-2023-patchday-secure-boot-issues-also-on-bare-metal-systems/)，几次重大的事故均是由于 Windows 的 Bug 导致的。并且 Windows Server 很难使用开源的技术进行调度、监控和管理，我们正在全面的避免使用 Windows Server 和微软的周边方案。
-
-未来，我们将只允许 Linux 服务器接入数据中心。并且只使用开源方案（除游戏服务器外）。做到五大原则:
-
-* EverGreen (无过时软件和库)
-* EverOpenSource (无闭源软件)
-* EverKnown (无未知用途的设计)
-* EverClean (无无意义的数据)
-* EverReproducible (无不可复现的设计)
-
-## ZFS
-
-考虑到 ZFS 方案对于数据中心存储已经非常成熟，并且使用 ZFS 可以非常有效的得到安全、巨大、高速、方便快照、方便缓存的存储设备，我们正在重构数据中心的存储结构，全部放弃阵列卡 + ext4 的方案，转而使用 ZFS。  
-
-## GPU
-
-最近我们仍然专注于为数据中心增加 GPU 算力。这需要踩大量的坑。包括：搞定 vGPU License、设计 mdev 的 GPU 虚拟化方案、搞定 GPU 虚拟化的驱动问题、监控、分配、调度等。
-
-## DevOps ? GitLab !
-
-为了提供更加强大的 DevOps 功能并移除微软的 Azure DevOps 带来的严重功能缺失和 Hack 等对数据中心造成的复杂化，我们决定从数据中心中移除所有的 Windows 服务器，并全部使用 Linux 。
-
-因此，我们使用了 GitLab 来替代 Azure DevOps。
-
-我们的 DevOps 服务地址：[https://gitlab.aiursoft.cn/](https://gitlab.aiursoft.cn/)。考虑到 DevOps 对计算资源的性能要求，我们仍然局限于会员制：仅会员可以使用 DevOps 服务。
-
-## AI ？
-
-我们都不是 AI 的专家。因此我们在 AI 算力方面方面还在努力摸索。我们的目标是：提供一个稳定的、高性能的、高可用的 AI 算力平台，来给所有试图在我们数据中心里做 AI 的人提供支持。
-
-关于我们踩坑的所有笔记，我都将汇总到 [Aiursoft 运维文档中心](https://docs.aiursoft.cn)。我们也欢迎大家一起来完善这个文档。
-
-## AI 实验室
-
-我们搞 AI 的主张之一，就是人人有丹炼！因此，我们构建了一个共享的实验室：
-
-[https://lab.aiursoft.cn/](https://lab.aiursoft.cn/)
-
-在实验室里，你可以享受到 GPU 资源。它已经预装了 Python 环境和 CUDA 环境，已经安装好了 NVIDIA 加速卡驱动。你可以免费试用它来训练、运行、测试你的 AI 应用程序！
-
-致信 [anduin@aiursoft.com](mailto://anduin@aiursoft.com) 以获取实验室账号。
-
+  To facilitate maintenance, expansion, testing, and deployment, we are fully containerizing all services in our data center. This requires a declarative reconstruction of the entire data center.
+  
+  We are using Docker to containerize all services and Docker Swarm for service orchestration. Ultimately, all declarative code is committed to [GitLab](https://gitlab.aiursoft.cn/aiursoft/box), utilizing GitLab CI/CD for automated building, testing, and deployment.
+  
+  Yes, the entire project is now complete, and users will not notice any changes. However, for us, this is a significant advancement.
+  
+  ## Information Security Practices and Inspections
+  
+  To ensure the security of the data center, we are conducting a series of security checks and practices.
+  
+  We have implemented several security measures, including but not limited to:
+  
+  * Enabling HSTS
+  * Enforcing DNSSEC
+  * Enforcing site-wide DNSCAA
+  * Achieving an SSLABS A+ rating
+  
+  We have also implemented several experience-related measures, including but not limited to:
+  
+  * Enabling HTTP/3 based on QUIC
+  * Supporting IPv6
+  * Using Brotli compression algorithm
+  * Using BBR for congestion control optimization and cake for queue management optimization
+  
+  Additionally, we have compiled a [Web Application Development Checklist](https://anduin.aiursoft.cn/post/2024/3/1/web-checklist) for reference.
+  
+  ## Package Management Acceleration
+  
+  To speed up the download of various Docker, NuGet, APT, and NPM packages for developers, Aiursoft is building a series of mirror sites for official sources.
+  
+  Click the "Package Repository" button in the square below to experience it!
+  
+  ## Run It! CppRunner!
+  
+  Are you often asked how to set up a development environment? Have you found a piece of fragmented code and want to see the results? Quickly scratched out a function and are unsure if it's correct?
+  
+  Yes! Many times you don't want to set up a development environment, or you just want to quickly run the code to see the result. At this time, you need CppRunner! Although it's called CppRunner, it's actually a general code runner that supports 17 common languages.
+  
+  You can experience it at [https://cpprunner.aiursoft.cn/](https://cpprunner.aiursoft.cn/).
+  
+  Now you have a blessing to quickly scratch out some code for testing! I hope it can help you and your friends improve efficiency and also help countless beginners quickly verify their code.
+  
+  **CppRunner Bounty Hacking Contest**
+  
+  CppRunner is an open-source project, and we want to challenge the construction of a secure remote code execution environment. If you can use it to:
+  
+  * Access the host's confidential file "/etc/fstab"
+  * Send any network request to a third-party server
+  * Crash the server (excluding DDOS)
+  
+  You have found a security vulnerability! We will immediately award a prize of 2048 yuan. Please send the vulnerability to [anduin@aiursoft.com](mailto://anduin@aiursoft.com). Please include detailed reproduction steps.
+  
+  By this announcement, Aiursoft authorizes everyone to hack into the CppRunner server in any way, and this behavior will not be considered a violation of Aiursoft's terms of service nor any law.
+  
+  ## Gist Snippet Service
+  
+  We have deployed a Gist service. You can experience it at [https://gist.aiursoft.cn/](https://gist.aiursoft.cn/).
+  
+  Gist is a code snippet sharing service. You can share your code snippets here, and you can also view code snippets shared by others. Compared to creating a complete code repository, which is often unnecessary for just archiving an interesting small code, Gist is a great choice.
+  
+  ## ManHours Calculator
+  
+  We have developed a ManHours calculator that quickly helps you calculate the total time spent developing a project.
+  
+  Simply open [ManHours](https://manhours.aiursoft.cn), paste your Git repository link, and quickly calculate the total person-hours spent developing your project.
+  
+  You can paste the calculated result as a Badge into your project's README to show the development time of your project.
+  
+  (Note: Only public repositories are supported)
+  
+  ## Monitor PPI Calculator
+  
+  We have developed a Monitor PPI calculator that helps you quickly calculate the PPI of your monitor.
+  
+  This can effectively help you choose a monitor or calculate the PPI value of your monitor. Next time you buy a laptop or desktop monitor, you can choose one with a PPI that is an integer multiple of 96 to avoid scaling issues~
+  
+  Enter your resolution and screen size to get your monitor's PPI value, and calculate the display text size based on your input scaling ratio.
+  
+  Open [https://anduin.aiursoft.cn/page/scale](https://anduin.aiursoft.cn/page/scale) to experience it!
+  
+  ## Remote Desktop Connection Solution
+  
+  To quickly help others solve problems, we have built a fast screen sharing and remote desktop connection solution that requires no registration or complex configuration.
+  
+  Click "Remote Desktop Connection" on the right to experience it with your friends!
+  
+  We reviewed all the open-source code before construction to ensure the project has no malicious logic.
+  
+  ## Avoid Microsoft
+  
+  Considering the recent [numerous bugs in Windows](https://borncity.com/win/2023/02/20/windows-server-2022-feb-2023-patchday-secure-boot-issues-also-on-bare-metal-systems/), with several major incidents caused by Windows bugs, and the difficulty of using open-source technologies for scheduling, monitoring, and managing Windows Server, we are avoiding the use of Windows Server and Microsoft's peripheral solutions altogether.
+  
+  In the future, we will only allow Linux servers to access the data center and only use open-source solutions (except for game servers). We adhere to five principles:
+  
+  * EverGreen (no outdated software and libraries)
+  * EverOpenSource (no closed-source software)
+  * EverKnown (no designs with unknown purposes)
+  * EverClean (no meaningless data)
+  * EverReproducible (no non-reproducible designs)
+  
+  ## ZFS
+  
+  Considering the maturity of the ZFS solution for data center storage, and its ability to provide secure, massive, high-speed, easy snapshot, and easy cache storage devices, we are restructuring the data center's storage structure, completely abandoning the RAID card + ext4 solution in favor of ZFS.
+  
+  ## GPU
+  
+  We are still focusing on increasing GPU computing power for the data center. This requires overcoming many challenges, including obtaining vGPU licenses, designing mdev GPU virtualization solutions, solving GPU virtualization driver issues, monitoring, allocation, scheduling, and more.
 `;
 
