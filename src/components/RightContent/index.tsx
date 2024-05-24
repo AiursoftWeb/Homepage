@@ -28,12 +28,12 @@ const RightContent = () => {
 
         <Popover placement="bottomRight" content={<Help i={0} title={false} />}>
           <Button icon={<IconFont type="icon-xiaoqu-xianxing" />} type="text">
-            住户小区
+            Blogs
           </Button>
         </Popover>
         <Popover placement="bottomRight" content={<Help i={1} title={false} />}>
           <Button icon={<IconFont type="icon-xiaoqu-xianxing" />} type="text">
-            工具箱
+            Toolbox
           </Button>
         </Popover>
       </Space >
