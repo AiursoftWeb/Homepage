@@ -44,7 +44,7 @@ const iconCss = { css: { marginRight: "12px" } };
 export const info = [
   {
     id: 0,
-    title: "Announcement",
+    title: "Updates",
     icon: <NotificationOutlined />,
     notice: announcement,
   },
