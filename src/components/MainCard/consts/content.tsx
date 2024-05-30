@@ -41,7 +41,8 @@ const imgCss = {
   `,
 };
 const iconCss = { css: { marginRight: "12px" } };
-export const info = [
+export const info = [];
+export const infoReal = [
   {
     id: 0,
     title: "Updates",
