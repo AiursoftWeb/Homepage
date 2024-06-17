@@ -4,11 +4,6 @@ stages:
 deploy_docker:
   stage: deploy
   script:
-    - >
-      if [ "$CI_COMMIT_REF_NAME" = "master" ]; then
-        TAG="latest"
-      else
-        TAG="$CI_COMMIT_REF_NAME"
-      fi
-      docker build . -t hub.aiursoft.cn/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:$TAG
-      docker push hub.aiursoft.cn/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:$TAG
+    - if [ "$CI_COMMIT_REF_NAME" = "master" ]; then TAG="latest"; else TAG="$CI_COMMIT_REF_NAME"; fi
+    - docker build . -t hub.aiursoft.cn/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:$TAG
+    - docker push hub.aiursoft.cn/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:$TAG
