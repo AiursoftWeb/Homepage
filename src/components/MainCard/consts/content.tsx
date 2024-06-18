@@ -154,6 +154,11 @@ export const info = [
         icon: <img src={icons.mc} {...imgCss} alt="" />,
         content: minecraft,
       },
+      {
+        label: "Chess",
+        value: "https://chess.aiursoft.cn",
+        icon: <img src={icons.knight} {...imgCss} alt="" />,
+      },
       // {
       //   label: "Terraria",
       //   // value: "https://terraria.aiursoft.cn",
