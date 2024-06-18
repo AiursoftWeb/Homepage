@@ -1,5 +1,19 @@
 export const announcement =
   `
+## Chess server
+
+We built a new chess server. You can experience it at [https://chess.aiursoft.cn/](https://chess.aiursoft.cn/).
+
+The entire server is built on the latest technology stack, including:
+
+* .NET 8
+* ASP.NET Core
+* WebSockets
+
+And it is fully containerized, orchestrated by Docker Swarm, and deployed by GitLab CI/CD. It is also open-source, and you can view the source code at [https://gitlab.aiursoft.cn/aiursoft/chessserver](https://gitlab.aiursoft.cn/aiursoft/chessserver).
+
+Online gaming with friends is a great way to relax. We hope you enjoy it!
+
 ## Comprehensive Containerization
 
 To facilitate maintenance, expansion, testing, and deployment, we are fully containerizing all services in our data center. This requires a declarative reconstruction of the entire data center.
