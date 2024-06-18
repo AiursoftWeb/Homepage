@@ -12,7 +12,7 @@ import {
   EditOutlined,
   NotificationOutlined,
   PictureOutlined,
-  // CloudServerOutlined,
+  CloudServerOutlined,
   AntDesignOutlined,
   NodeCollapseOutlined,
   GitlabOutlined,
@@ -77,6 +77,11 @@ export const info = [
         label: "Three body",
         value: "https://three.aiursoft.cn/",
         icon: <NodeCollapseOutlined  {...iconCss} />,
+      },
+      {
+        label: "Learn",
+        value: "https://oi.aiursoft.cn/",
+        icon: <CloudServerOutlined  {...iconCss} />,
       },
       {
         label: "GitLab",
