@@ -36,6 +36,11 @@ const RightContent = () => {
             Toolbox
           </Button>
         </Popover>
+        <Popover placement="bottomRight" content={<Help i={2} title={false} />}>
+          <Button icon={<IconFont type="icon-xiaoqu-xianxing" />} type="text">
+            Books
+          </Button>
+        </Popover>
       </Space >
     </>
   );

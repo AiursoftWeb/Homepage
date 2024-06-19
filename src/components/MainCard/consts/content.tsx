@@ -91,11 +91,6 @@ export const info = [
         label: "Gist",
         value: "https://gist.aiursoft.cn/",
         icon: <BookOutlined {...iconCss} />,
-      },
-      {
-        label: "Code Runner",
-        value: "https://cpprunner.aiursoft.cn/",
-        icon: <CodepenOutlined {...iconCss} />,
       }
     ],
   },
@@ -115,15 +110,10 @@ export const info = [
         icon: <CodeOutlined {...iconCss} />,
       },
       {
-        label: "Baget",
+        label: "Registry",
         //value: "https://nuget.aiursoft.cn",
         content: registry,
         icon: <FilePptOutlined {...iconCss} />,
-      },
-      {
-        label: "Kiwix",
-        value: "https://wiki.aiursoft.cn",
-        icon: <FileTextOutlined {...iconCss} />,
       },
       {
         label: "Media CMS",
@@ -149,7 +139,7 @@ export const info = [
   },
   {
     id: 3,
-    title: "UDP Demos",
+    title: "Games",
     icon: <IconFont type="icon-youxi" />,
     children: [
       {

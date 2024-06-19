@@ -18,7 +18,8 @@ import openDetailModal from '@/utils/detail-modal';
 const imgCss = {
   css: { width: "24px", height: "24px", marginRight: "12px", borderRadius: 2 },
 };
-const e: HelpModel[] = [
+
+const navbar: HelpModel[] = [
   {
     id: 2,
     title: "Blogs",
@@ -184,11 +185,11 @@ const Help: React.FC<{ i: number; title?: boolean }> = ({
               marginBottom: 20,
             }}
           >
-            {e[i].title}
+            {navbar[i].title}
           </Space>
         )}
         <div>
-          {e[i].children.map((more) => {
+          {navbar[i].children.map((more) => {
             return (
               <div key={more.label}>
                 <a
