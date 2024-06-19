@@ -28,6 +28,7 @@ import { registry } from "./registry";
 // import { factorio } from "./factorio";
 // import { cssource } from "./cssource";
 import { minecraft } from "./minecraft";
+import { learn } from "./learn";
 const imgCss = {
   css: css`
     width: 24px;
@@ -80,7 +81,8 @@ export const info = [
       },
       {
         label: "Learn",
-        value: "https://oi.aiursoft.cn/",
+        // value: "https://oi.aiursoft.cn/",
+        content: learn,
         icon: <CloudServerOutlined  {...iconCss} />,
       },
       {
