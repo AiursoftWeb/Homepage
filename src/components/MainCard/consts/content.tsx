@@ -24,9 +24,6 @@ import * as icons from "../icons";
 import { css } from "@emotion/react";
 import { announcement } from "./announcement";
 import { registry } from "./registry";
-// import { terraria } from "./terraria";
-// import { factorio } from "./factorio";
-// import { cssource } from "./cssource";
 import { minecraft } from "./minecraft";
 import { learn } from "./learn";
 const imgCss = {
