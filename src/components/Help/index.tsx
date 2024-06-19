@@ -4,7 +4,9 @@ import {
   InteractionOutlined,
   FieldTimeOutlined,
   GiftOutlined,
-  TranslationOutlined
+  TranslationOutlined,
+  CodepenOutlined,
+  FileTextOutlined
 } from "@ant-design/icons";
 import { remotely } from "../MainCard/consts/remotely";
 import { Modal, Space } from "antd";
@@ -129,11 +131,37 @@ const e: HelpModel[] = [
         value: "https://manhours.aiursoft.cn",
       },
       {
+        label: "Code Runner",
+        icon: <CodepenOutlined {...imgCss} />,
+        value: "https://cpprunner.aiursoft.cn",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Books",
+    children: [
+      {
         label: "How to cook",
         icon: <GiftOutlined {...imgCss} />,
         value: "https://cook.aiursoft.cn",
       },
-    ],
+      {
+        label: "Wikipedia",
+        icon: <FileTextOutlined {...imgCss} />,
+        value: "https://wiki.aiursoft.cn",
+      },
+      {
+        label: "OI",
+        icon: <FileTextOutlined {...imgCss} />,
+        value: "https://oi.aiursoft.cn",
+      },
+      {
+        label: "CTF",
+        icon: <FileTextOutlined {...imgCss} />,
+        value: "https://ctf.aiursoft.cn",
+      }
+    ]
   }
 ];
 const Help: React.FC<{ i: number; title?: boolean }> = ({
