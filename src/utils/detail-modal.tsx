@@ -27,7 +27,6 @@ export default function openDetailModal(modal, label: string, content: string) {
             minHeight: '300px',
             overflowY: 'auto',
             textOverflow: 'ellipsis',
-            maxHeight: '400px',
             paddingLeft: '10px',
         },
         icon: null,
