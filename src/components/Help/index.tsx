@@ -6,7 +6,8 @@ import {
   GiftOutlined,
   TranslationOutlined,
   CodepenOutlined,
-  FileTextOutlined
+  FileTextOutlined,
+  FileImageOutlined
 } from "@ant-design/icons";
 import { remotely } from "../MainCard/consts/remotely";
 import { Modal, Space } from "antd";
@@ -111,6 +112,11 @@ const navbar: HelpModel[] = [
     id: 3,
     title: "Toolbox",
     children: [
+      {
+        label: "File Transfer",
+        value: "https://drive.aiursoft.cn",
+        icon: <FileImageOutlined {...imgCss} />,
+      },
       {
         label: "Display PPI Calculator",
         value: "https://anduin.aiursoft.cn/page/scale",
