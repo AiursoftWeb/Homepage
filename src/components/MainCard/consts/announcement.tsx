@@ -1,5 +1,13 @@
 export const announcement =
   `
+## File transfer
+
+If you want to transfer a photo from your PC to your phone, what do you do?
+
+You can use Aiursoft's file transfer service. It is a simple and easy-to-use file transfer service that does not require registration. You can transfer files between devices with just a few clicks.
+
+Try it here! [https://drive.aiursoft.cn/](https://drive.aiursoft.cn/)
+
 ## Chess server
 
 We built a new chess server. You can experience it at [https://chess.aiursoft.cn/](https://chess.aiursoft.cn/).
