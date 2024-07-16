@@ -3,8 +3,8 @@
 FROM hub.aiursoft.cn/node:21-alpine AS npm-env
 WORKDIR /src
 COPY . .
-RUN yarn
-RUN yarn build
+RUN npm i
+RUN npm run build
 
 # ============================
 # Prepare Runtime Environment
