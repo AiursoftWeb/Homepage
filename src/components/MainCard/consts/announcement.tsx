@@ -8,7 +8,7 @@ If you want to speed up the download of NPM packages, you can use Aiursoft's NPM
 npm set registry https://npm.aiursoft.cn/
 \`\`\`
 
-Or you can create a new `.npmrc` file in your project root directory and add the following content:
+Or you can create a new \`.npmrc\` file in your project root directory and add the following content:
 
 \`\`\`
 registry=https://npm.aiursoft.cn/
