@@ -1,5 +1,19 @@
 export const announcement =
   `
+## NPM Server
+
+If you want to speed up the download of NPM packages, you can use Aiursoft's NPM server. It is a simple and easy-to-use NPM server that does not require registration. You can use it to download NPM packages with just a few clicks.
+
+\`\`\`bash
+npm set registry https://npm.aiursoft.cn/
+\`\`\`
+
+Or you can create a new `.npmrc` file in your project root directory and add the following content:
+
+\`\`\`
+registry=https://npm.aiursoft.cn/
+\`\`\`
+
 ## File transfer
 
 If you want to transfer a photo from your PC to your phone, what do you do?
