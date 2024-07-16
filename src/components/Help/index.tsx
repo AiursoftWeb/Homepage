@@ -142,6 +142,26 @@ const navbar: HelpModel[] = [
         icon: <CodepenOutlined {...imgCss} />,
         value: "https://cpprunner.aiursoft.cn",
       },
+      {
+        label: "Nuget Registry",
+        icon: <CodepenOutlined {...imgCss} />,
+        value: "https://nuget.aiursoft.cn",
+      },
+      {
+        label: "Docker Registry",
+        icon: <CodepenOutlined {...imgCss} />,
+        value: "https://hub.aiursoft.cn",
+      },
+      {
+        label: "npm Registry",
+        icon: <CodepenOutlined {...imgCss} />,
+        value: "https://npm.aiursoft.cn",
+      },
+      {
+        label: "APT Registry",
+        icon: <CodepenOutlined {...imgCss} />,
+        value: "https://mirror.aiursoft.cn",
+      },
     ],
   },
   {
