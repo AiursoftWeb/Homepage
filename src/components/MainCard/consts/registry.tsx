@@ -3,7 +3,7 @@ export const registry =
 
 Aiursoft 为了加速常见开发人员下载各类 ubuntu, arch, docker, nuget 的包的速度，正在建设一系列对于官方源的镜像站点。
 
-### Ubuntu, Debian
+### Ubuntu
 
 你可以立刻使用 Aiursoft 自建的 Apt 包管理服务器。
 
@@ -23,6 +23,8 @@ deb http://mirror.aiursoft.cn/ubuntu/ jammy-security main restricted universe mu
 > 注意上面 jammy 是你的 Ubuntu 发行版代号 (这里是22.04)，你需要根据你的版本修改。
 
 然后直接正常使用 apt 命令即可。
+
+目前只允许阅读，不允许上传。但是这个服务器配置了自动化 Mirror，任何官方的 Ubuntu 包都会自动同步到这个服务器上。
 
 ### Nuget
 
@@ -72,6 +74,8 @@ docker pull hub.aiursoft.cn/aiursoft/tracer:latest
 sed -i "s/https:\/\/downloads.immortalwrt.org/https:\/\/immortalwrt.aiursoft.cn/g" ./repositories.conf
 \`\`\`
 
+目前只允许阅读，不允许上传。
+
 ### NPM
 
 如果你想使用 Aiursoft 的 NPM 镜像服务器来加速你的项目，请执行以下命令：
@@ -87,5 +91,7 @@ registry=https://npm.aiursoft.cn/
 \`\`\`
 
 之后，你运行 'npm install' 就会使用 Aiursoft 的 NPM 镜像服务器来下载依赖包。
+
+目前只允许阅读，不允许上传。但是这个服务器配置了自动化 Mirror，任何官方的 NPM 包都会自动同步到这个服务器上。
 
 `;
