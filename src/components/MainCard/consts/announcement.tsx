@@ -1,5 +1,13 @@
 export const announcement =
   `
+## Our own Operating System
+
+We are developing our own operating system. The operating system is based on the Linux kernel and is designed to be a lightweight, secure, and easy-to-use operating system. It is fully open-source and free to use.
+
+Try it here! [https://www.anduinos.com](https://www.anduinos.com)
+
+------
+
 ## NPM Server
 
 If you want to speed up the download of NPM packages, you can use Aiursoft's NPM server. It is a simple and easy-to-use NPM server that does not require registration. You can use it to download NPM packages with just a few clicks.
