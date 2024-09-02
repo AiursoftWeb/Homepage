@@ -1,10 +1,8 @@
 export const announcement =
   `
-## AnduinOS - Our own Operating System
+## AnduinOS 1.0 - Our own Operating System is released!
 
-We are developing our own operating system. The operating system is based on the Linux kernel and is designed to be a lightweight, secure, and easy-to-use operating system. It is fully open-source and free to use.
-
-Try it here! [https://www.anduinos.com](https://www.anduinos.com)
+We are developing our own operating system. The operating system is based on the Linux kernel and is designed to be a lightweight, secure, and easy-to-use operating system. It is fully open-source and free to use. Try it here! [https://www.anduinos.com](https://www.anduinos.com)
 
 ------
 
