@@ -118,6 +118,11 @@ const navbar: HelpModel[] = [
         icon: <FileImageOutlined {...imgCss} />,
       },
       {
+        label: "IP Address Calculator",
+        value: "https://ip.aiursoft.cn/",
+        icon: <CalculatorOutlined {...imgCss} />,
+      },
+      {
         label: "Display PPI Calculator",
         value: "https://anduin.aiursoft.cn/page/scale",
         icon: <CalculatorOutlined {...imgCss} />,
