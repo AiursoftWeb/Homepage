@@ -54,7 +54,7 @@ export const info = [
       {
         label: "Aiursoft Chat",
         icon: <MessageOutlined {...iconCss} />,
-        value: "https://chat.aiursoft.cn/",
+        value: "https://openweb.aiursoft.cn/",
       },
       // {
       //   label: "Aiursoft Wiki",
