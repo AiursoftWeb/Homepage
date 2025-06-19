@@ -77,7 +77,7 @@ const App = () => {
             }}
           >
             <Space direction={isMobileDevice ? 'vertical' : 'horizontal'}>
-              <span>Aiursoft-Homepage ©2023 </span>
+              <span>Anduin's Nas ©2023 </span>
               <a
                 href='https://beian.miit.gov.cn/'
                 target='_blank'

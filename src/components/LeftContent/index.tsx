@@ -22,7 +22,7 @@ const LeftContent = () => {
           margin-left: 4px;
         `}
       >
-        Aiursoft
+        Anduin's Nas - Aiursoft
       </div>
     </Space>
   );
