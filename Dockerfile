@@ -2,8 +2,9 @@
 # Prepare Build Environment
 FROM hub.aiursoft.cn/node:21-alpine AS npm-env
 WORKDIR /src
-COPY . .
+COPY package.json package-lock.json ./
 RUN npm i
+COPY . .
 RUN npm run build
 
 # ============================

@@ -8,7 +8,6 @@ import MainCard from './components/MainCard';
 import { Footer } from 'antd/es/layout/layout';
 import { isDarkMode, DarkModeContext } from '@/utils/dark-mode';
 import { useState } from 'react';
-import { StrangeLogo } from '@/components/logos/strange-logo';
 import { isMobile } from 'is-mobile';
 const { Header, Content } = Layout;
 
@@ -59,14 +58,6 @@ const App = () => {
               minHeight: '30%',
             }}
           >
-            <div
-              className='center'
-              css={{
-                minHeight: '20vh',
-              }}
-            >
-              <StrangeLogo />
-            </div>
             <MainCard />
           </Content>
           <Footer
