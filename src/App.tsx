@@ -86,7 +86,7 @@ const App = () => {
                 苏ICP备2022030859号
               </a>
               <a
-                href='https://stats.uptimerobot.com/ynrA5c73EN'
+                href='https://uptime.aiursoft.cn/status/aiursoft'
                 target='_blank'
                 rel='noreferrer'
               >
