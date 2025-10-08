@@ -128,6 +128,11 @@ const navbar: HelpModel[] = [
         icon: <CalculatorOutlined {...imgCss} />,
       },
       {
+        label: "Piano note calculator",
+        value: "https://pianonote.aiursoft.cn",
+        icon: <CalculatorOutlined {...imgCss} />,
+      },
+      {
         label: "Translate",
         value: "https://translate.aiursoft.cn",
         icon: <TranslationOutlined {...imgCss} />,
