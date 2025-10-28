@@ -77,7 +77,7 @@ const App = () => {
                 苏ICP备2022030859号
               </a>
               <a
-                href='https://uptime.aiursoft.cn/status/aiursoft'
+                href='https://uptime.aiursoft.com/status/aiursoft'
                 target='_blank'
                 rel='noreferrer'
               >
