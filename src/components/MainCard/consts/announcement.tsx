@@ -26,11 +26,11 @@ If you want to transfer a photo from your PC to your phone, what do you do?
 
 You can use Aiursoft's file transfer service. It is a simple and easy-to-use file transfer service that does not require registration. You can transfer files between devices with just a few clicks.
 
-Try it here! [https://drive.aiursoft.cn/](https://drive.aiursoft.cn/)
+Try it here! [https://drive.aiursoft.com/](https://drive.aiursoft.com/)
 
 ## Chess server
 
-We built a new chess server. You can experience it at [https://chess.aiursoft.cn/](https://chess.aiursoft.cn/).
+We built a new chess server. You can experience it at [https://chess.aiursoft.com/](https://chess.aiursoft.com/).
 
 The entire server is built on the latest technology stack, including:
 
@@ -68,7 +68,7 @@ We have also implemented several experience-related measures, including but not 
 * Using Brotli compression algorithm
 * Using BBR for congestion control optimization and cake for queue management optimization
 
-Additionally, we have compiled a [Web Application Development Checklist](https://anduin.aiursoft.cn/post/2024/3/1/web-checklist) for reference.
+Additionally, we have compiled a [Web Application Development Checklist](https://anduin.aiursoft.com/post/2024/3/1/web-checklist) for reference.
 
 ## Package Management Acceleration
 
@@ -122,7 +122,7 @@ This can effectively help you choose a monitor or calculate the PPI value of you
 
 Enter your resolution and screen size to get your monitor's PPI value, and calculate the display text size based on your input scaling ratio.
 
-Open [https://anduin.aiursoft.cn/page/scale](https://anduin.aiursoft.cn/page/scale) to experience it!
+Open [https://anduin.aiursoft.com/page/scale](https://anduin.aiursoft.com/page/scale) to experience it!
 
 ## Remote Desktop Connection Solution
 

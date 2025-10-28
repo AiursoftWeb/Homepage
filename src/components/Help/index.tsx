@@ -28,67 +28,67 @@ const navbar: HelpModel[] = [
     children: [
       {
         label: "AnduinXue",
-        value: "https://anduin.aiursoft.cn",
+        value: "https://anduin.aiursoft.com",
         icon: <img src={icons.anduin} {...imgCss} alt="" />,
       },
       {
         label: "杨过",
-        value: "https://gxhao.aiursoft.cn",
+        value: "https://gxhao.aiursoft.com",
         icon: <img src={icons.yang} {...imgCss} alt="" />,
       },
       {
         label: "Gbiner",
-        value: "https://gbiner.aiursoft.cn",
+        value: "https://gbiner.aiursoft.com",
         icon: <img src={icons.gb} {...imgCss} alt="" />,
       },
       {
         label: "Rest",
-        value: "https://rest.aiursoft.cn",
+        value: "https://rest.aiursoft.com",
         icon: <img src={icons.rest} {...imgCss} alt="" />,
       },
       {
         label: "JimMoen",
-        value: "https://jimmoen.aiursoft.cn",
+        value: "https://jimmoen.aiursoft.com",
         icon: <img src={icons.jim} {...imgCss} alt="" />,
       },
       {
         label: "Kitlau",
-        value: "https://kitlau.aiursoft.cn",
+        value: "https://kitlau.aiursoft.com",
         icon: <img src={icons.kit} {...imgCss} alt="" />,
       },
       {
         label: "EdgeNeko",
-        value: "https://edgeneko.aiursoft.cn",
+        value: "https://edgeneko.aiursoft.com",
         icon: <img src={icons.edgeneko} {...imgCss} alt="" />,
       },
       {
         label: "Dvorak",
-        value: "https://dvorak.aiursoft.cn",
+        value: "https://dvorak.aiursoft.com",
         icon: <img src={icons.dvorak} {...imgCss} alt="" />,
       },
       {
         label: "lyx",
-        value: "https://lyx.aiursoft.cn",
+        value: "https://lyx.aiursoft.com",
         icon: <img src={icons.lyx} {...imgCss} alt="" />,
       },
       {
         label: "anois",
-        value: "https://anois.aiursoft.cn/",
+        value: "https://anois.aiursoft.com/",
         icon: <img src={icons.anois} {...imgCss} alt="" />,
       },
       {
         label: "shubuzuo",
-        value: "https://shubuzuo.aiursoft.cn",
+        value: "https://shubuzuo.aiursoft.com",
         icon: <img src={icons.shubuzuo} {...imgCss} alt="" />,
       },
       {
         label: "Xinboo",
-        value: "https://xinboo.aiursoft.cn",
+        value: "https://xinboo.aiursoft.com",
         icon: <img src={icons.xinboo} {...imgCss} alt="" />,
       },
       {
         label: "RDF",
-        value: "https://rdf.aiursoft.cn",
+        value: "https://rdf.aiursoft.com",
         icon: <img src={icons.rdf} {...imgCss} alt="" />,
       },
       {
@@ -98,12 +98,12 @@ const navbar: HelpModel[] = [
       },
       {
         label: "Aimer Neige",
-        value: "https://aimer.aiursoft.cn",
+        value: "https://aimer.aiursoft.com",
         icon: <img src={icons.aimer} {...imgCss} alt="" />,
       },
       {
         label: "cody",
-        value: "https://cody.aiursoft.cn",
+        value: "https://cody.aiursoft.com",
         icon: <img src={icons.cody} {...imgCss} alt="" />,
       },
     ],
@@ -114,12 +114,12 @@ const navbar: HelpModel[] = [
     children: [
       {
         label: "File Transfer",
-        value: "https://drive.aiursoft.cn",
+        value: "https://drive.aiursoft.com",
         icon: <FileImageOutlined {...imgCss} />,
       },
       {
         label: "IP Address Calculator",
-        value: "https://ip.aiursoft.cn/",
+        value: "https://ip.aiursoft.com/",
         icon: <CalculatorOutlined {...imgCss} />,
       },
       {
@@ -181,22 +181,22 @@ const navbar: HelpModel[] = [
       {
         label: "How to cook",
         icon: <GiftOutlined {...imgCss} />,
-        value: "https://cook.aiursoft.cn",
+        value: "https://cook.aiursoft.com",
       },
       {
         label: "Wikipedia",
         icon: <FileTextOutlined {...imgCss} />,
-        value: "https://wiki.aiursoft.cn",
+        value: "https://wiki.aiursoft.com",
       },
       {
         label: "OI",
         icon: <FileTextOutlined {...imgCss} />,
-        value: "https://oi.aiursoft.cn",
+        value: "https://oi.aiursoft.com",
       },
       {
         label: "CTF",
         icon: <FileTextOutlined {...imgCss} />,
-        value: "https://ctf.aiursoft.cn",
+        value: "https://ctf.aiursoft.com",
       }
     ]
   }

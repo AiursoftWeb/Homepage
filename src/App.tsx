@@ -84,7 +84,7 @@ const App = () => {
                 Availability
               </a>
               <a
-                href='https://tracer.aiursoft.cn/'
+                href='https://tracer.aiursoft.com/'
                 target='_blank'
                 rel='noreferrer'
               >

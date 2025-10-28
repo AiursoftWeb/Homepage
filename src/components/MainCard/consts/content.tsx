@@ -59,26 +59,26 @@ export const info = [
       // {
       //   label: "Aiursoft Wiki",
       //   icon: <EditOutlined {...iconCss} />,
-      //   value: "https://docs.aiursoft.cn/",
+      //   value: "https://docs.aiursoft.com/",
       // },
       // {
       //   label: "AI 绘图",
-      //   value: "https://paint.aiursoft.cn/",
+      //   value: "https://paint.aiursoft.com/",
       //   icon: <PictureOutlined {...iconCss} />,
       // },
       {
         label: "Game of life",
-        value: "https://gameoflife.aiursoft.cn/",
+        value: "https://gameoflife.aiursoft.com/",
         icon: <AntDesignOutlined  {...iconCss} />,
       },
       {
         label: "Three body",
-        value: "https://three.aiursoft.cn/",
+        value: "https://three.aiursoft.com/",
         icon: <NodeCollapseOutlined  {...iconCss} />,
       },
       {
         label: "Learn",
-        // value: "https://oi.aiursoft.cn/",
+        // value: "https://oi.aiursoft.com/",
         content: learn,
         icon: <CloudServerOutlined  {...iconCss} />,
       },
@@ -101,7 +101,7 @@ export const info = [
     children: [
       {
         label: "Nextcloud",
-        value: "https://nextcloud.aiursoft.cn",
+        value: "https://nextcloud.aiursoft.com",
         icon: <BankOutlined {...iconCss} />,
       },
       {
@@ -122,17 +122,17 @@ export const info = [
       },
       {
         label: "Kavita",
-        value: "https://books.aiursoft.cn",
+        value: "https://books.aiursoft.com",
         icon: <IconFont {...iconCss} type="icon-tushuguan" />,
       },
       {
         label: "Koel",
-        value: "https://musics.aiursoft.cn",
+        value: "https://musics.aiursoft.com",
         icon: <CustomerServiceOutlined {...iconCss} />,
       },
       // {
       //   label: "电视台",
-      //   value: "https://live.aiursoft.cn",
+      //   value: "https://live.aiursoft.com",
       //   icon: <DesktopOutlined {...iconCss} />,
       // }
     ],
@@ -144,61 +144,61 @@ export const info = [
     children: [
       {
         label: "Minecraft",
-        // value: "https://mc.aiursoft.cn",
+        // value: "https://mc.aiursoft.com",
         icon: <img src={icons.mc} {...imgCss} alt="" />,
         content: minecraft,
       },
       {
         label: "Chess",
-        value: "https://chess.aiursoft.cn",
+        value: "https://chess.aiursoft.com",
         icon: <img src={icons.knight} {...imgCss} alt="" />,
       },
       // {
       //   label: "Terraria",
-      //   // value: "https://terraria.aiursoft.cn",
+      //   // value: "https://terraria.aiursoft.com",
       //   icon: <img src={icons.tl} {...imgCss} alt="" />,
       //   content: terraria,
       // },
       // {
       //   label: "Factorio",
-      //   // value: "https://factorio.aiursoft.cn",
+      //   // value: "https://factorio.aiursoft.com",
       //   icon: <img src={icons.ft} {...imgCss} alt="" />,
       //   content: factorio,
       // },
       // {
       //   label: "CS:Source",
-      //   // value: "https://cssource.aiursoft.cn",
+      //   // value: "https://cssource.aiursoft.com",
       //   icon: <img src={icons.cs} {...imgCss} alt="" />,
       //   content: cssource,
       // },
       {
         label: "Cat",
-        value: "https://cat.aiursoft.cn",
+        value: "https://cat.aiursoft.com",
         icon: <img src={icons.cat} {...imgCss} alt="" />,
       },
       {
         label: "Miku",
-        value: "https://miku.aiursoft.cn",
+        value: "https://miku.aiursoft.com",
         icon: <img src={icons.mk} {...imgCss} alt="" />,
       },
       {
         label: "Minesweeper",
-        value: "https://minesweeper.aiursoft.cn",
+        value: "https://minesweeper.aiursoft.com",
         icon: <img src={icons.sl} {...imgCss} alt="" />,
       },
       {
         label: "2048",
-        value: "https://2048.aiursoft.cn",
+        value: "https://2048.aiursoft.com",
         icon: <img src={icons._2048} {...imgCss} alt="" />,
       },
       {
         label: "Hextris",
-        value: "https://hextris.aiursoft.cn",
+        value: "https://hextris.aiursoft.com",
         icon: <img src={icons.russia} {...imgCss} alt="" />,
       },
       {
         label: "Life Game",
-        value: "https://life.aiursoft.cn",
+        value: "https://life.aiursoft.com",
         icon: <img src={icons.restart} {...imgCss} alt="" />,
       },
     ],

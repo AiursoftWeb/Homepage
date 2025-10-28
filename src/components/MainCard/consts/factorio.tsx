@@ -15,7 +15,7 @@ export const factorio =
 
 ### 服务器地址
 
-  factorio.aiursoft.cn
+  factorio.aiursoft.com
 
 ### 服务器端口
 

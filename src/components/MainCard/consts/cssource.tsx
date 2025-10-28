@@ -17,7 +17,7 @@ CS（Counter-Strike）是一款由Valve Corporation开发的第一人称射击�
 
 ### 服务器地址
 
-  cssource.aiursoft.cn
+  cssource.aiursoft.com
 
 ### 服务器端口
 

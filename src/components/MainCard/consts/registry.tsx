@@ -66,12 +66,12 @@ docker pull hub.aiursoft.com/aiursoft/tracer:latest
 
 你可以立刻使用 Aiursoft 自建的 ImmortalWrt 包管理服务器：
 
-[https://immortalwrt.aiursoft.cn/](https://immortalwrt.aiursoft.cn/)
+[https://immortalwrt.aiursoft.com/](https://immortalwrt.aiursoft.com/)
 
 你可以使用这个作为 ImmortalWrt 的源头，直接在 ImmortalWrt 的 Web 界面上添加这个源头即可，或使用它来编译你的 ImmortalWrt 固件。
 
 \`\`\`bash
-sed -i "s/https:\/\/downloads.immortalwrt.org/https:\/\/immortalwrt.aiursoft.cn/g" ./repositories.conf
+sed -i "s/https:\/\/downloads.immortalwrt.org/https:\/\/immortalwrt.aiursoft.com/g" ./repositories.conf
 \`\`\`
 
 目前只允许阅读，不允许上传。

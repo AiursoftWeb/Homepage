@@ -17,7 +17,7 @@ CTF（Capture The Flag，夺旗赛）起源于 1996 年 DEFCON 全球黑客大�
 
 我们提供了一个 CTF 知识文档库，在这里你可以学习到 CTF 的相关知识。
 
-[点击这里进入](https://ctf.aiursoft.cn/)
+[点击这里进入](https://ctf.aiursoft.com/)
 
 ## OI 竞赛
 
@@ -25,13 +25,13 @@ OI（Olympiad in Informatics，信息学奥林匹克竞赛）在中国起源于 
 
 我们提供了一个 OI 知识文档库，在这里你可以学习到 OI 的相关知识。
 
-[点击这里进入](https://oi.aiursoft.cn/)
+[点击这里进入](https://oi.aiursoft.com/)
 
 ## How To Cook
 
 做饭是每个人都会的技能，但是做出好吃的饭菜却是一门艺术。我们提供了一些简单的菜谱，让你可以在这里学习到一些简单的烹饪技巧。
 
-[点击这里进入](https://cook.aiursoft.cn/)
+[点击这里进入](https://cook.aiursoft.com/)
 
 ## Wikipedia
 
@@ -39,6 +39,6 @@ OI（Olympiad in Informatics，信息学奥林匹克竞赛）在中国起源于 
 
 我们提供了一个维基百科的镜像站点，让你可以在这里学习到更多的知识。
 
-[点击这里进入](https://wiki.aiursoft.cn/)
+[点击这里进入](https://wiki.aiursoft.com/)
 
 `;

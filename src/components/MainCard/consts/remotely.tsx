@@ -7,13 +7,13 @@ export const remotely =
 
 **不需要**注册账号！**不需要**下载软件！**不需要**配置路由器和防火墙！
 
-直接使用浏览器打开 [https://remotely.aiursoft.cn/RemoteControl/Viewer](https://remotely.aiursoft.cn/RemoteControl/Viewer)，输入对方的 ID，即可远程控制对方的电脑！
+直接使用浏览器打开 [https://remotely.aiursoft.com/RemoteControl/Viewer](https://remotely.aiursoft.com/RemoteControl/Viewer)，输入对方的 ID，即可远程控制对方的电脑！
 
 ## 让他人控制我的电脑
 
 **不需要**注册账号！**不需要**配置路由器和防火墙！
 
-下载被控客户端，使用浏览器打开 [https://remotely.aiursoft.cn/downloads](https://remotely.aiursoft.cn/downloads)
+下载被控客户端，使用浏览器打开 [https://remotely.aiursoft.com/downloads](https://remotely.aiursoft.com/downloads)
 
 现在支持 Windows 和 Ubuntu，不需要安装，但是需要管理员或ROOT权限。
 
@@ -21,6 +21,6 @@ export const remotely =
 
 ### 小问题
 
-如果 Remotely Desktop 询问你服务器地址，请填写：[https://remotely.aiursoft.cn](https://remotely.aiursoft.cn)
+如果 Remotely Desktop 询问你服务器地址，请填写：[https://remotely.aiursoft.com](https://remotely.aiursoft.com)
 
 `;

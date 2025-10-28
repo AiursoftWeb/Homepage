@@ -15,7 +15,7 @@ export const terraria =
 
 ### 服务器地址
 
-  terraria.aiursoft.cn
+  terraria.aiursoft.com
 
 ### 服务器端口
 

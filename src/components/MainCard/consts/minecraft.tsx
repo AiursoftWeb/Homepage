@@ -17,7 +17,7 @@ export const minecraft =
 
 ### 服务器地址
 
-  mc.aiursoft.cn
+  mc.aiursoft.com
 
 ### 服务器端口
 
@@ -29,7 +29,7 @@ export const minecraft =
 
 这台服务器支持通过网页在线预览玩家的位置，并查看世界地图。
 
-[点击这里预览](https://mc.aiursoft.cn/)
+[点击这里预览](https://mc.aiursoft.com/)
 
 ### 加入方式
 
