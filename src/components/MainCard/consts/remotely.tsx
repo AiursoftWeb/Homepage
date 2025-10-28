@@ -1,7 +1,7 @@
 export const remotely =
   `# 使用 Aiursoft 的开源自运营远程桌面解决方案
 
-[Remotely](https://git.aiursoft.cn/PublicVault/Remotely) 是一个开源的远程桌面解决方案，它可以让你轻松代替任何远程桌面客户端，使用浏览器远程连接到任何电脑。
+[Remotely](https://git.aiursoft.com/PublicVault/Remotely) 是一个开源的远程桌面解决方案，它可以让你轻松代替任何远程桌面客户端，使用浏览器远程连接到任何电脑。
 
 ## 控制他人的电脑
 

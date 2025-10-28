@@ -106,7 +106,7 @@ export const info = [
       },
       {
         label: "Gitea",
-        value: "https://git.aiursoft.cn",
+        value: "https://git.aiursoft.com",
         icon: <CodeOutlined {...iconCss} />,
       },
       {
