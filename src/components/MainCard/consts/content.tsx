@@ -89,7 +89,7 @@ export const info = [
       },
       {
         label: "Gist",
-        value: "https://gist.aiursoft.cn/",
+        value: "https://gist.aiursoft.com/",
         icon: <BookOutlined {...iconCss} />,
       }
     ],
@@ -111,7 +111,7 @@ export const info = [
       },
       {
         label: "Registry",
-        //value: "https://nuget.aiursoft.cn",
+        //value: "https://nuget.aiursoft.com",
         content: registry,
         icon: <FilePptOutlined {...iconCss} />,
       },

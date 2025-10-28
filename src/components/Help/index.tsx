@@ -155,7 +155,7 @@ const navbar: HelpModel[] = [
       {
         label: "Nuget Registry",
         icon: <CodepenOutlined {...imgCss} />,
-        value: "https://nuget.aiursoft.cn",
+        value: "https://nuget.aiursoft.com",
       },
       {
         label: "Docker Registry",

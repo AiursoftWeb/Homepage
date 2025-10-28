@@ -100,7 +100,7 @@ By this announcement, Aiursoft authorizes everyone to hack into the CppRunner se
 
 ## Gist Snippet Service
 
-We have deployed a Gist service. You can experience it at [https://gist.aiursoft.cn/](https://gist.aiursoft.cn/).
+We have deployed a Gist service. You can experience it at [https://gist.aiursoft.com/](https://gist.aiursoft.com/).
 
 Gist is a code snippet sharing service. You can share your code snippets here, and you can also view code snippets shared by others. Compared to creating a complete code repository, which is often unnecessary for just archiving an interesting small code, Gist is a great choice.
 

@@ -30,7 +30,7 @@ deb http://mirror.aiursoft.cn/ubuntu/ jammy-security main restricted universe mu
 
 你可以立刻使用 Aiursoft 自建的 Nuget 包管理服务器：
 
-[https://nuget.aiursoft.cn/](https://nuget.aiursoft.cn/)
+[https://nuget.aiursoft.com/](https://nuget.aiursoft.com/)
 
 如果你想在项目中使用它，请在 '.sln' 文件所在的目录放置文件 'nuget.config'，并在其中写入以下内容：
 
@@ -39,7 +39,7 @@ deb http://mirror.aiursoft.cn/ubuntu/ jammy-security main restricted universe mu
 <configuration>
     <packageSources>
         <clear />
-        <add key="nuget" value="https://nuget.aiursoft.cn/v3/index.json" />
+        <add key="nuget" value="https://nuget.aiursoft.com/v3/index.json" />
     </packageSources>
 </configuration>
 \`\`\`
