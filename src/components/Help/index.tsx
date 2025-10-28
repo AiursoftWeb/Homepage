@@ -150,7 +150,7 @@ const navbar: HelpModel[] = [
       {
         label: "Code Runner",
         icon: <CodepenOutlined {...imgCss} />,
-        value: "https://cpprunner.aiursoft.cn",
+        value: "https://cpprunner.aiursoft.com",
       },
       {
         label: "Nuget Registry",

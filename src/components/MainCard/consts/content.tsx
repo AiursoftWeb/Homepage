@@ -117,7 +117,7 @@ export const info = [
       },
       {
         label: "Media CMS",
-        value: "https://videos.aiursoft.cn",
+        value: "https://videos.aiursoft.com",
         icon: <VideoCameraOutlined {...iconCss} />,
       },
       {

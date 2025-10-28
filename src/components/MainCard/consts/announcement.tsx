@@ -82,7 +82,7 @@ Are you often asked how to set up a development environment? Have you found a pi
 
 Yes! Many times you don't want to set up a development environment, or you just want to quickly run the code to see the result. At this time, you need CppRunner! Although it's called CppRunner, it's actually a general code runner that supports 17 common languages.
 
-You can experience it at [https://cpprunner.aiursoft.cn/](https://cpprunner.aiursoft.cn/).
+You can experience it at [https://cpprunner.aiursoft.com/](https://cpprunner.aiursoft.com/).
 
 Now you have a blessing to quickly scratch out some code for testing! I hope it can help you and your friends improve efficiency and also help countless beginners quickly verify their code.
 

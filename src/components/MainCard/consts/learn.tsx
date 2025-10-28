@@ -9,7 +9,7 @@ export const learn =
 
 我们提供了一个在线的代码运行测试器，你可以在这里运行你的代码，查看运行结果。
 
-[点击这里进入](https://cpprunner.aiursoft.cn/)
+[点击这里进入](https://cpprunner.aiursoft.com/)
 
 ## CTF Capture The Flag
 
