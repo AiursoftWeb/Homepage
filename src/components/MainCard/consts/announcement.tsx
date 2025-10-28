@@ -11,13 +11,13 @@ We are developing our own operating system. The operating system is based on the
 If you want to speed up the download of NPM packages, you can use Aiursoft's NPM server. It is a simple and easy-to-use NPM server that does not require registration. You can use it to download NPM packages with just a few clicks.
 
 \`\`\`bash
-npm set registry https://npm.aiursoft.cn/
+npm set registry https://npm.aiursoft.com/
 \`\`\`
 
 Or you can create a new \`.npmrc\` file in your project root directory and add the following content:
 
 \`\`\`
-registry=https://npm.aiursoft.cn/
+registry=https://npm.aiursoft.com/
 \`\`\`
 
 ## File transfer

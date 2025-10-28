@@ -93,7 +93,7 @@ const navbar: HelpModel[] = [
       },
       {
         label: "fissssssh",
-        value: "https://fissssssh.aiursoft.cn",
+        value: "https://fissssssh.aiursoft.com",
         icon: <img src={icons.fissssssh} {...imgCss} alt="" />,
       },
       {
@@ -165,7 +165,7 @@ const navbar: HelpModel[] = [
       {
         label: "npm Registry",
         icon: <CodepenOutlined {...imgCss} />,
-        value: "https://npm.aiursoft.cn",
+        value: "https://npm.aiursoft.com",
       },
       {
         label: "APT Registry",

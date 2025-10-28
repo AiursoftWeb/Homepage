@@ -81,13 +81,13 @@ sed -i "s/https:\/\/downloads.immortalwrt.org/https:\/\/immortalwrt.aiursoft.cn/
 如果你想使用 Aiursoft 的 NPM 镜像服务器来加速你的项目，请执行以下命令：
 
 \`\`\`bash
-npm set registry https://npm.aiursoft.cn/
+npm set registry https://npm.aiursoft.com/
 \`\`\`
 
 或者，你可以在你的项目根目录下创建一个新的 '.npmrc' 文件，放在 'package.json' 同级目录，并添加以下内容：
 
 \`\`\`
-registry=https://npm.aiursoft.cn/
+registry=https://npm.aiursoft.com/
 \`\`\`
 
 之后，你运行 'npm install' 就会使用 Aiursoft 的 NPM 镜像服务器来下载依赖包。
