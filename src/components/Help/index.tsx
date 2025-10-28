@@ -160,7 +160,7 @@ const navbar: HelpModel[] = [
       {
         label: "Docker Registry",
         icon: <CodepenOutlined {...imgCss} />,
-        value: "https://hub.aiursoft.cn",
+        value: "https://hub.aiursoft.com",
       },
       {
         label: "npm Registry",

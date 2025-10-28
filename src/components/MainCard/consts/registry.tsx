@@ -50,14 +50,14 @@ deb http://mirror.aiursoft.cn/ubuntu/ jammy-security main restricted universe mu
 
 你可以立刻使用 Aiursoft 自建的 Docker 镜像服务器：
 
-[https://hub.aiursoft.cn/](https://hub.aiursoft.cn/)
+[https://hub.aiursoft.com/](https://hub.aiursoft.com/)
 
 如果你想使用它，请直接让你的项目以它作为源头去拉取镜像即可。
 
 例如:
 
 \`\`\`bash
-docker pull hub.aiursoft.cn/aiursoft/tracer:latest
+docker pull hub.aiursoft.com/aiursoft/tracer:latest
 \`\`\`
 
 目前只允许阅读，不允许上传。
