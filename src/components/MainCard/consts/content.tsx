@@ -84,7 +84,7 @@ export const info = [
       },
       {
         label: "GitLab",
-        value: "https://gitlab.aiursoft.cn/",
+        value: "https://gitlab.aiursoft.com/",
         icon: <GitlabOutlined {...iconCss} />,
       },
       {

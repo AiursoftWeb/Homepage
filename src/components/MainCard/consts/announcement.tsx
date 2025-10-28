@@ -38,7 +38,7 @@ The entire server is built on the latest technology stack, including:
 * ASP.NET Core
 * WebSockets
 
-And it is fully containerized, orchestrated by Docker Swarm, and deployed by GitLab CI/CD. It is also open-source, and you can view the source code at [https://gitlab.aiursoft.cn/aiursoft/chessserver](https://gitlab.aiursoft.cn/aiursoft/chessserver).
+And it is fully containerized, orchestrated by Docker Swarm, and deployed by GitLab CI/CD. It is also open-source, and you can view the source code at [https://gitlab.aiursoft.com/aiursoft/chessserver](https://gitlab.aiursoft.com/aiursoft/chessserver).
 
 Online gaming with friends is a great way to relax. We hope you enjoy it!
 
@@ -46,7 +46,7 @@ Online gaming with friends is a great way to relax. We hope you enjoy it!
 
 To facilitate maintenance, expansion, testing, and deployment, we are fully containerizing all services in our data center. This requires a declarative reconstruction of the entire data center.
 
-We are using Docker to containerize all services and Docker Swarm for service orchestration. Ultimately, all declarative code is committed to [GitLab](https://gitlab.aiursoft.cn/aiursoft/box), utilizing GitLab CI/CD for automated building, testing, and deployment.
+We are using Docker to containerize all services and Docker Swarm for service orchestration. Ultimately, all declarative code is committed to [GitLab](https://gitlab.aiursoft.com/aiursoft/box), utilizing GitLab CI/CD for automated building, testing, and deployment.
 
 Yes, the entire project is now complete, and users will not notice any changes. However, for us, this is a significant advancement.
 

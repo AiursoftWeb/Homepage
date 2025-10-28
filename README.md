@@ -1,8 +1,8 @@
 # Aiursoft Homepage by Herbert
 
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://gitlab.aiursoft.cn/aiursoft/homepage/-/blob/master/LICENSE)
-[![Pipeline stat](https://gitlab.aiursoft.cn/aiursoft/homepage/badges/master/pipeline.svg)](https://gitlab.aiursoft.cn/aiursoft/homepage/-/pipelines)
-[![ManHours](https://manhours.aiursoft.cn/r/gitlab.aiursoft.cn/aiursoft/homepage.svg)](https://gitlab.aiursoft.cn/aiursoft/homepage/-/commits/master?ref_type=heads)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://gitlab.aiursoft.com/aiursoft/homepage/-/blob/master/LICENSE)
+[![Pipeline stat](https://gitlab.aiursoft.com/aiursoft/homepage/badges/master/pipeline.svg)](https://gitlab.aiursoft.com/aiursoft/homepage/-/pipelines)
+[![ManHours](https://manhours.aiursoft.cn/r/gitlab.aiursoft.com/aiursoft/homepage.svg)](https://gitlab.aiursoft.com/aiursoft/homepage/-/commits/master?ref_type=heads)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fwww.aiursoft.cn%2F)](https://www.aiursoft.cn)
 [![Docker](https://img.shields.io/docker/pulls/aiursoft/homepage.svg)](https://hub.docker.com/r/aiursoft/homepage)
 
