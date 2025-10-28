@@ -124,17 +124,17 @@ const navbar: HelpModel[] = [
       },
       {
         label: "Display PPI Calculator",
-        value: "https://anduin.aiursoft.cn/page/scale",
+        value: "https://anduin.aiursoft.com/page/scale",
         icon: <CalculatorOutlined {...imgCss} />,
       },
       {
         label: "Piano note calculator",
-        value: "https://pianonote.aiursoft.cn",
+        value: "https://musictools.aiursoft.com",
         icon: <CalculatorOutlined {...imgCss} />,
       },
       {
         label: "Translate",
-        value: "https://translate.aiursoft.cn",
+        value: "https://translate.aiursoft.com",
         icon: <TranslationOutlined {...imgCss} />,
       },
       {
