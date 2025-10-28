@@ -145,7 +145,7 @@ const navbar: HelpModel[] = [
       {
         label: "Repo Manhours",
         icon: <FieldTimeOutlined {...imgCss} />,
-        value: "https://manhours.aiursoft.cn",
+        value: "https://manhours.aiursoft.com",
       },
       {
         label: "Code Runner",

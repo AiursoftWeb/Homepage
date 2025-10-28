@@ -108,7 +108,7 @@ Gist is a code snippet sharing service. You can share your code snippets here, a
 
 We have developed a ManHours calculator that quickly helps you calculate the total time spent developing a project.
 
-Simply open [ManHours](https://manhours.aiursoft.cn), paste your Git repository link, and quickly calculate the total person-hours spent developing your project.
+Simply open [ManHours](https://manhours.aiursoft.com), paste your Git repository link, and quickly calculate the total person-hours spent developing your project.
 
 You can paste the calculated result as a Badge into your project's README to show the development time of your project.
 
