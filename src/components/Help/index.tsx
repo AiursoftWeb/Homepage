@@ -170,7 +170,7 @@ const navbar: HelpModel[] = [
       {
         label: "APT Registry",
         icon: <CodepenOutlined {...imgCss} />,
-        value: "https://mirror.aiursoft.cn",
+        value: "https://mirror.aiursoft.com",
       },
     ],
   },

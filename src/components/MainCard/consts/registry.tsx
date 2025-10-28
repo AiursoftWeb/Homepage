@@ -7,16 +7,16 @@ Aiursoft 为了加速常见开发人员下载各类 ubuntu, arch, docker, nuget 
 
 你可以立刻使用 Aiursoft 自建的 Apt 包管理服务器。
 
-[https://mirror.aiursoft.cn/](https://mirror.aiursoft.cn/)
+[https://mirror.aiursoft.com/](https://mirror.aiursoft.com/)
 
 配置方法：
 
 \`\`\`bash
 echo "
-deb http://mirror.aiursoft.cn/ubuntu/ jammy main restricted universe multiverse
-deb http://mirror.aiursoft.cn/ubuntu/ jammy-updates main restricted universe multiverse
-deb http://mirror.aiursoft.cn/ubuntu/ jammy-backports main restricted universe multiverse
-deb http://mirror.aiursoft.cn/ubuntu/ jammy-security main restricted universe multiverse
+deb http://mirror.aiursoft.com/ubuntu/ jammy main restricted universe multiverse
+deb http://mirror.aiursoft.com/ubuntu/ jammy-updates main restricted universe multiverse
+deb http://mirror.aiursoft.com/ubuntu/ jammy-backports main restricted universe multiverse
+deb http://mirror.aiursoft.com/ubuntu/ jammy-security main restricted universe multiverse
 " | sudo tee /etc/apt/sources.list
 \`\`\`
 
