@@ -34,7 +34,7 @@ We built a new chess server. You can experience it at [https://chess.aiursoft.co
 
 The entire server is built on the latest technology stack, including:
 
-* .NET 9
+* .NET 10
 * ASP.NET Core
 * WebSockets
 
